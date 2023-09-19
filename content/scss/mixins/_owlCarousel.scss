@@ -1,0 +1,25 @@
+//
+// white_Arrow_Vcenter
+
+.white_Arrow_Vcenter {
+    .owl-nav {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        button {
+            span {
+                font-size: 30px;
+                ;color: white ;
+            }
+        }
+
+    }
+
+
+}

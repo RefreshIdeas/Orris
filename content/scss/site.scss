@@ -1,3 +1,11 @@
-body{
-    background-color: green;
-}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import 'layout/header';
+@import 'mixins/siteCustomizxation';
+@import 'mixins/owlCarousel';
+
+
