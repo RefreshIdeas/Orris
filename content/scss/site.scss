@@ -3,9 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@import 'utilities/sit-settings';
 @import 'layout/header';
 @import 'mixins/siteCustomizxation';
 @import 'mixins/owlCarousel';
+@import 'mixins/buttons';
+
 
 

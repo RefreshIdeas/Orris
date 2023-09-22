@@ -1,0 +1,19 @@
+// 1rem to 10px
+html {
+    font-size: 10px;
+  }
+
+
+
+// fonts setting
+@font-face {
+    font-family: "Centabel";
+    src: url("/content/fonts/centabel.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+ body{
+    font-family: 'Inter', sans-serif;
+ }
