@@ -4,6 +4,8 @@
 @tailwind utilities;
 
 @import 'utilities/sit-settings';
+@import 'mixins/fonts';
+
 @import 'layout/header';
 @import 'mixins/siteCustomizxation';
 @import 'mixins/owlCarousel';
