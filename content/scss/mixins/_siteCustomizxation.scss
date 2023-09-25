@@ -1,8 +1,17 @@
 .container{
 padding-right:15px ;    
 padding-left:15px ;    
+};
+
+[class^="basis-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
 
 
+.container{
+    @apply mx-auto
 }
 
 

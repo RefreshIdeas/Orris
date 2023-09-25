@@ -1,0 +1,19 @@
+.heroTitle{
+    @apply md:text-[8rem] text-[6rem] leading-[8rem] font-[500] 
+}
+
+.heroTitleSub{
+    @apply md:text-[4.2rem] text-[3rem] leading-[4rem] font-[400] 
+}
+
+.sectionHeading{
+    @apply md:text-[4.2rem] text-[5rem] leading-[5rem] font-[500] 
+}
+
+.sectionSubHeading{
+    @apply md:text-[2rem] text-[2rem] leading-[3.4rem] font-[300] 
+}
+
+.sectionText{
+    @apply md:text-[1.8rem] text-[1.8rem] leading-[3rem] font-[300] 
+}
