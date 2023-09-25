@@ -12,6 +12,14 @@ plugins:[],
 
       padding: {
         sectionPadding: '75px',
+        
+        sectionPaddingMOB: '75px',
+        sectionPaddingTAB: '75px',
+      },
+
+      margin: {
+        sectionmargin: '75px',
+      
       },
 
 
@@ -51,7 +59,7 @@ theme1:'0 4px 4px rgba(0, 0, 0, 0.25)',
         theme1:'#007A7F',
         theme2:'#3A3947',
         light_blue:'#F5F8FF',
-        light_blue:'#D2AF6F',
+        light_brown:'#D2AF6F',
         themeGradient1:'#FFB400',
         themeGradient1_1:'#B87A02'
          

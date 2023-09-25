@@ -3,7 +3,7 @@ padding-right:15px ;
 padding-left:15px ;    
 };
 
-[class^="basis-"] {
+[class^="basis-"],[class^="md:basis-"],[class^="lg:basis-"],[class^="sm:basis-"] {
     padding-right: 15px;
     padding-left: 15px;
 

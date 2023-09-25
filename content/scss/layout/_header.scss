@@ -77,3 +77,19 @@
     }
   }
   
+
+
+  //fixed on scroll
+  header.scrollActive{
+transition: 0.3s linear;
+    animation-fill-mode: both;
+    animation: fixed;
+    // animation: fixedHeader 0.3s linear;
+    background-color: white;
+    @apply drop-shadow-theme1;
+img{
+  height: 54px !important;
+}
+
+
+  }
