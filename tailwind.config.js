@@ -37,6 +37,12 @@ theme1:'0 4px 4px rgba(0, 0, 0, 0.25)',
           lineHeight: '3.4rem',
           fontWeight: '300',
         }],
+        'sectionText': ['1.8rem', {
+          lineHeight: '3rem',
+          fontWeight: '300',
+        }],
+
+
       },
 
 
