@@ -4,17 +4,17 @@
 .white_Arrow_Vcenter {
     .owl-nav {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 0;
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
 
         button {
             span {
-                font-size: 30px;
+                font-size: 130px;
                 ;color: white ;
             }
         }
