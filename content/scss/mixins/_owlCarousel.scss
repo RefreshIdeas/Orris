@@ -42,4 +42,17 @@
     }
 
 
+    .owl-dots{
+
+        
+                button{
+        @apply h-[15px] w-[15px] rounded-full bg-white;
+            &.active{
+        @apply bg-theme1
+                
+            } 
+                }
+    }
+
+
 }
