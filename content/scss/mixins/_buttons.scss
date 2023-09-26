@@ -1,5 +1,16 @@
 .btn {
     @apply  md:py-[16px] py-[12px] md:pl-[40px] md:pr-[20px] px-[20px] text-[16px] max-[290px]:text-[14px] font-medium border-[2px] border-theme2 uppercase rounded-[4px] hover:bg-theme1 hover:border-theme1 duration-500 hover:text-white flex items-center justify-end max-w-max w-full break-keep text-theme2;
 
+&.white{
+  @apply border-white text-white hover:bg-white hover:text-theme2;
+  
+ &:hover{
+  svg{
+    @apply fill-theme2;
+
+  }
+ }
+}
+
   }
 
