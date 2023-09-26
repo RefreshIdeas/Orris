@@ -7,6 +7,7 @@ $('.white_Arrow_Vcenter').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
+    autoplayHoverPause:false,
     dots:false,
     animateOut: 'fadeOut',
     responsive:{
@@ -29,17 +30,22 @@ $('.black_Arrow_Vcenter').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
+    autoplayHoverPause:true,
     dots:true,
     animateOut: 'fadeOut',
     responsive:{
         0:{
-            items:1
+            items:1,
+            dotsEach: 2,
+            
         },
         600:{
-            items:1
+            items:1,
+            dotsEach: 1,
         },
         1000:{
-            items:1
+            items:1,
+            dotsEach: 1,
         }
     }
 })
@@ -72,6 +78,47 @@ counters.forEach( counter => {
    
    animate();
 });
+
+
+
+let navs = document.querySelector('nav');
+navs.addEventListener('click',function(e){
+let nav = e.target.closest('.nav')
+if(!nav) return;
+let navIndicator = nav.querySelector('.navIndicator');
+let subnav = nav.querySelector('.subNavs');
+document.querySelectorAll('.subNavs').forEach(val=>val.style="height:0");
+document.querySelectorAll('.navIndicator').forEach(val=>val.innerText="+");
+
+
+if(subnav.classList.contains('active')){
+    document.querySelectorAll('.subNavs').forEach(val=>val.style="height:0");
+document.querySelectorAll('.navIndicator').forEach(val=>val.innerText="+");
+subnav.classList.remove('active');
+}else{
+    subnav.style="height:auto";
+    subnav.classList.add('active')
+    navIndicator.innerText="-";
+}
+
+
+
+}) 
+
+
+
+
+
+
+// /trash
+
+
+
+
+
+
+
+
 
 
 

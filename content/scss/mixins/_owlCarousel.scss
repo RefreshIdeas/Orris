@@ -26,13 +26,14 @@
     .owl-nav {
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);
-        width: 115%;
+        transform: translate3d(-50%,50%,0);
+    
+      
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-@apply md:bottom-[50%] bottom-0 max-[768px]:hidden;
+@apply md:bottom-[50%] bottom-[-50px] z-20 items-center justify-between flex md:w-[105%] w-[240px];
         button {
             svg {
 @apply  text-black max-[768px]:h-[50px]
@@ -44,11 +45,14 @@
 
     .owl-dots{
 
-        
+        @apply flex justify-center md:justify-end items-center md:mt-[-60px] mt-[40px] md:mr-[30px] relative;
                 button{
-        @apply h-[15px] w-[15px] rounded-full bg-white;
+                    span{
+        @apply h-[15px] w-[15px] rounded-full md:bg-white bg-neutral-300 block mx-2;
+       };
             &.active{
-        @apply bg-theme1
+                span{
+        @apply bg-theme1}
                 
             } 
                 }
