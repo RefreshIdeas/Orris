@@ -2,57 +2,75 @@
 // white_Arrow_Vcenter
 
 .white_Arrow_Vcenter {
-    .owl-nav {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  .owl-nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-@apply md:bottom-[50%] bottom-0 max-[768px]:hidden;
-        button {
-            svg {
-@apply  text-white max-[768px]:h-[50px]
-            }
-        }
-
+    @apply md:bottom-[50%] bottom-0 max-[768px]:hidden;
+    button {
+      svg {
+        @apply text-white max-[768px]:h-[50px];
+      }
     }
-
-
+  }
 }
 
 .black_Arrow_Vcenter {
-    .owl-nav {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 115%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  .owl-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 115%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-@apply md:bottom-[50%] bottom-0 max-[768px]:hidden;
-        button {
-            svg {
-@apply  text-black max-[768px]:h-[50px]
-            }
-        }
-
+    @apply md:bottom-[50%] bottom-0 max-[768px]:hidden;
+    button {
+      svg {
+        @apply text-black max-[768px]:h-[50px];
+      }
     }
+  }
 
-
-    .owl-dots{
-
-        
-                button{
-        @apply h-[15px] w-[15px] rounded-full bg-white;
-            &.active{
-        @apply bg-theme1
-                
-            } 
-                }
+  .owl-dots {
+    button {
+      @apply h-[15px] w-[15px] rounded-full bg-white;
+      &.active {
+        @apply bg-theme1;
+      }
     }
-
-
+  }
 }
+
+.our_customer_speak {
+    .owl-nav {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 115%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      @apply md:bottom-[50%] bottom-0 max-[768px]:hidden;
+      button {
+        svg {
+          @apply text-black max-[768px]:h-[50px];
+        }
+      }
+    }
+  
+    .owl-dots {
+      button {
+        @apply h-[15px] w-[15px] rounded-full bg-white;
+        &.active {
+          @apply bg-theme1;
+        }
+      }
+    }
+  }
