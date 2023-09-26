@@ -3,11 +3,16 @@
 
 &.white{
   @apply border-white text-white hover:bg-white hover:text-theme2;
-  
+  svg{
+    g{
+      @apply fill-white;
+    }
+  }
  &:hover{
   svg{
+    g{
     @apply fill-theme2;
-
+     }
   }
  }
 }
