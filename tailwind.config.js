@@ -12,6 +12,14 @@ plugins:[],
 
       padding: {
         sectionPadding: '75px',
+        
+        sectionPaddingMOB: '75px',
+        sectionPaddingTAB: '75px',
+      },
+
+      margin: {
+        sectionmargin: '75px',
+      
       },
 
 
@@ -25,16 +33,6 @@ theme1:'0 4px 4px rgba(0, 0, 0, 0.25)',
         
       
 
-// <<<<<<< HEAD
-//         'heroTitleSub': ['4.2rem', {
-//           lineHeight: ' 4rem',
-//           fontWeight: '400',
-//         }],
-//         'sectionHeading': ['4.2rem', {
-//           lineHeight: '5rem',
-//           fontWeight: '500',
-//         }],
-// =======
       //   'heroTitleSub': ['4.2rem', {
       //     lineHeight: '4rem',
       //     fontWeight: '400',
@@ -43,7 +41,6 @@ theme1:'0 4px 4px rgba(0, 0, 0, 0.25)',
       //     lineHeight: '5rem',
       //     fontWeight: '500',
       //   }],
-// >>>>>>> 16aaa47226451ac8f381205c7500cfdf54c97569
 
       //   'sectionSubHeading': ['2rem', {
       //     lineHeight: '3.4rem',
@@ -62,7 +59,7 @@ theme1:'0 4px 4px rgba(0, 0, 0, 0.25)',
         theme1:'#007A7F',
         theme2:'#3A3947',
         light_blue:'#F5F8FF',
-        light_blue:'#D2AF6F',
+        light_brown:'#D2AF6F',
         themeGradient1:'#FFB400',
         themeGradient1_1:'#B87A02'
          

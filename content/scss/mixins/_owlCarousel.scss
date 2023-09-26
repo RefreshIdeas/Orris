@@ -4,18 +4,38 @@
 .white_Arrow_Vcenter {
     .owl-nav {
         position: absolute;
-        top: 40%;
         left: 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-
+@apply md:bottom-[50%] bottom-0 max-[768px]:hidden;
         button {
-            span {
-                font-size: 130px;
-                ;color: white ;
+            svg {
+@apply  text-white max-[768px]:h-[50px]
+            }
+        }
+
+    }
+
+
+}
+
+.black_Arrow_Vcenter {
+    .owl-nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 115%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+@apply md:bottom-[50%] bottom-0 max-[768px]:hidden;
+        button {
+            svg {
+@apply  text-black max-[768px]:h-[50px]
             }
         }
 
