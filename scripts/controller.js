@@ -115,7 +115,11 @@ subnav.classList.remove('active');
 
 
 
-
+document.querySelectorAll('.toggle').forEach(val=>{
+    val.addEventListener('click',function (e) {
+        document.querySelector('.navigationSection').classList.toggle('active')
+          })
+})
 
 
 
