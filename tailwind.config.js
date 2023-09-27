@@ -10,6 +10,10 @@ plugins:[],
 // extends
     extend: {
 
+      screens: {
+       
+      },
+
       padding: {
         sectionPadding: '75px',
         

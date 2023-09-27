@@ -1,0 +1,18 @@
+
+footer{
+    .footerLargeLinks{
+        @apply font-centabel text-[35px] leading-[30px] text-white hover:text-themeGradient1 font-extralight flex max-w-[254px] w-full justify-between items-center py-[30px];
+
+
+&:hover{
+    svg{
+transform: translateX(30px);
+    }
+}
+
+        svg{
+            @apply  ml-16
+        }
+    }
+}
+

@@ -6,14 +6,13 @@ padding-left:15px ;
 };
 
 [class^="basis-"],[class^="md:basis-"],[class^="lg:basis-"],[class^="sm:basis-"] {
-    padding-right: 15px;
-    padding-left: 15px;
+    @apply px-[15px]
 
 }
 
 
 .container{
-    @apply mx-auto
+    @apply mx-auto;
 }
 
 
