@@ -65,7 +65,10 @@ theme1:'0 4px 4px rgba(0, 0, 0, 0.25)',
         light_blue:'#F5F8FF',
         light_brown:'#D2AF6F',
         themeGradient1:'#FFB400',
-        themeGradient1_1:'#B87A02'
+        themeGradient1_1:'#B87A02',
+
+        // borderClrs
+        lightWhite:'rgba(#fff,0.25)'
          
       },
 

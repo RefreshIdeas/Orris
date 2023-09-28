@@ -1,0 +1,36 @@
+
+.square_icons{
+    .icons{
+        @apply border-[1px] border-white border-opacity-25 block max-w-max p-[9px] duration-300 hover:bg-white;
+
+&.facebook:hover{
+    path{
+        @apply fill-[#0866FF]
+    }
+
+}
+
+&.instagram:hover{
+    path{
+        @apply fill-[#ee2a7b];
+        // background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+    }
+
+}
+
+&.linkedin:hover{
+    path{
+        @apply fill-[#0072b1]
+    }
+
+}
+
+&.youtube:hover{
+    path{
+        @apply fill-[#CD201F]
+    }
+
+}
+
+    }
+}
