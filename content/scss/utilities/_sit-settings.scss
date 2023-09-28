@@ -22,3 +22,8 @@ html {
   font-family: 'Inter', sans-serif;
 overflow: hidden; 
 }
+
+a{
+    @apply hover:text-themeGradient1
+  
+}

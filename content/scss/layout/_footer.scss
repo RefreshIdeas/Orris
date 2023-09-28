@@ -33,19 +33,20 @@ footer {
 
 
   .bg-overlay{
-    animation:footerZinOut 8s linear infinite;
+    animation: zoom-in-zoom-out 8s linear infinite;
+    transform: scale(1.01, 1.01);
   }
 }
 
 
-@keyframes footerZinOut{
-    0%{
-scale: 1;
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1.01, 1.01);
     }
-    50%{
-        scale: 1.1;
+    50% {
+      transform: scale(1.2, 1.2);
     }
-    100%{
-        scale: 1;
+    100% {
+      transform: scale(1.01, 1.01);
     }
-}
+  }

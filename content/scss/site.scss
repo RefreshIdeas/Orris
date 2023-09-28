@@ -1,7 +1,5 @@
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 @import 'utilities/sit-settings';
 @import 'mixins/fonts';
@@ -15,4 +13,6 @@
 
 
 
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
