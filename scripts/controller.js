@@ -113,30 +113,46 @@ $( ".owl-next").html('<svg xmlns="http://www.w3.org/2000/svg" width="100" height
 
 
 
+
+
 const counters = document.querySelectorAll('.counterUP');
 const speed = 200;
 
-counters.forEach( counter => {
-   const animate = () => {
-      const value = +counter.getAttribute('counterNumber');
-      const data = +counter.innerText;
-     
-      const time = value / speed;
-     if(data < value) {
-          counter.innerText = Math.ceil(data + time);
-          if(value > 500){
-            setTimeout(animate, 1);
-          }else{
-            setTimeout(animate, 100);
-          }
-        }else{
-          counter.innerText = value;
+
+
+let observer = new IntersectionObserver((val)=>{
+
+
+if(val[0].isIntersecting){
+    counters.forEach( counter => {
+        const animate = () => {
+           const value = +counter.getAttribute('counterNumber');
+           const data = +counter.innerText;
+          
+           const time = value / speed;
+          if(data < value) {
+               counter.innerText = Math.ceil(data + time);
+               if(value > 500){
+                 setTimeout(animate, 1);
+               }else{
+                 setTimeout(animate, 100);
+               }
+             }else{
+               counter.innerText = value;
+             }
+          
         }
-     
-   }
-   
-   animate();
-});
+        
+        animate();
+     });
+}
+
+
+
+},{ threshold: 1,})
+observer.observe(counters[0])
+
+
 
 
 
