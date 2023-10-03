@@ -21,7 +21,15 @@ footer {
   }
 
   .footerSmallLinks {
-    @apply text-[16px] text-white font-extralight leading-[20px] mb-[20px] block;
+    @apply text-[16px] text-white font-extralight leading-[20px] mb-[20px] block relative max-w-max;
+
+    &::after{
+        @apply left-0 h-[1px] w-0 duration-700 bg-themeGradient1 absolute hover:w-[60%] -bottom-3;
+        content: "";
+
+    }
+
+
   }
 
   .footerOuterPadding {
