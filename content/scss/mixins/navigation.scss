@@ -1,0 +1,84 @@
+// header navigations
+.navigationSection {
+  @apply right-0 bg-transparent invisible ease-linear duration-300;
+
+
+  .all_Nav_block{  
+    @apply ease-linear translate-x-[-100%] duration-500;
+  
+
+  }
+  .navBlock {
+    // transition-duration: 300ms;
+    // transition: linear;
+    @apply max-w-[380px] bg-white h-full relative z-10;
+
+    nav.mainNavs {
+      .nav {
+        @apply font-centabel text-[25px] leading-[50px] py-[10px] duration-300 text-black flex items-center pl-[45px] pr-[20px] cursor-pointer;
+  
+        svg {
+          @apply ml-[25px];
+        }
+  
+        &:hover {
+          @apply bg-septenary_BG_clr text-white;
+          svg {
+            path {
+              fill: white;
+            }
+          }
+        }
+  
+        &.active {
+          @apply bg-septenary_BG_clr text-white;
+          svg {
+            @apply hidden;
+          }
+        }
+      }
+    }
+  }
+
+  .subNav_block{
+    @apply translate-x-[-100%];
+    nav.subNavs{
+      @apply flex flex-col justify-start h-full;
+
+      .subNavs_list{
+        @apply h-[0] overflow-hidden;
+
+        &.active{
+          height: auto;
+
+        };
+        
+        .subNav a{
+          @apply text-[22px] font-thin text-white leading-[50px] py-[10px];
+         }
+
+      }
+    }
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+
+
+  &.active {
+    @apply bg-black bg-opacity-60 visible;
+
+    
+    
+    .all_Nav_block{
+      @apply translate-x-0;
+
+
+    }
+  };
+
+
+  
+  
+}

@@ -3,7 +3,7 @@ footer {
     @apply text-[22px] leading-[40px] text-white font-thin mb-[13px];
   }
   .footerLargeLinks {
-    @apply font-centabel text-[35px] leading-[35px] text-white hover:text-themeGradient1 font-thin flex justify-start items-center;
+    @apply font-centabel text-[35px] leading-[35px] text-white hover:text-tertiary_BG_clr font-thin flex justify-start items-center;
 
     span {
       @apply block max-w-[190px] w-full;
@@ -23,13 +23,10 @@ footer {
   .footerSmallLinks {
     @apply text-[16px] text-white font-extralight leading-[20px] mb-[20px] block relative max-w-max;
 
-    &::after{
-        @apply left-0 h-[1px] w-0 duration-700 bg-themeGradient1 absolute hover:w-[60%] -bottom-3;
-        content: "";
-
+    &::after {
+      @apply left-0 h-[1px] w-0 duration-700 bg-tertiary_BG_clr absolute hover:w-[60%] -bottom-3;
+      content: "";
     }
-
-
   }
 
   .footerOuterPadding {
@@ -39,22 +36,20 @@ footer {
   .footerSmallLinks {
   }
 
-
-  .bg-overlay{
+  .bg-overlay {
     animation: zoom-in-zoom-out 8s linear infinite;
     transform: scale(1.01, 1.01);
   }
 }
 
-
 @keyframes zoom-in-zoom-out {
-    0% {
-      transform: scale(1.01, 1.01);
-    }
-    50% {
-      transform: scale(1.2, 1.2);
-    }
-    100% {
-      transform: scale(1.01, 1.01);
-    }
+  0% {
+    transform: scale(1.01, 1.01);
   }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1.01, 1.01);
+  }
+}

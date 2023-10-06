@@ -28,7 +28,7 @@ plugins:[],
 
 
       dropShadow: {
-theme1:'0 4px 4px rgba(0, 0, 0, 0.25)',
+primary_clr:'0 4px 4px rgba(0, 0, 0, 0.25)',
 
       },
 
@@ -60,15 +60,25 @@ theme1:'0 4px 4px rgba(0, 0, 0, 0.25)',
 
 
       colors:{
-        theme1:'#007A7F',
-        theme2:'#3A3947',
-        light_blue:'#F5F8FF',
-        light_brown:'#D2AF6F',
-        themeGradient1:'#FFB400',
-        themeGradient1_1:'#B87A02',
+        
+        primary_clr:'#007A7F',
+        secondary_clr:'#3A3947',
+
+        // bg colors
+        primary_BG_clr:'#F5F8FF',        
+        secondary_BG_clr:'#F5F4F4',  
+        tertiary_BG_clr:'#FFB400',
+        quartary_BG_clr:'#B87A02',
+        senary_BG_clr:'#D2AF6F',
+        septenary_BG_clr:'#5B5B5B',
+
+        // border colors
+        primary_BG_clr:'#D9D9D9',
+        secondary_border_clr:'rgba(#fff,0.25)',     
+        
 
         // borderClrs
-        lightWhite:'rgba(#fff,0.25)'
+       
          
       },
 

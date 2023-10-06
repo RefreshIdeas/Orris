@@ -4,6 +4,8 @@ import "./events";
 import VenoBox from "venobox";
 import "venobox/dist/venobox.min.css";
 
+
+
 $(".white_Arrow_Vcenter").owlCarousel({
   loop: true,
   margin: 10,
@@ -107,10 +109,7 @@ $(".owl-next").html(
   '<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 7 16"><path fill="currentColor" d="M1.5 13a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71L5.3 7.99L1.15 3.85c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l4.49 4.51c.2.2.2.51 0 .71l-4.5 4.49c-.1.1-.23.15-.35.15Z"/></svg>'
 );
 
-const intserSectingElement = document.querySelectorAll("section");
-
-const speed = 200;
-
+const intserSectingElement = document.querySelectorAll('section');
 let observer = new IntersectionObserver(
   (val) => {
     if (val[0].isIntersecting) {
@@ -120,9 +119,9 @@ let observer = new IntersectionObserver(
   { threshold: 0.1 }
 );
 intserSectingElement.forEach((val) => observer.observe(val));
-
 // counter initfunction
 function counterInit(param) {
+const speed = 200;
   const counters = document.querySelectorAll(".counterUP");
 
   counters.forEach((counter) => {
@@ -147,42 +146,73 @@ function counterInit(param) {
   });
 }
 
-let navs = document.querySelector("nav");
-navs.addEventListener("click", function (e) {
-  let nav = e.target.closest(".nav");
-  if (!nav) return;
-  let navIndicator = nav.querySelector(".navIndicator");
-  let subnav = nav.querySelector(".subNavs");
-  document
-    .querySelectorAll(".subNavs")
-    .forEach((val) => (val.style = "height:0"));
-  document
-    .querySelectorAll(".navIndicator")
-    .forEach((val) => (val.innerText = "+"));
 
-  if (subnav.classList.contains("active")) {
-    document
-      .querySelectorAll(".subNavs")
-      .forEach((val) => (val.style = "height:0"));
-    document
-      .querySelectorAll(".navIndicator")
-      .forEach((val) => (val.innerText = "+"));
-    subnav.classList.remove("active");
-  } else {
-    subnav.style = "height:auto";
-    subnav.classList.add("active");
-    navIndicator.innerText = "-";
-  }
-});
 
+// toggle function globally
+function addToogleEvent() {
+let click = document.querySelectorAll('.clickEvent')
+click.forEach((val) => {val.addEventListener('click',toggleFunc)})
+};
+
+function toggleFunc(e) {
+
+let nameof_class_tobe_toggle = e.target.closest('.clickEvent').dataset.toggleto;
+if(!nameof_class_tobe_toggle) return;
+let classes_tobe_toggle = document.querySelectorAll(`.${nameof_class_tobe_toggle}`);
+console.log(classes_tobe_toggle)
+
+Array.from(classes_tobe_toggle).forEach(element =>{
+   element.classList.toggle('active');
+  });
+}
+addToogleEvent();
+
+
+
+/// nav events
+let mainNav = document.querySelectorAll('.nav');
+mainNav.forEach(element =>{
+  element.addEventListener('click', function(e){
+    let target = e.target.closest('.nav');
+    let SubNavName = target.dataset.main_nav_of;
+    let parentDiv_subnav = document.querySelector('.subNav_block');
+    let subnav = document.querySelector(`.${SubNavName}`);
+    let allSubNavs = document.querySelectorAll('.subNavs_list');
+    allSubNavs.forEach(element => element.classList.remove('active'));
+    mainNav.forEach(element => element.classList.remove('active'));
+    
+    target.classList.add('active');
+    if(!parentDiv_subnav.classList.contains('active')){
+      parentDiv_subnav.classList.add('active')
+    }
+    let targetPostionTop = target.getBoundingClientRect().top;
+    parentDiv_subnav.style=`margin-top: ${targetPostionTop}px`;
+    subnav.classList.toggle('active');
+
+    if(!SubNavName) return;
+  })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+// veno box for pop image and video
 new VenoBox({
   selctor: ".venobox",
 });
 
+
+
+
+
 // /trash
 
-document.querySelectorAll(".navEvent").forEach((val) => {
-  val.addEventListener("click", function (e) {
-    document.querySelector(".navigationSection").classList.toggle("active");
-  });
-});

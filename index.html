@@ -19,134 +19,193 @@
 
 
   <header class="fixed w-full left-0 top-0 z-20">
-    <div class="container mx-auto flex justify-between items-center px-[15px] py-5">
+    <div class="container mx-auto ">
 
-      <a href="/" class="">
-        <img src="/content/images/orris-icon.png"
-          class="md:w-[132px] md:h-auto h-[50px] object-contain duration-700 navLogo" alt="Logo">
-        <span class="opacity-0 h-0 w-0 block overflow-hidden">LOGO</span>
-      </a>
+      <div class="flex justify-between items-center px-[15px] py-5">
+        <div class="hamburger_menu flex items-center cursor-pointer clickEvent toggle"
+          data-toggleTO="navigationSection">
+          <p class="font-normal text-secondary_clr text-[18px] hover:text-primary_clr">MENU</p>
+          <div class="toggle-button ClickTrigger ml-5">
+            <div class="toggle">
+              <span class="line-toggle"></span>
+              <span class="line-toggle"></span>
+              <span class="line-toggle"></span>
+            </div>
 
-      <div class="hamburger_menu flex items-center cursor-pointer navEvent open">
-
-        <div class="toggle-button ClickTrigger mr-5">
-          <div class="toggle">
-            <span class="line-toggle"></span>
-            <span class="line-toggle"></span>
-            <span class="line-toggle"></span>
           </div>
+
+
 
         </div>
 
-        <p class="font-normal text-theme2 text-[18px] hover:text-theme1">MENU</p>
 
+        <a href="/" class="">
+          <img src="/content/images/orris-icon.png"
+            class="md:w-[132px] md:h-auto h-[50px] object-contain duration-700 navLogo" alt="Logo">
+          <span class="opacity-0 h-0 w-0 block overflow-hidden">LOGO</span>
+        </a>
+
+        <div class="hamburger_menu flex items-center cursor-pointer navEvent open">
+        </div>
       </div>
 
-      <div class="fixed top-0 h-screen w-full bg-white overflow-auto navigationSection">
+      <div class="fixed top-0 h-screen w-full  overflow-auto navigationSection">
 
 
-        <div class="container mx-auto  px-[15px] py-5 relative z-30 overflow-auto">
+        <div class="relative all_Nav_block z-30 overflow-auto h-screen flex items-start">
 
-          <div class="flex justify-between items-center navEvent">
-            <a href="/" class="">
-              <img src="/content/images/orris-icon.png"
-                class="md:w-[132px] md:h-auto h-[50px] object-contain logo duration-700" alt="Logo">
-              <span class="opacity-0 h-0 w-0 block overflow-hidden">LOGO</span>
-            </a>
+          <div class="navBlock pt-[15px] flex flex-col justify-between">
+            <div class="navUpperBlock">
+              <div class="flex justify-between items-center">
 
-            <div class="hamburger_menu flex items-center cursor-pointer">
 
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" class="mr-2" height="40" viewBox="0 0 24 24">
-                <path class="fill-theme1"
-                  d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z" />
-              </svg>
+                <div
+                  class="hamburger_menu flex items-center justify-between w-full cursor-pointer mb-4 pl-[45px] pr-[20px]">
 
-              <p class="font-medium text-[18px] uppercase text-theme1">Close</p>
+                  <p class="current_page font-centabel text-[16px] leading-[30px] underline">Home</p>
 
+                  <svg class="clickEvent toggle" data-toggleTO="navigationSection" width="20" height="26"
+                    viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.40434 0.545454L9.92387 12.0671H10.0606L17.5801 0.545454H19.4569L11.0922 13.2727L19.4569 26H17.5801L10.0606 14.5529H9.92387L2.40434 26H0.527566L8.96684 13.2727L0.527566 0.545454H2.40434Z"
+                      fill="#3A3947" />
+                  </svg>
+
+                </div>
+              </div>
+              <nav class="mainNavs">
+                <ul class="px-0 mx-0 navs h-full ">
+                  <li class="nav block" data-main_nav_of="nav1">About Us
+                    <span class="navIndicator"><svg width="35" height="25" viewBox="0 0 44 25"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
+                          fill="fill-secondary_clr"></path>
+                      </svg></span>
+                  </li>
+
+                  <li class="nav block" data-main_nav_of="nav2">What We Do
+                    <span class="navIndicator"><svg width="35" height="25" viewBox="0 0 44 25"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
+                          fill="fill-secondary_clr"></path>
+                      </svg></span>
+                  </li>
+
+                  <li class="nav block" data-main_nav_of="nav3">Group of companies
+                    <span class="navIndicator"><svg width="35" height="25" viewBox="0 0 44 25"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
+                          fill="fill-secondary_clr"></path>
+                      </svg></span>
+                  </li>
+
+                  <li class="nav block" data-main_nav_of="nav4">Press & media
+                    <span class="navIndicator"><svg width="35" height="25" viewBox="0 0 44 25"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
+                          fill="fill-secondary_clr"></path>
+                      </svg></span>
+                  </li>
+
+                  <li class="nav block" data-main_nav_of="nav5">Careers
+                    <span class="navIndicator"><svg width="35" height="25" viewBox="0 0 44 25"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
+                          fill="fill-secondary_clr"></path>
+                      </svg></span>
+                  </li>
+
+
+                </ul>
+
+              </nav>
+            </div>
+            <div class="navLowerBlock py-[25px] sm:px-[45px] bg-secondary_BG_clr">
+              <a href="mailto:mail@orris.in"
+                class="btn lg secondary_clr mb-[2rem] trasparent border-[1.5px] font-centabel border-secondary_clr border-opacity-25 rounded-none w-full block">Quick
+                Enquiry <svg xmlns="http://www.w3.org/2000/svg" class="ml-[18px]" width="28" height="28"
+                  viewBox="0 0 26 26">
+                  <path fill="currentColor"
+                    d="M3 4C1.344 4 0 5.344 0 7v12c0 1.656 1.344 3 3 3h20c1.656 0 3-1.344 3-3V7c0-1.656-1.344-3-3-3H3zm0 2h20c.551 0 1 .449 1 1v.5l-11 5.938L2 7.5V7c0-.551.449-1 1-1zM2 7.781l6.531 5.094l-6.406 6.563l7.813-5.563L13 15.844l3.063-1.969l7.812 5.563l-6.406-6.563L24 7.781V19a.95.95 0 0 1-.125.438c-.165.325-.486.562-.875.562H3c-.389 0-.71-.237-.875-.563A.95.95 0 0 1 2 19V7.781z">
+                  </path>
+                </svg></a>
+
+              <a href="mailto:mail@orris.in"
+                class="btn lg secondary_clr trasparent border-[1.5px] font-centabel border-white border-opacity-25 rounded-none w-full block">Contact
+                Us <svg xmlns="http://www.w3.org/2000/svg" class="ml-[18px]" width="28" height="28" viewBox="0 0 16 16">
+                  <path fill="currentColor"
+                    d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576L6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76l7.494-7.493Z">
+                  </path>
+                </svg>
+
+              </a>
             </div>
           </div>
 
+          <div class="subNav_block py-[15px] sm:px-[45px] bg-septenary_BG_clr max-w-max max-h-max clickEvent toggle ease-linear duration-300" data-toggleTO="subNav_block">
+            <div class="navUpperBlock">
+              <div class="flex items-center cursor-pointer">
+                <svg class=" rotate-180" width="35" height="25" viewBox="0 0 44 25" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
+                    fill="#fff"></path>
+                </svg>
 
-          <div class="nvBlock mt-[30px] text-center">
+                <span class="text-[18px] text-white font-thin leading-[50px] ml-[20px] font-centabel">Close</span>
+              </div>
+            </div>
+            <div class="navLowerBlock">
+              <nav class="subNavs">
 
-            <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto block" width="41" height="40" viewBox="0 0 20 20">
-              <path class="fill-theme1"
-                d="M18.178 11.373a.7.7 0 0 1 .7.7v5.874c.027.812-.071 1.345-.434 1.68c-.338.311-.828.4-1.463.366H3.144C2.5 19.961 2 19.7 1.768 19.173c-.154-.347-.226-.757-.226-1.228v-5.873a.7.7 0 0 1 1.4 0v5.873c0 .232.026.42.07.562l.036.098l-.003-.01c.001-.013.03-.008.132-.002h13.84c.245.014.401 0 .456-.001l.004-.001c-.013-.053.012-.27 0-.622v-5.897a.7.7 0 0 1 .701-.7ZM10.434 0c.264 0 .5.104.722.297l8.625 8.139a.7.7 0 1 1-.962 1.017l-8.417-7.944l-9.244 7.965a.7.7 0 0 1-.915-1.06L9.689.277l.086-.064c.214-.134.428-.212.66-.212Z" />
-            </svg>
+                <ul class="subNavs_list nav1">
+                  <li class="subNav"><a href="#">Overview</a></li>
+                  <li class="subNav"><a href="#">Orris Ethos</a></li>
+                  <li class="subNav"><a href="#">Our Team</a></li>
+                  <li class="subNav"><a href="#">CSR</a></li>
+                </ul>
 
+                <ul class="subNavs_list nav2">
+                  <li class="subNav"><a href="#">Residential</a></li>
+                  <li class="subNav"><a href="#">Commercial</a></li>
+                  <li class="subNav"><a href="#">Our Team</a></li>
+                  <li class="subNav"><a href="#">CSR</a></li>
 
-            <nav>
-              <ul class="px-0 mx-0 navs h-full ">
-                <li class="nav block">About Us <span class="navIndicator">+</span>
+                </ul>
 
-                  <ul class="subNavs">
-                    <li class="subNav"><a href="#">Overview</a></li>
-                    <li class="subNav"><a href="#">Orris Ethos</a></li>
-                    <li class="subNav"><a href="#">Our Team</a></li>
-                    <li class="subNav"><a href="#">CSR</a></li>
+                <ul class="subNavs_list nav3">
+                  <li class="subNav"><a href="#">Real Estate</a></li>
+                  <li class="subNav"><a href="#">Entertainment</a></li>
+                  <li class="subNav"><a href="#">Hospitality</a></li>
+                  <li class="subNav"><a href="#">Warehousing parks</a></li>
+                  <li class="subNav"><a href="#">Education</a></li>
+                </ul>
 
-                  </ul>
-                </li>
-
-                <li class="nav block">What We Do <span class="navIndicator">+</span>
-
-                  <ul class="subNavs">
-                    <li class="subNav"><a href="#">Residential</a></li>
-                    <li class="subNav"><a href="#">Commercial</a></li>
-                    <li class="subNav"><a href="#">Our Team</a></li>
-                    <li class="subNav"><a href="#">CSR</a></li>
-
-                  </ul>
-                </li>
-
-                <li class="nav block">Group of companies <span class="navIndicator">+</span>
-
-                  <ul class="subNavs">
-                    <li class="subNav"><a href="#">Real Estate</a></li>
-                    <li class="subNav"><a href="#">Entertainment</a></li>
-                    <li class="subNav"><a href="#">Hospitality</a></li>
-                    <li class="subNav"><a href="#">Warehousing parks</a></li>
-                    <li class="subNav"><a href="#">Education</a></li>
-
-                  </ul>
-                </li>
-
-                <li class="nav block">Press & media <span class="navIndicator">+</span>
-
-                  <ul class="subNavs">
-                    <li class="subNav"><a href="#">Blogss</a></li>
-                    <li class="subNav"><a href="#">Events</a></li>
-                    <li class="subNav"><a href="#">Advertisements</a></li>
-                    <li class="subNav"><a href="#">Media Coverage</a></li>
+                <ul class="subNavs_list nav4">
+                  <li class="subNav"><a href="#">Blogss</a></li>
+                  <li class="subNav"><a href="#">Events</a></li>
+                  <li class="subNav"><a href="#">Advertisements</a></li>
+                  <li class="subNav"><a href="#">Media Coverage</a></li>
 
 
-                  </ul>
-                </li>
+                </ul>
 
-                <li class="nav block">Careers<span class="navIndicator">+</span>
-
-                  <ul class="subNavs">
-                    <li class="subNav"><a href="#">Why Join Us</a></li>
-                    <li class="subNav"><a href="#">Life at Orris</a></li>
-                    <li class="subNav"><a href="#">Current Openings</a></li>
-                    <li class="subNav"><a href="#">Media Coverage</a></li>
+                <ul class="subNavs_list nav5">
+                  <li class="subNav"><a href="#">Why Join Us</a></li>
+                  <li class="subNav"><a href="#">Life at Orris</a></li>
+                  <li class="subNav"><a href="#">Current Openings</a></li>
+                  <li class="subNav"><a href="#">Media Coverage</a></li>
 
 
-                  </ul>
-                </li>
+                </ul>
 
-                <li class="nav block"><a href="#">
-                    Contact Us
-                  </a>
-
-
-                </li>
-              </ul>
-
-            </nav>
-
+              </nav>
+            </div>
           </div>
-
 
         </div>
 
@@ -183,7 +242,7 @@
             Explore
 
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-7" width="30" height="30" viewBox="0 0 20 20">
-              <g class="fill-theme2 group-hover:fill-white duration-500" fill-rule="evenodd" clip-rule="evenodd">
+              <g class="fill-secondary_clr group-hover:fill-white duration-500" fill-rule="evenodd" clip-rule="evenodd">
                 <path
                   d="M11.026 5.232a1 1 0 0 1 1.409.128l3.333 4a1 1 0 0 1-1.536 1.28l-3.334-4a1 1 0 0 1 .128-1.408Z" />
                 <path
@@ -211,11 +270,11 @@
             Building a New India
           </h1>
 
-          <a href="#" class="btn border-theme2 theme2 mx-auto mt-[30px] group">
+          <a href="#" class="btn border-secondary_clr secondary_clr mx-auto mt-[30px] group">
             Explore
 
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-7" width="30" height="30" viewBox="0 0 20 20">
-              <g class="fill-theme2 group-hover:fill-white duration-500" fill-rule="evenodd" clip-rule="evenodd">
+              <g class="fill-secondary_clr group-hover:fill-white duration-500" fill-rule="evenodd" clip-rule="evenodd">
                 <path
                   d="M11.026 5.232a1 1 0 0 1 1.409.128l3.333 4a1 1 0 0 1-1.536 1.28l-3.334-4a1 1 0 0 1 .128-1.408Z" />
                 <path
@@ -251,22 +310,22 @@
       <div class="flex flex-wrap mx-[-15px] justify-between">
 
         <div class="lg:basis-6/12 lg:mt-[30px]">
-          <h2 class="sectionHeading text-theme2">
+          <h2 class="sectionHeading text-secondary_clr">
             We are a global Real Estate Developer, Investor & Manager
 
           </h2>
 
-          <p class="sectionText text-theme2 mt-[35px]">
+          <p class="sectionText text-secondary_clr mt-[35px]">
             Through a decade-long endeavor to ensure the highest possible quality of life to their patrons, Orris has
             quickly grown from being one of the top real estate property developers in Delhi/NCR to an organization
             well-diversified in the fields of Real estate, Entertainment, Hospitality, Warehousing Parks & Education.
           </p>
 
-          <a href="#" class="btn border-theme2 theme2 group mt-[65px]">
+          <a href="#" class="btn border-secondary_clr secondary_clr group mt-[65px]">
             know more
 
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-7" width="30" height="30" viewBox="0 0 20 20">
-              <g class="fill-theme2 group-hover:fill-white duration-500" fill-rule="evenodd" clip-rule="evenodd">
+              <g class="fill-secondary_clr group-hover:fill-white duration-500" fill-rule="evenodd" clip-rule="evenodd">
                 <path d="M11.026 5.232a1 1 0 0 1 1.409.128l3.333 4a1 1 0 0 1-1.536 1.28l-3.334-4a1 1 0 0 1 .128-1.408Z">
                 </path>
                 <path
@@ -285,17 +344,17 @@
           class="xl:basis-5/12 basis-full lg:basis-6/12 flex flex-wrap justify-center sm:justify-between xl:mt-0 mt-[30px]">
 
 
-          <div class="sm:basis-6/12 basis-full drop-shadow-theme1">
+          <div class="sm:basis-6/12 basis-full drop-shadow-primary_clr">
 
             <div
-              class="bg-light_blue rounded-md py-[30px] px-[20px] flex flex-col items-center min-h-[250px] mb-[30px] mt-[30px]">
+              class="bg-primary_BG_clr rounded-md py-[30px] px-[20px] flex flex-col items-center min-h-[250px] mb-[30px] mt-[30px]">
               <img src="/uploads/fldCMS/svg/landBank.svg" alt="">
               <p class="sectionText text-black mb-0 mt-2.5 text-center">One of the Biggest Land Bank</p>
 
             </div>
 
             <div
-              class="bg-light_blue rounded-md py-[30px] px-[20px] flex flex-col items-center min-h-[250px] sm:mb-[0px] mb-[30px]">
+              class="bg-primary_BG_clr rounded-md py-[30px] px-[20px] flex flex-col items-center min-h-[250px] sm:mb-[0px] mb-[30px]">
               <img src="/uploads/fldCMS/svg/Property-Experience.svg" alt="">
               <p class="sectionText text-black mb-0 mt-2.5 text-center">Your Complete Property Experience</p>
 
@@ -303,16 +362,16 @@
           </div>
 
 
-          <div class="sm:basis-6/12 basis-full drop-shadow-theme1">
+          <div class="sm:basis-6/12 basis-full drop-shadow-primary_clr">
             <div
-              class="bg-light_blue rounded-md pb-[30px] py-[40px] px-[20px] flex flex-col items-center min-h-[250px] mb-[30px] ">
+              class="bg-primary_BG_clr rounded-md pb-[30px] py-[40px] px-[20px] flex flex-col items-center min-h-[250px] mb-[30px] ">
               <img src="/uploads/fldCMS/svg/green-home.svg" alt="">
               <p class="sectionText text-black mb-0 mt-2.5 text-center">Timely Execution & ECO - Friendly</p>
 
             </div>
 
             <div
-              class="bg-light_blue rounded-md py-[30px] px-[20px] flex flex-col items-center min-h-[250px] mt-[30px]">
+              class="bg-primary_BG_clr rounded-md py-[30px] px-[20px] flex flex-col items-center min-h-[250px] mt-[30px]">
               <img src="/uploads/fldCMS/svg/team-building.svg" alt="">
               <p class="sectionText text-black mb-0 mt-2.5 text-center">Customer Oriented Company</p>
 
@@ -335,7 +394,7 @@
   <section class="residential-commercial-BLOCk">
 
     <div class="container ">
-      <h2 class="sectionHeading text-theme2 text-left mb-[30px]">
+      <h2 class="sectionHeading text-secondary_clr text-left mb-[30px]">
         Projects
 
       </h2>
@@ -381,14 +440,14 @@
 
 
   <section class="counterSection">
-    <div class="mt-sectionmargin bg-light_blue ">
+    <div class="mt-sectionmargin bg-primary_BG_clr ">
       <div class="container py-sectionPadding ">
-        <h2 class="sectionHeading text-theme2 text-center">
+        <h2 class="sectionHeading text-secondary_clr text-center">
           We are a global Real Estate Developer, Investor &amp; Manager
 
         </h2>
 
-        <p class="sectionSubHeading text-theme2 fw text-center mt-[20px]">
+        <p class="sectionSubHeading text-secondary_clr fw text-center mt-[20px]">
           Through a decade-long endeavor to ensure the highest possible quality of life to their patrons, Orris has
           quickly grown from being one of the top real estate property developers in Delhi/NCR to an organization
           well-diversified in the fields of Real estate, Entertainment, Hospitality, Warehousing Parks &amp; Education.
@@ -396,34 +455,34 @@
 
         <div class="flex mt-[50px] max-[290px]:justify-center md:flex-nowrap flex-wrap max-[640px]:items-center">
           <div
-            class="md:mb-0 px-[15px] max-[640px]:pb-[20px]  mb-[30px] basis-6/12 md:basis-3/12 lg:px-[40px] text-center md:text-[50px] text-[35px] lg:text-[80px] border-theme2 max-[290px]:border-r-0 border-r-[1px] text-theme1 font-semibold">
-            <span class="counterUP md:text-[50px] text-[35px] lg:text-[80px] text-theme1 font-semibold"
+            class="md:mb-0 px-[15px] max-[640px]:pb-[20px]  mb-[30px] basis-6/12 md:basis-3/12 lg:px-[40px] text-center md:text-[50px] text-[35px] lg:text-[80px] border-secondary_clr max-[290px]:border-r-0 border-r-[1px] text-primary_clr font-semibold">
+            <span class="counterUP md:text-[50px] text-[35px] lg:text-[80px] text-primary_clr font-semibold"
               counterNumber="17">0</span><sup>+</sup>
 
-            <p class="sm:text-[20px] text-[16px] font-medium text-theme2">Years of Experience</p>
+            <p class="sm:text-[20px] text-[16px] font-medium text-secondary_clr">Years of Experience</p>
           </div>
           <div
-            class="md:mb-0 px-[15px] max-[640px]:pb-[20px]  mb-[30px] basis-6/12 md:basis-3/12 lg:px-[40px] text-center md:text-[50px] text-[35px] lg:text-[80px] border-theme2 max-[290px]:border-r-0 md:border-r-[1px] text-theme1 font-semibold">
-            <span class="counterUP md:text-[50px] text-[35px] lg:text-[80px] text-theme1 font-semibold"
+            class="md:mb-0 px-[15px] max-[640px]:pb-[20px]  mb-[30px] basis-6/12 md:basis-3/12 lg:px-[40px] text-center md:text-[50px] text-[35px] lg:text-[80px] border-secondary_clr max-[290px]:border-r-0 md:border-r-[1px] text-primary_clr font-semibold">
+            <span class="counterUP md:text-[50px] text-[35px] lg:text-[80px] text-primary_clr font-semibold"
               counterNumber="20">0</span><sup>+</sup>
 
-            <p class="sm:text-[20px] text-[16px] font-medium text-theme2">Million Sq. Ft.
+            <p class="sm:text-[20px] text-[16px] font-medium text-secondary_clr">Million Sq. Ft.
               Under Construction</p>
           </div>
           <div
-            class="md:mb-0 px-[15px] max-[640px]:pb-[20px]  mb-[30px] basis-6/12 md:basis-3/12 lg:px-[40px] text-center md:text-[50px] text-[35px] lg:text-[80px] border-theme2 max-[290px]:border-r-0 border-r-[1px] text-theme1 font-semibold">
-            <span class="counterUP md:text-[50px] text-[35px] lg:text-[80px] text-theme1 font-semibold"
+            class="md:mb-0 px-[15px] max-[640px]:pb-[20px]  mb-[30px] basis-6/12 md:basis-3/12 lg:px-[40px] text-center md:text-[50px] text-[35px] lg:text-[80px] border-secondary_clr max-[290px]:border-r-0 border-r-[1px] text-primary_clr font-semibold">
+            <span class="counterUP md:text-[50px] text-[35px] lg:text-[80px] text-primary_clr font-semibold"
               counterNumber="7"></span><sup>+</sup>
 
-            <p class="sm:text-[20px] text-[16px] font-medium text-theme2">Million Sq. Ft.
+            <p class="sm:text-[20px] text-[16px] font-medium text-secondary_clr">Million Sq. Ft.
               Already Delivered</p>
           </div>
           <div
-            class="md:mb-0 px-[15px] max-[640px]:pb-[20px]  mb-[30px] basis-6/12 md:basis-3/12 lg:px-[40px] text-center md:text-[50px] text-[35px] lg:text-[80px] text-theme1 font-semibold">
-            <span class="counterUP md:text-[50px] text-[35px] lg:text-[80px] text-theme1 font-semibold"
+            class="md:mb-0 px-[15px] max-[640px]:pb-[20px]  mb-[30px] basis-6/12 md:basis-3/12 lg:px-[40px] text-center md:text-[50px] text-[35px] lg:text-[80px] text-primary_clr font-semibold">
+            <span class="counterUP md:text-[50px] text-[35px] lg:text-[80px] text-primary_clr font-semibold"
               counterNumber="5000">0</span><sup>+</sup>
 
-            <p class="sm:text-[20px] text-[16px] font-medium text-theme2">Happy Customers</p>
+            <p class="sm:text-[20px] text-[16px] font-medium text-secondary_clr">Happy Customers</p>
           </div>
         </div>
 
@@ -478,11 +537,11 @@
 
         </div>
 
-        <a href="#" class="mx-auto btn border-theme2 theme2 group md:mt-[30px] mt-[100px]">
+        <a href="#" class="mx-auto btn border-secondary_clr secondary_clr group md:mt-[30px] mt-[100px]">
           View All Projects
 
           <svg xmlns="http://www.w3.org/2000/svg" class="ml-7" width="30" height="30" viewBox="0 0 20 20">
-            <g class="fill-theme2 group-hover:fill-white duration-500" fill-rule="evenodd" clip-rule="evenodd">
+            <g class="fill-secondary_clr group-hover:fill-white duration-500" fill-rule="evenodd" clip-rule="evenodd">
               <path d="M11.026 5.232a1 1 0 0 1 1.409.128l3.333 4a1 1 0 0 1-1.536 1.28l-3.334-4a1 1 0 0 1 .128-1.408Z">
               </path>
               <path d="M11.026 14.768a1 1 0 0 1-.128-1.408l3.334-4a1 1 0 0 1 1.536 1.28l-3.333 4a1 1 0 0 1-1.409.128Z">
@@ -505,12 +564,12 @@
   <section>
 
     <div class="container py-sectionPadding ">
-      <h2 class="sectionHeading text-theme2 text-center">
+      <h2 class="sectionHeading text-secondary_clr text-center">
         What We Do
 
       </h2>
 
-      <p class="sectionSubHeading text-theme2 fw text-center mt-[20px]">
+      <p class="sectionSubHeading text-secondary_clr fw text-center mt-[20px]">
         Orris is a well-diversified organization that provides real estate, entertainment, hospitality, warehouse parks
         &
         education services.
@@ -600,12 +659,12 @@
 
     <div class="relative bg-white py-sectionPadding">
       <div
-        class="bg-overlay absolute top-0 left-0 h-[90%] md:h-[80%] w-full bg-gradient-to-b from-themeGradient1 to-themeGradient1_1 opacity-20">
+        class="bg-overlay absolute top-0 left-0 h-[90%] md:h-[80%] w-full bg-gradient-to-b from-tertiary_BG_clr to-quartary_BG_clr opacity-20">
       </div>
       <div class="container  relative z-10">
 
 
-        <h2 class="sectionHeading text-theme2 mb-[35px] md:absolute left-[15px] top-5">Our Customer Speak</h2>
+        <h2 class="sectionHeading text-secondary_clr mb-[35px] md:absolute left-[15px] top-5">Our Customer Speak</h2>
         <div class="owl-carousel owl-theme theme_dot_Hleft ">
 
 
@@ -617,7 +676,7 @@
 
               <div class="md:basis-5/12 basis-full md:order-2 md:mb-0 mb-[40px]">
                 <div class=" py-[20px] pr-[20px] relative">
-                  <div class="absolute right-0 top-0 h-full w-[40%] bg-theme1 z-0"></div>
+                  <div class="absolute right-0 top-0 h-full w-[40%] bg-primary_clr z-0"></div>
                   <img class="rounded-tl-[50px] relative z-[1] max-w-full h-[360px] object-cover"
                     src="/uploads/fldCMS/testimonial_image.png" alt="">
 
@@ -648,11 +707,11 @@
 
 
         </div>
-        <a href="#" class=" btn border-theme2 theme2 group md:mt-[20px] mt-[50px]">
+        <a href="#" class=" btn border-secondary_clr secondary_clr group md:mt-[20px] mt-[50px]">
           View All Testimonials
 
           <svg xmlns="http://www.w3.org/2000/svg" class="ml-7" width="30" height="30" viewBox="0 0 20 20">
-            <g class="fill-theme2 group-hover:fill-white duration-500" fill-rule="evenodd" clip-rule="evenodd">
+            <g class="fill-secondary_clr group-hover:fill-white duration-500" fill-rule="evenodd" clip-rule="evenodd">
               <path d="M11.026 5.232a1 1 0 0 1 1.409.128l3.333 4a1 1 0 0 1-1.536 1.28l-3.334-4a1 1 0 0 1 .128-1.408Z">
               </path>
               <path d="M11.026 14.768a1 1 0 0 1-.128-1.408l3.334-4a1 1 0 0 1 1.536 1.28l-3.333 4a1 1 0 0 1-1.409.128Z">
@@ -720,7 +779,7 @@
       <div class="container  relative z-10">
 
 
-        <h2 class="sectionHeading text-theme2  mb-[45px]">Our Financial Partners</h2>
+        <h2 class="sectionHeading text-secondary_clr  mb-[45px]">Our Financial Partners</h2>
         <div class="flex flex-wrap mx-[-15px]">
           <div class="basis-3/12 mb-[45px]">
             <img src="/uploads/fldCMS/fldBRAND/icici.png" class="mr-auto block max-w-full" alt="icici">
@@ -784,7 +843,7 @@
                   Residential
                 </span>
                 <svg width="44" height="25" viewBox="0 0 44 25"
-                  class="group-hover:stroke-themeGradient1 duration-300  group-hover:ml-10"
+                  class="group-hover:stroke-tertiary_BG_clr duration-300  group-hover:ml-10"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
@@ -800,7 +859,7 @@
                   Commercial
                 </span>
                 <svg width="44" height="25" viewBox="0 0 44 25"
-                  class="group-hover:stroke-themeGradient1 duration-300  group-hover:ml-10"
+                  class="group-hover:stroke-tertiary_BG_clr duration-300  group-hover:ml-10"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
@@ -817,7 +876,7 @@
                   Construction updates
                 </span>
                 <svg width="44" height="25" viewBox="0 0 44 25"
-                  class="group-hover:stroke-themeGradient1 duration-300  group-hover:ml-10"
+                  class="group-hover:stroke-tertiary_BG_clr duration-300  group-hover:ml-10"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
@@ -979,7 +1038,8 @@
           <div target="_blank"
             class="md:basis-6/12 basis-full justify-center text-white font-light text-[1.4rem] flex  md:justify-end">
             <img class="mr-3 w-[19px] h-[25px] object-contain" src="/uploads/fldCMS/ri-logo.png" alt="refresh Ideas">
-            Website by&nbsp;<a href="https://www.refreshideas.com/" class="font-normal"> Refresh Ideas</a></div>
+            Website by&nbsp;<a href="https://www.refreshideas.com/" class="font-normal"> Refresh Ideas</a>
+          </div>
 
         </div>
 

@@ -1,17 +1,16 @@
 .btn {
-  @apply md:py-[16px] py-[12px] md:pl-[40px] md:pr-[20px] px-[20px] text-[16px] max-[290px]:text-[14px] font-medium border-[2px]  uppercase rounded-[4px] duration-500 hover:text-white flex items-center  max-w-max w-full break-keep text-theme2;
+  @apply md:py-[16px] py-[12px] md:pl-[40px] md:pr-[20px] px-[20px] text-[16px] max-[290px]:text-[14px] font-medium border-[2px]  uppercase rounded-[4px] duration-500 hover:text-white flex items-center  max-w-max w-full break-keep text-secondary_clr;
 
-  
-  // for theme2 button
+  // for secondary_clr button
 
-  &.theme2 {
-    @apply hover:bg-theme1 hover:border-theme1 border-theme2 text-theme2 hover:text-white;
+  &.secondary_clr {
+    @apply hover:bg-primary_clr hover:border-primary_clr border-secondary_clr text-secondary_clr hover:text-white;
   }
 
   // for white button
 
   &.white {
-    @apply border-white text-white hover:bg-white hover:text-theme2;
+    @apply border-white text-white hover:bg-white hover:text-secondary_clr;
     svg {
       g {
         @apply fill-white;
@@ -20,7 +19,7 @@
     &:hover {
       svg {
         g {
-          @apply fill-theme2;
+          @apply fill-secondary_clr;
         }
       }
     }
@@ -31,14 +30,22 @@
   }
 
   &.trasparent {
-    @apply text-white hover:text-themeGradient1 text-[25px] max-w-full justify-center hover:border-opacity-100 leading-[40px];
-    path{
-      @apply duration-100
+    @apply text-white hover:text-tertiary_BG_clr text-[25px] max-w-full justify-center hover:border-opacity-100 leading-[40px];
+    path {
+      @apply duration-100;
     }
-
     &:hover {
       path {
-        @apply fill-themeGradient1;
+        @apply fill-tertiary_BG_clr;
+      }
+    }
+
+    &.secondary_clr {
+      @apply hover:bg-primary_clr hover:border-primary_clr border-primary_BG_clr text-secondary_clr hover:text-white;
+      &:hover {
+        path {
+          @apply fill-white;
+        }
       }
     }
   }
