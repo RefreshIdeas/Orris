@@ -87,7 +87,7 @@
     transition: 0.3s linear;
   }
 }
-.navEvent:hover {
+.hamburger_menu:hover {
   p {
     @apply text-primary_clr;
   }
@@ -105,7 +105,7 @@ header.scrollActive {
   // animation: fixedHeader 0.3s linear;
   background-color: rgba(black, 0.8);
   // box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-  .hamburger_menu.open {
+  .hamburger_menu {
     .line-toggle {
       background-color: white !important;
     }

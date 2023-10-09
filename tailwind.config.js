@@ -28,9 +28,14 @@ plugins:[],
 
 
       dropShadow: {
-primary_clr:'0 4px 4px rgba(0, 0, 0, 0.25)',
+        primary_shadow:'0 4px 4px rgba(0, 0, 0, 0.25)',
+        secondary_shadow:'10px 10px 25px 0px rgba(0, 0, 0, 0.10)',
+
 
       },
+
+
+     
 
 // font size start
       // fontSize: {
@@ -73,7 +78,7 @@ primary_clr:'0 4px 4px rgba(0, 0, 0, 0.25)',
         septenary_BG_clr:'#5B5B5B',
 
         // border colors
-        primary_BG_clr:'#D9D9D9',
+        primary_border_clr:'#D9D9D9',
         secondary_border_clr:'rgba(#fff,0.25)',     
         
 

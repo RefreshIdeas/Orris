@@ -168,29 +168,52 @@ Array.from(classes_tobe_toggle).forEach(element =>{
 addToogleEvent();
 
 
-
 /// nav events
 let mainNav = document.querySelectorAll('.nav');
+let parentDiv_subnav = document.querySelector('.subNav_block');
+let allSubNavs = document.querySelectorAll('.subNavs_list');
+
 mainNav.forEach(element =>{
   element.addEventListener('click', function(e){
     let target = e.target.closest('.nav');
     let SubNavName = target.dataset.main_nav_of;
-    let parentDiv_subnav = document.querySelector('.subNav_block');
     let subnav = document.querySelector(`.${SubNavName}`);
-    let allSubNavs = document.querySelectorAll('.subNavs_list');
     allSubNavs.forEach(element => element.classList.remove('active'));
-    mainNav.forEach(element => element.classList.remove('active'));
+    mainNav.forEach(element => element !== target && element.classList.remove('active'));
     
-    target.classList.add('active');
     if(!parentDiv_subnav.classList.contains('active')){
       parentDiv_subnav.classList.add('active')
     }
+       if(target.classList.contains('active')){
+        target.classList.remove('active');
+        parentDiv_subnav.classList.remove('active')
+
+       }
+       else{
+        target.classList.add('active');
+
+       }
+  
     let targetPostionTop = target.getBoundingClientRect().top;
-    parentDiv_subnav.style=`margin-top: ${targetPostionTop}px`;
+    if(screen.width > 640){
+      parentDiv_subnav.style=`margin-top: ${targetPostionTop}px`;
+
+    }
     subnav.classList.toggle('active');
 
     if(!SubNavName) return;
   })
+})
+
+
+let subNavBlock = document.querySelectorAll('.subNav_block');
+subNavBlock.forEach(element=>{
+  element.addEventListener('click', function(e){
+    mainNav.forEach(element => element.classList.remove('active'));
+
+  })
+
+  
 })
 
 

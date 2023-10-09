@@ -1,5 +1,15 @@
 .btn {
   @apply md:py-[16px] py-[12px] md:pl-[40px] md:pr-[20px] px-[20px] text-[16px] max-[290px]:text-[14px] font-medium border-[2px]  uppercase rounded-[4px] duration-500 hover:text-white flex items-center  max-w-max w-full break-keep text-secondary_clr;
+  svg {
+    @apply ml-10;
+  }
+  &:hover {
+    svg {
+      path {
+        @apply fill-white;
+      }
+    }
+  }
 
   // for secondary_clr button
 
@@ -18,7 +28,7 @@
     }
     &:hover {
       svg {
-        g {
+        path {
           @apply fill-secondary_clr;
         }
       }
@@ -41,7 +51,7 @@
     }
 
     &.secondary_clr {
-      @apply hover:bg-primary_clr hover:border-primary_clr border-primary_BG_clr text-secondary_clr hover:text-white;
+      @apply hover:bg-primary_clr hover:border-primary_clr border-primary_border_clr text-secondary_clr hover:text-white;
       &:hover {
         path {
           @apply fill-white;
