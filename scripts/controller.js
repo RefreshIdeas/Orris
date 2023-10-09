@@ -84,7 +84,7 @@ $(".theme_dot_Hleft").owlCarousel({
   responsive: {
     0: {
       items: 1,
-      dotsEach: 2,
+     
       // mouseDrag: true,
       // touchDrag: true,
     },
@@ -92,12 +92,12 @@ $(".theme_dot_Hleft").owlCarousel({
       items: 1,
       mouseDrag: true,
       touchDrag: true,
-      dotsEach: 1,
+     
     },
     1000: {
       items: 1,
 
-      dotsEach: 1,
+     
     },
   },
 });
