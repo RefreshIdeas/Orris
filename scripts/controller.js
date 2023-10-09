@@ -116,7 +116,7 @@ let observer = new IntersectionObserver(
       if (val[0].target.classList.contains("counterSection")) counterInit();
     }
   },
-  { threshold: 0.1 }
+  { threshold: screen.width > 600 ? 0.1 : 1 }
 );
 intserSectingElement.forEach((val) => observer.observe(val));
 // counter initfunction
@@ -162,6 +162,7 @@ let classes_tobe_toggle = document.querySelectorAll(`.${nameof_class_tobe_toggle
 console.log(classes_tobe_toggle)
 
 Array.from(classes_tobe_toggle).forEach(element =>{
+  if(element.classList.contains('navigationSection')) document.querySelector('html').classList.toggle('navActive')
    element.classList.toggle('active');
   });
 }

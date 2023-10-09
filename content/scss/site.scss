@@ -1,22 +1,18 @@
-
-
-
-@import 'utilities/sit-settings';
-@import 'mixins/fonts';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'mixins/siteCustomizxation';
-@import 'mixins/owlCarousel';
-@import 'mixins/buttons';
-@import 'mixins/hoverEffects';
-@import 'mixins/social_icons';
+// custom
+@import "utilities/sit-settings";
+@import "mixins/fonts";
+@import "layout/header";
+@import "layout/footer";
+@import "mixins/siteCustomizxation";
+@import "mixins/owlCarousel";
+@import "mixins/buttons";
+@import "mixins/hoverEffects";
+@import "mixins/social_icons";
 // @import 'mixins/keyFrames.scss';
-@import 'mixins/shadow';
+@import "mixins/shadow";
+@import "mixins/bodySections";
 
-
-
-
-
+// tailwind
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

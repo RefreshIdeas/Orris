@@ -68,3 +68,11 @@
     }
   }
 }
+
+// body manipulation
+body,
+html {
+  &.navActive {
+    @apply overflow-hidden;
+  }
+}
