@@ -9,7 +9,7 @@ import "venobox/dist/venobox.min.css";
 $(".white_Arrow_Vcenter").owlCarousel({
   loop: true,
   margin: 10,
-  nav: true,
+  nav: false,
   autoplayHoverPause: false,
   dots: false,
   animateOut: "fadeOut",
