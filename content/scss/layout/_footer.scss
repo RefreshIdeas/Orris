@@ -37,19 +37,16 @@ footer {
   }
 
   .bg-overlay {
-    animation: zoom-in-zoom-out 8s linear infinite;
-    transform: scale(1.01, 1.01);
+    transition: transform 10s linear;
+    animation: zoomAnimation 10s infinite alternate;
   }
 }
 
-@keyframes zoom-in-zoom-out {
+@keyframes zoomAnimation {
   0% {
-    transform: scale(1.01, 1.01);
-  }
-  50% {
-    transform: scale(1.2, 1.2);
-  }
-  100% {
-    transform: scale(1.01, 1.01);
-  }
+    transform: scale(1.1);
+}
+100% {
+    transform: scale(1.6); /* Adjust the zoom level here */
+}
 }
