@@ -1,5 +1,64 @@
 .btn {
-    @apply  md:py-[16px] py-[12px] md:px-[25px] px-[20px] text-[16px] font-medium border-[2px] border-theme2 uppercase rounded-[4px] hover:bg-theme1 hover:border-theme1 duration-500 hover:text-white flex items-center justify-end max-w-[204px] w-full break-keep text-theme2;
-
+  @apply md:py-[16px] py-[12px] md:pl-[40px] md:pr-[20px] px-[20px] text-[16px] max-[290px]:text-[14px] font-medium border-[2px]  uppercase rounded-[4px] duration-300 hover:text-white flex items-center  max-w-max w-full break-keep text-secondary_clr ease-linear;
+  svg {
+    @apply ml-10 duration-300 ease-linear;
+    path {
+      @apply duration-300 ease-linear;
+    }
+  }
+  &:hover {
+    svg {
+      path {
+        @apply fill-white;
+      }
+    }
   }
 
+  // for secondary_clr button
+
+  &.secondary_clr {
+    @apply hover:bg-primary_clr hover:border-primary_clr border-secondary_clr text-secondary_clr hover:text-white;
+  }
+
+  // for white button
+
+  &.white {
+    @apply border-white text-white hover:bg-white hover:text-secondary_clr;
+    svg {
+      g {
+        @apply fill-white;
+      }
+    }
+    &:hover {
+      svg {
+        path {
+          @apply fill-secondary_clr;
+        }
+      }
+    }
+  }
+
+  &.lg {
+    @apply py-[12px]  px-[20px] rounded-none font-thin border-[1px] uppercase hover:text-white flex items-center max-w-max w-full break-keep;
+  }
+
+  &.trasparent {
+    @apply text-white hover:text-tertiary_BG_clr max-w-full justify-center hover:border-opacity-100 leading-[40px];
+
+    &:hover {
+      path {
+        @apply fill-tertiary_BG_clr;
+      }
+    }
+
+    &.secondary_clr {
+      @apply hover:bg-tertiary_BG_clr hover:border-tertiary_BG_clr border-primary_border_clr text-secondary_clr hover:text-white;
+
+      &:hover {
+        path {
+          @apply fill-white;
+        }
+      }
+    }
+  }
+}

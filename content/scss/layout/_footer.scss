@@ -1,0 +1,52 @@
+footer {
+  .footerNavHeading {
+    @apply text-[22px] leading-[40px] text-white font-thin mb-[13px];
+  }
+  .footerLargeLinks {
+    @apply font-centabel text-[35px] leading-[35px] text-white hover:text-tertiary_BG_clr font-thin flex justify-start items-center;
+
+    span {
+      @apply block max-w-[190px] w-full;
+    }
+
+    &:hover {
+      svg {
+        transform: translateX(30px);
+      }
+    }
+
+    svg {
+      @apply ml-16;
+    }
+  }
+
+  .footerSmallLinks {
+    @apply text-[16px] text-white font-extralight leading-[20px] mb-[20px] block relative max-w-max;
+
+    &::after {
+      @apply left-0 h-[1px] w-0 duration-700 bg-tertiary_BG_clr absolute hover:w-[60%] -bottom-3;
+      content: "";
+    }
+  }
+
+  .footerOuterPadding {
+    @apply py-[30px];
+  }
+
+  .footerSmallLinks {
+  }
+
+  .bg-overlay {
+    transition: transform 10s linear;
+    animation: zoomAnimation 10s infinite alternate;
+  }
+}
+
+@keyframes zoomAnimation {
+  0% {
+    transform: scale(1.1);
+}
+100% {
+    transform: scale(1.6); /* Adjust the zoom level here */
+}
+}

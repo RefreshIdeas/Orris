@@ -1,0 +1,78 @@
+// header navigations
+.navigationSection {
+  @apply right-0 bg-transparent invisible ease-linear duration-300;
+
+  .all_Nav_block {
+    @apply ease-linear translate-x-[-100%] duration-500;
+  }
+  .navBlock {
+    // transition-duration: 300ms;
+    // transition: linear;
+    @apply sm:max-w-[380px] max-w-[480px] w-full bg-white h-full relative z-10;
+
+    nav.mainNavs {
+      .nav {
+        @apply font-centabel sm:text-[25px] text-[22px] leading-[50px] py-[10px] duration-300 text-black flex items-center sm:pl-[45px] pl-[25px] pr-[20px] cursor-pointer;
+
+        svg {
+          @apply sm:ml-[25px] ml-[20px] max-[640px]:w-[30px];
+        }
+
+        &:hover {
+          @apply bg-septenary_BG_clr text-white;
+          svg {
+            path {
+              fill: white;
+            }
+          }
+        }
+
+        &.active {
+          @apply bg-septenary_BG_clr text-white;
+          svg {
+            @apply hidden;
+          }
+        }
+      }
+    }
+  }
+
+  .subNav_block {
+    @apply translate-x-[-100%] sm:relative fixed top-0 left-0 sm:max-w-max w-full sm:max-h-max max-[640px]:h-screen max-[640px]:z-10;
+    nav.subNavs {
+      @apply flex flex-col justify-start h-full;
+
+      .subNavs_list {
+        @apply h-[0] overflow-hidden;
+
+        &.active {
+          height: auto;
+        }
+
+        .subNav a {
+          @apply text-[22px] font-thin text-white leading-[50px] sm:py-[10px] py-[20px];
+        }
+      }
+    }
+
+    &.active {
+      @apply translate-x-[0];
+    }
+  }
+
+  &.active {
+    @apply bg-black bg-opacity-60 visible;
+
+    .all_Nav_block {
+      @apply translate-x-0;
+    }
+  }
+}
+
+// body manipulation
+body,
+html {
+  &.navActive {
+    @apply overflow-hidden;
+  }
+}

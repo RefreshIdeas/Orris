@@ -1,18 +1,31 @@
+
+//container
 .container{
-padding-right:15px ;    
-padding-left:15px ;    
+    @apply mx-auto;
+}
+
+.container{
+    @apply px-[15px]   
 };
 
-[class^="basis-"],[class^="md:basis-"],[class^="lg:basis-"],[class^="sm:basis-"] {
-    padding-right: 15px;
-    padding-left: 15px;
+
+// class basis
+[class*="basis-"],[class^="md:basis-"],[class^="lg:basis-"],[class^="sm:basis-"] {
+    @apply px-[15px]
 
 }
 
 
-.container{
-    @apply mx-auto
+
+// venobox 
+//   hiddding scroll bar
+[class^="vbox"]{
+    &::-webkit-scrollbar{
+        display: none !important;
+    }
 }
+
+
 
 
 
