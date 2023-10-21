@@ -1,32 +1,24 @@
-
 //container
-.container{
-    @apply mx-auto;
+.container {
+  @apply mx-auto;
 }
 
-.container{
-    @apply px-[15px]   
-};
-
+.container {
+  @apply px-[15px];
+}
 
 // class basis
-[class*="basis-"],[class^="md:basis-"],[class^="lg:basis-"],[class^="sm:basis-"] {
-    @apply px-[15px]
-
+[class*="basis-"],
+[class^="md:basis-"],
+[class^="lg:basis-"],
+[class^="sm:basis-"] {
+  @apply  px-[15px];
 }
 
-
-
-// venobox 
+// venobox
 //   hiddding scroll bar
-[class^="vbox"]{
-    &::-webkit-scrollbar{
-        display: none !important;
-    }
+[class^="vbox"] {
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
 }
-
-
-
-
-
-

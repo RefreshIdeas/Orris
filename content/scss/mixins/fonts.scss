@@ -1,19 +1,19 @@
-.heroTitle{
-    @apply md:text-[8rem] text-[6rem] leading-[8rem] font-[500] 
+.heroTitle {
+  @apply md:text-[8rem] text-[6rem] leading-[8rem] font-[500];
 }
 
-.heroTitleSub{
-    @apply md:text-[4.2rem] text-[3rem] leading-[4rem] font-[400] 
+.heroTitleSub {
+  @apply md:text-[4.2rem] text-[3rem] leading-[4rem] font-[400];
 }
 
-.sectionHeading{
-    @apply md:text-[4.2rem] text-[3rem] leading-[4rem] md:leading-[5rem] font-[500] 
+.sectionHeading {
+  @apply md:text-[2rem] text-[2rem] leading-[3.5rem] md:leading-[3.5rem] font-medium;
 }
 
-.sectionSubHeading{
-    @apply md:text-[2rem] text-[2rem] leading-[3.4rem] font-[300] 
+.sectionSubHeading {
+  @apply md:text-[2rem] text-[2rem] leading-[3.4rem] font-[300];
 }
 
-.sectionText{
-    @apply md:text-[1.8rem] text-[1.8rem] leading-[3rem] font-[300] 
+.sectionText {
+  @apply md:text-[1.5rem] text-[1.5rem] leading-[3.2rem] font-normal;
 }

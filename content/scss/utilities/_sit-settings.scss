@@ -5,12 +5,12 @@ html {
 }
 
 // fonts setting
-@font-face {
-  font-family: "Centabel";
-  src: url("/content/fonts/centabel.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: "Centabel";
+//   src: url("/content/fonts/centabel.ttf");
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
 
@@ -21,4 +21,16 @@ body {
 
 a {
   @apply hover:text-tertiary_BG_clr;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.207);
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-primary_clr;
 }
