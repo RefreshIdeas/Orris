@@ -5,7 +5,8 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     plugins: [],
-
+    prefix: "tw-",
+    important: true,
     // extends
     extend: {
       screens: {},

@@ -1,5 +1,5 @@
 .btn {
-  @apply md:py-[12px] py-[12px] sm:px-[40px] px-[30px] text-[14px] font-medium border-[1px] uppercase rounded-[6px] duration-300 hover:text-white flex items-center  max-w-max w-full break-keep text-secondary_clr ease-linear;
+  @apply md:py-[12px] py-[12px] sm:px-[40px] px-[25px] text-[14px] font-medium border-[1px] uppercase rounded-[6px] duration-300 hover:text-white flex items-center  max-w-max w-full break-keep text-secondary_clr ease-linear;
   svg {
     @apply ml-10 duration-300 ease-linear;
     path {
@@ -14,11 +14,9 @@
     }
   }
 
-
   &.primary {
     @apply hover:bg-tertiary_BG_clr hover:border-tertiary_BG_clr text-secondary_clr hover:text-secondary_clr border-secondary_clr;
   }
-
 
   &.white {
     @apply border-white text-white hover:bg-white hover:text-secondary_clr;

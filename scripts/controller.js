@@ -1,8 +1,6 @@
-
 import "owl.carousel"; // Owl Carousel JavaScript
 import "./events";
 import VenoBox from "venobox";
-import "venobox/dist/venobox.min.css";
 
 $(".white_Arrow_Vcenter").owlCarousel({
   loop: true,
@@ -24,7 +22,7 @@ $(".white_Arrow_Vcenter").owlCarousel({
   },
 });
 
-$(".black_Arrow_Vcenter").owlCarousel({
+$(".featured_projects").owlCarousel({
   loop: true,
   margin: 10,
   nav: true,
@@ -74,17 +72,15 @@ $(".theme_dot_Hleft").owlCarousel({
   loop: true,
   margin: 10,
   nav: false,
-  mouseDrag: false,
-  touchDrag: false,
+
   autoplayHoverPause: true,
   dots: true,
   animateOut: "fadeOut",
   responsive: {
     0: {
       items: 1,
-
-      // mouseDrag: true,
-      // touchDrag: true,
+      mouseDrag: true,
+      touchDrag: true,
     },
     600: {
       items: 1,
@@ -93,6 +89,28 @@ $(".theme_dot_Hleft").owlCarousel({
     },
     1000: {
       items: 1,
+      mouseDrag: false,
+      touchDrag: false,
+    },
+  },
+});
+
+$(".testimonial_slider").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  autoplayHoverPause: true,
+  dots: false,
+  animateOut: "fadeOut",
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 2,
     },
   },
 });
@@ -108,16 +126,24 @@ $(".owl-next").html(
   </svg>`
 );
 
-const intserSectingElement = document.querySelectorAll("section");
-let observer = new IntersectionObserver(
-  (val) => {
-    if (val[0].isIntersecting) {
-      if (val[0].target.classList.contains("counterSection")) counterInit();
-    }
-  },
-  { threshold: screen.width > 600 ? 0.1 : 1 }
-);
-intserSectingElement.forEach((val) => observer.observe(val));
+const targetElements = document.querySelectorAll(".animate");
+const options = {
+  rootMargin: "-100px",
+  threshold: screen.width > 600 ? 0 : 1,
+};
+let observer = new IntersectionObserver((val) => {
+  if (val[0].isIntersecting) {
+    // FOR ANIMATED
+    val.forEach((element) => {
+      element.target.classList.add("active");
+    });
+
+    // FOR COUNTER
+    if (val[0].target.classList.contains("counterSection")) counterInit();
+  }
+}, options);
+targetElements.forEach((val) => observer.observe(val));
+
 // counter initfunction
 function counterInit(param) {
   const speed = 200;

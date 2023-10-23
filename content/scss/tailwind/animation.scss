@@ -1,0 +1,14 @@
+.auto_Zoom_INOUT {
+  animation: auto_Zoom_INOUT 10s infinite alternate;
+  @include auto_Zoom_INOUT;
+}
+
+.fadeInUp {
+  @apply opacity-0;
+  &.active {
+    animation: fadeInUp 1.25s linear;
+    animation-fill-mode: both;
+    @include fadeInUp;
+  }
+}
+

@@ -12,7 +12,7 @@
 
     nav.mainNavs {
       .nav {
-        @apply sm:text-[25px] text-[22px] leading-[50px] py-[10px] duration-300 text-black flex items-center sm:pl-[45px] pl-[25px] pr-[20px] cursor-pointer;
+        @apply sm:text-[20px] text-[20px] leading-[50px] py-[5px] duration-300 text-black flex items-center sm:pl-[45px] pl-[25px] pr-[20px] cursor-pointer font-light uppercase;
 
         svg {
           @apply sm:ml-[25px] ml-[20px] max-[640px]:w-[30px];

@@ -57,9 +57,34 @@
   }
 }
 
+.testimonial_slider {
+  .owl-nav {
+    position: absolute;
+    left: unset;
+    right: 0;
+    transform: none !important;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @apply md:bottom-[50%] bottom-[7px] z-20 items-center justify-between flex md:w-[100%] w-[70px];
+    button {
+      svg {
+        @apply max-[768px]:h-[20px] max-[768px]:w-[20px];
+      }
+      &.owl-next,
+      &.owl-prev {
+        @include SMALLER_THEN_md {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}
+
 .theme_dot_Hleft {
   .owl-dots {
-    @apply flex justify-center md:justify-start items-center mt-[0px] md:mr-[30px] relative;
+    @apply flex md:justify-start items-center md:mt-[0px] mt-[30px] md:mr-[30px] relative;
     button {
       span {
         @apply h-[15px] w-[15px] rounded-full bg-secondary_clr block mx-2;

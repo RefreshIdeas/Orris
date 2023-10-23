@@ -1,0 +1,61 @@
+// ABOVE THE BREAKPOINT
+@mixin LARGER_THEN_sm {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin LARGER_THEN_md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin LARGER_THEN_lg {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin LARGER_THEN_xl {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin LARGER_THEN_doublexl {
+  @media (min-width: 1536px) {
+    @content;
+  }
+}
+
+// BELOW THE BREAKPOINT
+@mixin SMALLER_THEN_sm {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin SMALLER_THEN_md {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin SMALLER_THEN_lg {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin SMALLER_THEN_xl {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin SMALLER_THEN_doublexl {
+  @media (max-width: 1536px) {
+    @content;
+  }
+}
