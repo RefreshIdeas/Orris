@@ -39,6 +39,7 @@ $(".featured_projects").owlCarousel({
       dotsEach: 1,
     },
     1000: {
+      margin: 30,
       items: 1,
       dotsEach: 1,
     },

@@ -17,9 +17,20 @@
   &.primary {
     @apply hover:bg-tertiary_BG_clr hover:border-tertiary_BG_clr text-secondary_clr hover:text-secondary_clr border-secondary_clr;
   }
+  &.secondary {
+    @apply hover:text-tertiary_BG_clr max-w-full justify-center hover:border-opacity-100 leading-[40px] font-thin;
 
-  &.white {
-    @apply border-white text-white hover:bg-white hover:text-secondary_clr;
+    @apply hover:bg-tertiary_BG_clr hover:border-tertiary_BG_clr hover:text-secondary_clr;
+
+    &:hover {
+      path {
+        @apply fill-secondary_clr;
+      }
+    }
+  }
+
+  &.tertiary {
+    @apply border-white text-white  border-[1.5px]  border-opacity-25 rounded-none font-thin hover:text-tertiary_BG_clr hover:border-opacity-100;
     svg {
       g {
         @apply fill-white;
@@ -28,33 +39,13 @@
     &:hover {
       svg {
         path {
-          @apply fill-secondary_clr;
+          @apply fill-tertiary_BG_clr;
         }
       }
     }
   }
 
   &.lg {
-    @apply py-[12px]  px-[20px] rounded-none font-thin border-[1px] uppercase hover:text-white flex items-center max-w-max w-full break-keep;
-  }
-
-  &.trasparent {
-    @apply text-white hover:text-tertiary_BG_clr max-w-full justify-center hover:border-opacity-100 leading-[40px];
-
-    &:hover {
-      path {
-        @apply fill-tertiary_BG_clr;
-      }
-    }
-
-    &.secondary_clr {
-      @apply hover:bg-tertiary_BG_clr hover:border-tertiary_BG_clr border-primary_border_clr text-secondary_clr hover:text-white;
-
-      &:hover {
-        path {
-          @apply fill-white;
-        }
-      }
-    }
+    @apply py-[12px]  px-[20px] rounded-none border-[1px] uppercase flex items-center justify-center break-keep max-w-full text-[25px];
   }
 }
