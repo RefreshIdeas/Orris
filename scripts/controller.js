@@ -126,23 +126,61 @@ $(".owl-next").html(
   </svg>`
 );
 
-const targetElements = document.querySelectorAll(".animate");
+
+
+
+
 const options = {
-  rootMargin: "-100px",
+  rootMargin: "-50px",
   threshold: screen.width > 600 ? 0 : 1,
 };
-let observer = new IntersectionObserver((val) => {
-  if (val[0].isIntersecting) {
-    // FOR ANIMATED
-    val.forEach((element) => {
-      element.target.classList.add("active");
-    });
 
-    // FOR COUNTER
-    if (val[0].target.classList.contains("counterSection")) counterInit();
-  }
-}, options);
-targetElements.forEach((val) => observer.observe(val));
+function handleIntersection(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // FOR ANIMATED
+      entry.target.classList.add("active");
+
+      // FOR COUNTER
+      if (entry.target.classList.contains("counterSection")) counterInit();
+    }
+  });
+}
+
+const observer = new IntersectionObserver(handleIntersection, options);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const targetElements = document.querySelectorAll(".animate");
+  targetElements.forEach((element) => observer.observe(element));
+});
+
+function throttle(func, limit) {
+  let inThrottle;
+  return function () {
+    const args = arguments;
+    const context = this;
+    if (!inThrottle) {
+      func.apply(context, args);
+      inThrottle = true;
+      setTimeout(() => (inThrottle = false), limit);
+    }
+  };
+}
+
+function updateObserver() {
+  window.requestAnimationFrame(() => {
+    // Your Intersection Observer logic here
+  });
+}
+
+const throttledFunction = throttle(updateObserver, 200); // Adjust the limit as needed
+
+function handleScroll() {
+  throttledFunction();
+}
+
+window.addEventListener("scroll", handleScroll, { passive: true });
+
 
 // counter initfunction
 function counterInit(param) {
@@ -246,11 +284,11 @@ new VenoBox({
 });
 
 // mouse move event
-document.body.addEventListener("mousemove", function (e) {
-  console.log(
-    `${e.clientX}
-    ${e.clientY}`
-  );
-});
+// document.body.addEventListener("mousemove", function (e) {
+//   console.log(
+//     `${e.clientX}
+//     ${e.clientY}`
+//   );
+// });
 
 // /trash
