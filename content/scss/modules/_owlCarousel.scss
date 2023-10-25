@@ -124,5 +124,21 @@
   .owl-stage-outer {
     overflow: visible !important;
     position: unset !important;
+    .item {
+      position: relative;
+      &::after {
+        background-image: linear-gradient(
+          360deg,
+          #000000b3 6%,
+          rgba(255, 255, 255, 0) 20%
+        );
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+    }
   }
 }

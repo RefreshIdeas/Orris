@@ -6,9 +6,17 @@
 .fadeInUp {
   @apply opacity-0;
   &.active {
-    animation: fadeInUp 1.25s linear;
+    animation: fadeInUp 0.8s linear;
     animation-fill-mode: both;
     @include fadeInUp;
   }
 }
 
+.zoomIn {
+  opacity: 0;
+  &.active {
+    animation: zoomin 0.8s linear;
+    animation-fill-mode: both;
+    @include zoomin;
+  }
+}

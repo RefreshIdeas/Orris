@@ -33,3 +33,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   @apply bg-primary_clr;
 }
+
+.cursor_circle_view {
+  cursor: url("/uploads/fldCMS/svg/viewCursor.svg") 64 64, pointer;
+}

@@ -28,7 +28,6 @@ $(".featured_projects").owlCarousel({
   nav: true,
   autoplayHoverPause: true,
   dots: true,
-  animateOut: "fadeOut",
   responsive: {
     0: {
       items: 1,
@@ -158,10 +157,12 @@ function counterInit(param) {
       const time = value / speed;
       if (data < value) {
         counter.innerText = Math.ceil(data + time);
-        if (value > 500) {
-          setTimeout(animate, 1);
+        if (value < 10) {
+          setTimeout(animate, 400);
+        } else if (value <= 50 && value >= 10) {
+          setTimeout(animate, 200);
         } else {
-          setTimeout(animate, 100);
+          setTimeout(animate, 50);
         }
       } else {
         counter.innerText = value;
@@ -242,6 +243,14 @@ subNavBlock.forEach((element) => {
 // veno box for pop image and video
 new VenoBox({
   selctor: ".venobox",
+});
+
+// mouse move event
+document.body.addEventListener("mousemove", function (e) {
+  console.log(
+    `${e.clientX}
+    ${e.clientY}`
+  );
 });
 
 // /trash
