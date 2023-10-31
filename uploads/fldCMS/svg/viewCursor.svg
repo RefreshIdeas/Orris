@@ -1,20 +1,20 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" x="0px" y="0px" viewBox="0 0 116 116" style="position: absolute;enable-background:new 0 0 116 116;" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" x="0px" y="0px" viewBox="0 0 116 116"  xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none}
-	.st1{fill:#000}
+	.st1{fill:#fff}
 	.st2{enable-background:new}
 </style>
 <g>
-	<g id="Ellipse_15">
+	<g id="Ellipse_15" >
 		<g>
-			<circle class="st0" cx="58" cy="58" r="58"></circle>
+			<circle class="st0" cx="58" cy="58" r="58" ></circle>
 		</g>
 		<g>
-			<path class="st1" d="M58,116C26.02,116,0,89.98,0,58S26.02,0,58,0s58,26.02,58,58S89.98,116,58,116z M58,2C27.12,2,2,27.12,2,58
+			<path style="filter: drop-shadow(2px 4px 6px #0000008a);" class="st1" d="M58,116C26.02,116,0,89.98,0,58S26.02,0,58,0s58,26.02,58,58S89.98,116,58,116z M58,2C27.12,2,2,27.12,2,58
 				s25.12,56,56,56s56-25.12,56-56S88.88,2,58,2z"></path>
 		</g>
 	</g>
-	<g class="st2">
+	<g class="st2" style="filter: drop-shadow(2px 4px 6px #0000008a);">
 		<path class="st1" d="M43.32,56.4l-3.33,7.7h-1.76l-3.32-7.7h1.93l2.34,5.5l2.38-5.5H43.32z"></path>
 		<path class="st1" d="M49.45,56.4h1.78v7.7h-1.78V56.4z"></path>
 		<path class="st1" d="M64.52,62.67v1.43h-5.96v-7.7h5.82v1.43h-4.05v1.67h3.57v1.39h-3.57v1.78H64.52z"></path>
