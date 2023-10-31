@@ -129,8 +129,8 @@
       &::after {
         background-image: linear-gradient(
           360deg,
-          #000000b3 6%,
-          rgba(255, 255, 255, 0) 20%
+          rgb(0 0 0 / 40%) 16%,
+          rgba(255, 255, 255, 0) 24%
         );
         content: " ";
         top: 0;
