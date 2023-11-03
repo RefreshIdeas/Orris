@@ -127,8 +127,8 @@ $(".owl-next").html(
 );
 
 const options = {
-  rootMargin: screen.width > 600 ? "-10px" : "0px",
-  threshold:screen.width > 600 ? 0.7 : 0.1,
+  rootMargin: screen.width > 600 ? "-450px 0px -150px 0px" : "0px", 
+  threshold: screen.width > 600 ? 0 : 0.1,
 };
 
 function handleIntersection(entries) {
