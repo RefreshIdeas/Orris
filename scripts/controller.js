@@ -127,11 +127,11 @@ $(".owl-next").html(
 );
 
 const options = {
-  rootMargin: "-100px",
-  threshold: screen.width > 600 ? 0 : 0,
+  rootMargin: screen.width > 600 ? "-10px" : "0px",
+  threshold:screen.width > 600 ? 0.7 : 0.1,
 };
 
-function handleIntersection(entries, observer) {
+function handleIntersection(entries) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       // FOR ANIMATED
@@ -149,33 +149,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const targetElements = document.querySelectorAll(".animate");
   targetElements.forEach((element) => observer.observe(element));
 });
-
-function throttle(func, limit) {
-  let inThrottle;
-  return function () {
-    const args = arguments;
-    const context = this;
-    if (!inThrottle) {
-      func.apply(context, args);
-      inThrottle = true;
-      setTimeout(() => (inThrottle = false), limit);
-    }
-  };
-}
-
-function updateObserver() {
-  window.requestAnimationFrame(() => {
-    // Your Intersection Observer logic here
-  });
-}
-
-const throttledFunction = throttle(updateObserver, 200); // Adjust the limit as needed
-
-function handleScroll() {
-  throttledFunction();
-}
-
-window.addEventListener("scroll", handleScroll, { passive: true });
 
 // counter initfunction
 function counterInit(param) {
