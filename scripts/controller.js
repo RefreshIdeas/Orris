@@ -127,7 +127,7 @@ $(".owl-next").html(
 );
 
 const options = {
-  rootMargin: screen.width > 600 ? "-250px 0px -150px 0px" : "0px", 
+  rootMargin: screen.width > 600 ? "-500px 0px -100px 0px" : "0px",
   threshold: screen.width > 600 ? 0 : 0.1,
 };
 
