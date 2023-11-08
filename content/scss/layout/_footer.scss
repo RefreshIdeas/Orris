@@ -3,7 +3,7 @@ footer {
     @apply text-[22px] leading-[40px] text-white font-thin mb-[13px];
   }
   .footerLargeLinks {
-    @apply text-[35px] leading-[35px] text-white hover:text-tertiary_BG_clr font-thin flex justify-start items-center;
+    @apply text-[30px] leading-[35px] text-white hover:text-tertiary_BG_clr font-thin flex justify-start items-center;
 
     span {
       @apply block max-w-[190px] w-full;

@@ -8,11 +8,11 @@
 }
 
 // class basis
-  [class*="basis-"],
+[class*="basis-"],
 [class^="md:basis-"],
 [class^="lg:basis-"],
 [class^="sm:basis-"] {
-  @apply  px-[15px];
+  @apply px-[15px];
 }
 
 // venobox

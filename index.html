@@ -63,8 +63,8 @@
               <div class="flex justify-between items-center">
                 <div
                   class="flex items-center justify-between w-full cursor-pointer mb-4 sm:pl-[45px] pl-[30px] pr-[20px]">
-                  <p class="current_page text-[16px] leading-[30px] underline">
-                    Home
+                  <p class="current_page text-[16px] leading-[30px] font-light">
+                    HOME
                   </p>
 
                   <svg class="clickEvent toggle" data-toggleTO="navigationSection" width="20" height="26"
@@ -174,7 +174,7 @@
               <nav class="subNavs">
                 <ul class="subNavs_list nav1">
                   <li class="subNav"><a href="#">Overview</a></li>
-                  <li class="subNav"><a href="#">Orris Ethos</a></li>
+                  <!-- <li class="subNav"><a href="#">Orris Ethos</a></li> -->
                   <li class="subNav"><a href="#">Our Team</a></li>
                   <li class="subNav"><a href="#">CSR</a></li>
                 </ul>
@@ -186,6 +186,7 @@
                 </ul>
 
                 <ul class="subNavs_list nav3">
+                  <li class="subNav"><a href="#">Real Estate</a></li>
                   <li class="subNav"><a href="#">Entertainment</a></li>
                   <li class="subNav"><a href="#">Hospitality</a></li>
                   <li class="subNav"><a href="#">Warehousing parks</a></li>
@@ -215,7 +216,7 @@
   <section class="hero_Section">
     <div class="owl-carousel owl-theme white_Arrow_Vcenter">
       <div class="item relative xl:h-screen h-[65vh] w-full overflow-hidden">
-        <video src="/uploads/fldCMS/Orris2.mp4" autoplay muted loop class="object-cover h-full"></video>
+        <video src="/uploads/fldCMS/Orris2.mp4" autoplay muted loop class="object-cover h-full w-full"></video>
       </div>
     </div>
   </section>
@@ -296,9 +297,11 @@
         <div class="relative overflow-hidden">
           <div
             class="owl-carousel owl-theme black_Arrow_Vcenter featured_projects mt-[25px] md:mb-0 mb-0 h-[400px] md:h-[500px] lg:h-[679px] md:max-w-[85%] overflow-visible ">
-            <div class="item relative cursor_circle_view overflow-hidden">
-              <img src="/uploads/fldCMS/hero_section.png" alt="Project"
-                class="h-[400px] md:h-[500px] lg:h-[679px] object-cover object-center animate translate_scale_up" />
+            <div class="item relative group cursor_circle_view overflow-hidden">
+              <div class="bg-black relative z-10  animate translate_scale_up">
+                <img src="/uploads/fldCMS/hero_section.png" alt="Project"
+                  class="h-[400px] md:h-[500px] lg:h-[679px] object-cover object-center  group-hover:opacity-80 duration-200 ease-linear" />
+              </div>
               <div
                 class="md:px-[30px] md:pb-[30px] pb-[20px] px-[20px] absolute bottom-0 left-0 animate translate_up_down animate pt-[100px] z-20">
                 <h3
@@ -311,10 +314,13 @@
               </div>
             </div>
 
-            <div class="item relative cursor_circle_view overflow-hidden">
-              <img src="https://orris.in/images/projects/162108845220210515.JPG" alt="Project"
-                class="h-[400px] md:h-[500px] lg:h-[679px] object-cover object-center" />
-              <div class="md:px-[30px] md:pb-[30px] pb-[20px] px-[20px] absolute bottom-0 left-0  z-20">
+            <div class="item relative group cursor_circle_view overflow-hidden">
+              <div class="bg-black relative z-10  animate translate_scale_up">
+                <img src="https://orris.in/images/projects/162108845220210515.JPG" alt="Project"
+                  class="h-[400px] md:h-[500px] lg:h-[679px] object-cover object-center group-hover:opacity-80 duration-200 ease-linear" />
+              </div>
+              <div
+                class="md:px-[30px] md:pb-[30px] pb-[20px] px-[20px] absolute bottom-0 left-0 animate translate_up_down animate pt-[100px] z-20">
                 <h3
                   class="md:text-[25px] text-[22px] text-white font-semibold mb-0 leading-[30px] uppercase z-10 relative">
                   carnation residenct
@@ -325,9 +331,11 @@
               </div>
             </div>
 
-            <div class="item relative cursor_circle_view overflow-hidden">
-              <img src="https://orris.in/images/projects/162063655420210510.png" alt="Project"
-                class="h-[400px] md:h-[500px] lg:h-[679px] object-cover object-center" />
+            <div class="item relative group cursor_circle_view overflow-hidden">
+              <div class="bg-black relative z-10 ">
+                <img src="https://orris.in/images/projects/162063655420210510.png" alt="Project"
+                  class="h-[400px] md:h-[500px] lg:h-[679px] object-cover object-center group-hover:opacity-80 duration-200 ease-linear" />
+              </div>
 
               <div class="md:px-[30px] md:pb-[30px] pb-[20px] px-[20px] absolute bottom-0 left-0  z-20">
                 <h3
@@ -445,8 +453,9 @@
         <div class="md:basis-6/12 h-full relative md:mb-0 mb-[15px] md:px-[10px]">
           <div class="overflow-hidden">
             <a
-              class="w-full overflow-hidden h-full relative zoomOnHover block cursor_circle_view animate translate_scale_up">
-              <img src="/uploads/fldCMS/residential.png" class="h-full zoomEffectImg max-[768px]:h-[300px]  object-cover object-center"
+              class="w-full overflow-hidden h-full relative zoomOnHover group block cursor_circle_view bg-black animate translate_scale_up">
+              <img src="/uploads/fldCMS/residential.png"
+                class="h-full zoomEffectImg max-[768px]:h-[300px]  object-cover group-hover:opacity-80 duration-200 ease-linear object-center"
                 alt="" />
             </a>
           </div>
@@ -459,8 +468,10 @@
         <div class="md:basis-6/12 h-full relative md:mb-0 md:px-[10px]">
           <div class="overflow-hidden">
             <a
-              class="w-full overflow-hidden h-full relative zoomOnHover block cursor_circle_view animate translate_scale_up">
-              <img src="/uploads/fldCMS/commercial.png" class="h-full zoomEffectImg max-[768px]:h-[300px] object-center object-cover" alt="" />
+              class="w-full overflow-hidden h-full relative zoomOnHover group block cursor_circle_view bg-black animate translate_scale_up">
+              <img src="/uploads/fldCMS/commercial.png"
+                class="h-full zoomEffectImg max-[768px]:h-[300px] object-center group-hover:opacity-80 duration-200 ease-linear object-cover"
+                alt="" />
             </a>
           </div>
 
@@ -484,10 +495,12 @@
       </p>
       <div class="flex flex-wrap mx-[-15px] mt-[30px]">
         <div class="lg:basis-4/12 basis-full">
-          <div class="what_we_do_block relative zoomOnHover mb-[15px] sm:mb-[30px] sm:h-[370px] h-[300px] lg:h-full">
-            <img class="h-full w-full object-cover zoomEffectImg" src="/uploads/fldCMS/real-estate.jpg"
-              alt="Real Estate" />
-
+          <div
+            class="what_we_do_block overflow-hidden  relative zoomOnHover mb-[15px] sm:mb-[30px] sm:h-[370px] h-[300px] lg:h-full">
+            <div class="animate translate_scale_up h-[300px] md:h-[370px] md:mb-0 sm:mb-[30px] lg:h-full">
+              <img class="h-full w-full object-cover zoomEffectImg" src="/uploads/fldCMS/real-estate.jpg"
+                alt="Real Estate" />
+            </div>
             <div class="animate translate_right_left ">
               <div class=" absolute bottom-[20px] left-[20px] ">
                 <img src="/uploads/fldCMS/svg/Real-Estate.svg" alt="" />
@@ -500,10 +513,11 @@
         </div>
         <div class="lg:basis-4/12 basis-full sm:flex lg:block">
           <div
-            class="what_we_do_block relative zoomOnHover mb-[15px] sm:mb-[30px] h-[300px] md:h-[370px] sm:mr-[15px] lg:mx-0">
-            <img class="w-full object-cover h-full zoomEffectImg" src="/uploads/fldCMS/entertainment.jpg"
-              alt="ENTERTAINMENT" />
-
+            class="what_we_do_block overflow-hidden  relative zoomOnHover mb-[15px] sm:mb-[30px] h-[300px] md:h-[370px] sm:mr-[15px] lg:mx-0">
+            <div class="animate translate_scale_up h-[300px] md:h-[370px] md:mb-0 sm:mb-[30px]">
+              <img class="w-full object-cover h-full zoomEffectImg" src="/uploads/fldCMS/entertainment.jpg"
+                alt="ENTERTAINMENT" />
+            </div>
             <div class="animate translate_right_left ">
               <div class=" absolute bottom-[20px] left-[20px] ">
                 <img src="/uploads/fldCMS/svg/VectorENTERTAINMENT.svg" alt="" />
@@ -515,10 +529,11 @@
           </div>
 
           <div
-            class="what_we_do_block relative zoomOnHover mb-[15px] sm:mb-[30px] h-[300px] md:h-[370px] sm:ml-[15px] lg:mx-0 md:mb-0">
-            <img class="w-full object-cover h-full zoomEffectImg" src="/uploads/fldCMS/warehousing-parks.jpg"
-              alt="Warehousing parks" />
-
+            class="what_we_do_block overflow-hidden  relative zoomOnHover mb-[15px] sm:mb-[30px] h-[300px] md:h-[370px] sm:ml-[15px] lg:mx-0 md:mb-0">
+            <div class="animate translate_scale_up h-[300px] md:h-[370px] md:mb-0 sm:mb-[30px]">
+              <img class="w-full object-cover h-full zoomEffectImg" src="/uploads/fldCMS/warehousing-parks.jpg"
+                alt="Warehousing parks" />
+            </div>
             <div class="animate translate_right_left lg:delay-200">
               <div class=" absolute bottom-[20px] left-[20px] ">
                 <img src="/uploads/fldCMS/svg/Warehousing-parks.svg" alt="" />
@@ -531,10 +546,12 @@
         </div>
 
         <div class="lg:basis-4/12 basis-full sm:flex lg:block overflow-hidden">
-          <div class="what_we_do_block mb-[15px] sm:mb-[30px] h-[300px] md:h-[370px] sm:mr-[15px] lg:mx-0">
-            <img class="w-full object-cover h-full zoomEffectImg" src="/uploads/fldCMS/hospitality.jpg"
-              alt="Hospitality" />
-
+          <div
+            class="what_we_do_block overflow-hidden  mb-[15px] sm:mb-[30px] h-[300px] md:h-[370px] sm:mr-[15px] lg:mx-0">
+            <div class="animate translate_scale_up h-[300px] md:h-[370px] md:mb-0 sm:mb-[30px]">
+              <img class="w-full object-cover h-full zoomEffectImg" src="/uploads/fldCMS/hospitality.jpg"
+                alt="Hospitality" />
+            </div>
             <div class="animate translate_right_left delay-500">
               <div class=" absolute bottom-[20px] left-[20px] ">
                 <img src="/uploads/fldCMS/svg/hospitalityIcon.svg" alt="hospitality" />
@@ -547,21 +564,23 @@
           </div>
 
           <div
-            class="what_we_do_block relative zoomOnHover h-[300px] md:h-[370px] md:mb-0 sm:mb-[30px] sm:ml-[15px] lg:mx-0">
-            <img class="w-full object-cover h-full zoomEffectImg" src="/uploads/fldCMS/education.jpg" alt="Education" />
-
-            <div class="animate translate_right_left lg:delay-[400ms]">
-              <div class=" absolute bottom-[20px] left-[20px] ">
-                <img src="/uploads/fldCMS/svg/Education.svg" alt="" />
-                <p class="text-[18px] text-white font-medium uppercase mt-[12px]">
-                  Education
-                </p>
+            class="what_we_do_block overflow-hidden  relative zoomOnHover h-[300px] md:h-[370px] md:mb-0 sm:mb-[30px] sm:ml-[15px] lg:mx-0">
+            <div class="animate translate_scale_up h-[300px] md:h-[370px] md:mb-0 sm:mb-[30px]">
+              <img class="w-full object-cover h-full zoomEffectImg" src="/uploads/fldCMS/education.jpg"
+                alt="Education" />
+              </div>
+              <div class="animate translate_right_left lg:delay-[400ms]">
+                <div class=" absolute bottom-[20px] left-[20px] ">
+                  <img src="/uploads/fldCMS/svg/Education.svg" alt="" />
+                  <p class="text-[18px] text-white font-medium uppercase mt-[12px]">
+                    Education
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
   <section>
@@ -576,10 +595,10 @@
           <div class="item relative">
             <div class="flex flex-wrap mx-[-15px] justify-between">
               <div class="md:basis-5/12 basis-full md:order-2 md:mb-0 mb-[40px]">
-                <div class="py-[10px] pr-[10px] relative">
+                <div class="py-[10px] pr-[10px] relative animate translate_scale_up">
                   <div class="absolute right-0 top-0 h-full w-[40%] bg-primary_clr z-0"></div>
                   <img
-                    class="relative z-[1] max-w-full fade-in-left-element h-[360px] animate translate_scale_up lg:delay-200 object-cover"
+                    class="relative z-[1] max-w-full h-[360px] lg:delay-200 object-cover"
                     src="/uploads/fldCMS/testimonial_image.png" alt="" />
                 </div>
               </div>
@@ -599,10 +618,10 @@
           <div class="item relative">
             <div class="flex flex-wrap mx-[-15px] justify-between">
               <div class="md:basis-5/12 basis-full md:order-2 md:mb-0 mb-[40px]">
-                <div class="py-[10px] pr-[10px] relative">
+                <div class="py-[10px] pr-[10px] relative animate translate_scale_up">
                   <div class="absolute right-0 top-0 h-full w-[40%] bg-primary_clr z-0"></div>
                   <img
-                    class="relative z-[1] max-w-full fade-in-left-element h-[360px] animate translate_scale_up lg:delay-200 object-cover"
+                    class="relative z-[1] max-w-full h-[360px] lg:delay-200 object-cover"
                     src="/uploads/fldCMS/testimonial_image.png" alt="" />
                 </div>
               </div>
@@ -627,7 +646,7 @@
         <div class="owl-carousel owl-theme black_Arrow_Vcenter testimonial_slider md:mt-[90px] mt-[60px] md:mb-0 mb-0">
           <div class="item relative overflow-hidden ">
             <img src="/uploads/fldCMS/youtube_video.png" alt="youtube_video"
-              class="w-full object-cover object-center lg:h-[305px] h-[210px] animate translate_scale_up" />
+              class="w-full object-cover object-center lg:h-[305px] h-[210px]" />
             <a href="/uploads/fldCMS/youtube_video.png"
               class="venobox flex w-full mt-[25px]  sm:mt-[15px]  max-w-max sm:mx-auto px-[10px] items-center justify-center text-center">
               <p
@@ -641,7 +660,7 @@
 
           <div class="item relative overflow-hidden">
             <img src="/uploads/fldCMS/youtube_video1.png" alt="youtube_video"
-              class="w-full object-cover object-center lg:h-[305px] h-[210px] animate translate_scale_up" />
+              class="w-full object-cover object-center lg:h-[305px] h-[210px]" />
             <a href="/uploads/fldCMS/youtube_video1.png"
               class="venobox flex w-full mt-[25px]  sm:mt-[15px]  max-w-max sm:mx-auto px-[10px] items-center justify-center text-center">
               <p
@@ -657,7 +676,7 @@
             <img
               src="https://i.ytimg.com/vi/rx_KUOtpcK4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgQyg-MA8=&rs=AOn4CLBpGqs3w2on3dJWg33eSF4UV5ZClg"
               alt="youtube_video"
-              class="w-full object-cover object-center lg:h-[305px] h-[210px] animate translate_scale_up" />
+              class="w-full object-cover object-center lg:h-[305px] h-[210px]" />
             <a href="https://i.ytimg.com/vi/rx_KUOtpcK4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgQyg-MA8=&rs=AOn4CLBpGqs3w2on3dJWg33eSF4UV5ZClg"
               class="venobox flex w-full mt-[25px]  sm:mt-[15px] max-w-max sm:mx-auto px-[10px] items-center justify-center text-center">
               <p class="text-[14px] uppercase text-black font-light mb-0 leading-[30px] whitespace-nowrap mr-4 w-full">
@@ -823,7 +842,7 @@
                 <a href="#" class="footerSmallLinks"> Current openings </a>
               </div>
 
-              <div class="lg:basis-6/12 basis-full mt-auto lg:mb-0 mb-[20px]">
+              <div class="lg:basis-6/12 lg:px-[40px] basis-full mt-auto lg:mb-0 mb-[20px]">
                 <a href="mailto:mail@orris.in" class=" btn lg tertiary w-full block font-centabel ">Quick
                   Enquiry
                   <svg xmlns="http://www.w3.org/2000/svg" class="ml-[18px]" width="28" height="28" viewBox="0 0 26 26">
@@ -832,7 +851,7 @@
                   </svg></a>
               </div>
 
-              <div class="lg:basis-6/12 basis-full mt-auto lg:mb-0 mb-[20px]">
+              <div class="lg:basis-6/12 lg:px-[40px] basis-full mt-auto lg:mb-0 mb-[20px]">
                 <a href="mailto:mail@orris.in" class=" btn lg tertiary w-full block font-centabel">Contact
                   Us
                   <svg xmlns="http://www.w3.org/2000/svg" class="ml-[18px]" width="28" height="28" viewBox="0 0 16 16">

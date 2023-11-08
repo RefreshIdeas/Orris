@@ -126,6 +126,19 @@ $(".owl-next").html(
     </svg>`
 );
 
+let scrollEvent_elements = document.querySelectorAll(".scrollEvent");
+window.addEventListener("scroll", function (e) {
+  scrollEvent_elements.forEach((element) => {
+    let scrolly = +element.dataset.scrolly;
+    let classTobeAdd = element.dataset.addclass;
+    if (this.window.scrollY > scrolly) {
+      element.classList.add(classTobeAdd);
+    } else {
+      element.classList.remove(classTobeAdd);
+    }
+  });
+});
+
 const options = {
   rootMargin: screen.width > 600 ? "-500px 0px -100px 0px" : "0px",
   threshold: screen.width > 600 ? 0 : 0.1,
@@ -251,12 +264,23 @@ new VenoBox({
   selctor: ".venobox",
 });
 
-// mouse move event
-// document.body.addEventListener("mousemove", function (e) {
-//   console.log(
-//     `${e.clientX}
-//     ${e.clientY}`
-//   );
-// });
+// moveborder on click
+let moveBorder = document.querySelectorAll(".moveBorder");
+moveBorder.forEach((val) => {
+  let moveBorderElemets = val.querySelectorAll(".moveBorderElemets");
+  let activeBorder = val.querySelector(".activeBorder");
 
-// /trash
+  moveBorderElemets.forEach((moveBorderElem) => {
+    moveBorderElem.addEventListener("click", function (e) {
+      moveBorderElemets.forEach((val) =>
+        val.classList.remove(val.dataset.activeclass)
+      );
+      let elementDTL = e.target.getBoundingClientRect();
+      e.target.classList.add(e.target.dataset.activeclass);
+      console.log(elementDTL);
+      activeBorder.style = `left:${elementDTL.left}px;width:${elementDTL.width}px`;
+    });
+  });
+});
+
+// not shareablle
