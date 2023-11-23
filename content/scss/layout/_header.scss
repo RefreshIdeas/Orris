@@ -1,5 +1,10 @@
 @import "../modules/navigation";
 
+
+header{
+  z-index: 99;
+}
+
 // header button start
 .toggle-button {
   .toggle {
