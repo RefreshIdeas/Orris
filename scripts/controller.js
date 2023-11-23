@@ -127,11 +127,17 @@ $(".owl-next").html(
 );
 
 let scrollEvent_elements = document.querySelectorAll(".scrollEvent");
+scrollEvent_elements.forEach((val) => {
+  let current_postion = val.getBoundingClientRect().top + val.scrollHeight + 50;
+  val.setAttribute("data-currentpostion", current_postion);
+});
 window.addEventListener("scroll", function (e) {
   scrollEvent_elements.forEach((element) => {
-    let scrolly = +element.dataset.scrolly;
+    let scrolly = element.dataset.scrolly;
     let classTobeAdd = element.dataset.addclass;
-    if (this.window.scrollY > scrolly) {
+    let condition =
+      scrolly === "selfElement" ? element.dataset.currentpostion : +scrolly;
+    if (this.window.scrollY > condition) {
       element.classList.add(classTobeAdd);
     } else {
       element.classList.remove(classTobeAdd);
@@ -264,23 +270,91 @@ new VenoBox({
   selctor: ".venobox",
 });
 
-// moveborder on click
-let moveBorder = document.querySelectorAll(".moveBorder");
-moveBorder.forEach((val) => {
-  let moveBorderElemets = val.querySelectorAll(".moveBorderElemets");
-  let activeBorder = val.querySelector(".activeBorder");
+// section nav
+let section_nav_opt = {
+  rootMargin: "0px",
+  threshold: screen.width > 600 ? 1 : 0.3,
+};
 
-  moveBorderElemets.forEach((moveBorderElem) => {
-    moveBorderElem.addEventListener("click", function (e) {
-      moveBorderElemets.forEach((val) =>
-        val.classList.remove(val.dataset.activeclass)
+let section_obesever = new IntersectionObserver(
+  section_obesever_callBCK,
+  section_nav_opt
+);
+let section_navs = document.querySelector(".section_navs");
+let section_nav = document.querySelectorAll(".section_nav");
+let section_active_nav = document.querySelector(".section_active_nav");
+let section_nav_block = document.querySelectorAll(".section_nav_block");
+
+section_nav_block.forEach((val) => section_obesever.observe(val));
+
+function section_obesever_callBCK(entries) {
+  entries.forEach((element) => {
+    if (element.isIntersecting) {
+      let activeNav = document.querySelector(
+        `.${element.target.dataset.section_name}`
       );
-      let elementDTL = e.target.getBoundingClientRect();
-      e.target.classList.add(e.target.dataset.activeclass);
-      console.log(elementDTL);
-      activeBorder.style = `left:${elementDTL.left}px;width:${elementDTL.width}px`;
+      section_nav_active_handler(activeNav);
+    }
+  });
+}
+
+section_nav.forEach((element) => {
+  element.addEventListener("click", (e) =>
+    section_nav_active_handler(e.target)
+  );
+});
+
+function section_nav_active_handler(element) {
+  section_nav.forEach((val) => val.classList.remove(val.dataset.activeclass));
+
+  let elementDTL = element.getBoundingClientRect();
+  element.classList.add(element.dataset.activeclass);
+  let parent_postiion = section_navs.getBoundingClientRect().left;
+
+  section_active_nav.style = `left:${Math.abs(
+    parent_postiion - elementDTL.left
+  )}px;width:${elementDTL.width}px`;
+}
+
+// section nav
+
+// scroll to view
+
+let scrollNav = document.querySelectorAll(".scrollToView");
+scrollNav.forEach((element) => {
+  element.addEventListener("click", function (e) {
+    const elements = document.querySelector(
+      `[data-section_name= ${e.target.dataset.scrollto}]`
+    );
+    let elementDimention = elements.getBoundingClientRect();
+    let showOnCenter =
+      screen.width > 1024
+        ? (elementDimention.height - screen.height) / 2
+        : -150;
+    window.scrollTo({
+      top: window.pageYOffset + elementDimention.top + showOnCenter,
+      left: 0,
+      behavior: "smooth",
     });
   });
 });
 
-// not shareablle
+const sliderContainer = document.querySelector('.sliderContainer');
+let currentIndex = 0;
+
+// Attach a wheel event listener to the document for scrolling
+document.addEventListener('wheel', function (event) {
+  // Determine the direction of the scroll (up or down)
+  const scrollDirection = event.deltaY > 0 ? 'down' : 'up';
+
+  // Update the current index based on the scroll direction
+  currentIndex = scrollDirection === 'up' ? Math.max(currentIndex - 1, 0) : Math.min(currentIndex + 1, sliderContainer.children.length - 1);
+
+  // Slide to the current index
+  updateSlider();
+});
+
+function updateSlider() {
+  const translateValue = -currentIndex * 1598;
+  sliderContainer.style = `transform:translate(${translateValue}px)`;
+}

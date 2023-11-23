@@ -218,7 +218,7 @@
 
         <div class="relative h-[70vh] w-full overflow-hidden">
             <video
-                src="https://s3-figma-videos-production-sig.figma.com/video/1097853230729768743/TEAM/1e3b/1b6a/-4211-4eda-ad9d-13d990e44ab7?Expires=1700438400&Signature=ZQ9OFSxf7Rngryb7tQIYvJhmZYMOiUYtY0NVqDd6fS4NUlRcsYSRHdVaszQVJ25IIjPa1b-Lxem8rDpORHr-wP4Tcss4dZMITYLvOFwwl80QLgO2vZ8WNU2pU0F5VARVunQHAkRMGYuvBfreNBZWikXdULBWtcdgwvKp~hcGjLfHc04NWFgQASktOdDy1E8vn0XnZPnTpjQHQTWRY5wPvpp5HtQ2r6fNq8A1fVSWJhSn2spiorMX3S3tOIXAfZVcgw5l~2YzyA9wayENkoKYCXC-wDR58mlM6VjfXyqbu85VX-6U98UQiCaaAMRudFzwJzKPFxxN972UqUN1eCBgGA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                src="https://s3-figma-videos-production-sig.figma.com/video/1097853230729768743/TEAM/1e3b/1b6a/-4211-4eda-ad9d-13d990e44ab7?Expires=1701648000&Signature=IVw8Rc31RtctCsEoJk2A15kBJqAkQH5wE9N6UBFTh00zhZq5pCdK-RMfy8L4b3RMxc1~vZ2jMGJLfdj7pETQtaDLqA-YqldumHvPsvrsKiAv0rIjibD-4XlIM9y03LAqU9wLbNzGORNu1e~80s11H3IDfx3~S7lp8pH~4R27IQ6ASZ89n7f0yxJoUjeBKiGsjUO9Uj~iVBMb6Hh2H8Wv8AgMMMThcOnSkNfEGe6d7jcDjs3ch~K4YzjXaWYRNesX0PcP-xbwdP6Ux1nmUnwP8MvuE8EzA7Vas-9AywuBSc7wz89OsDjgCRm99f2K3ouwsGXgN6sdbfW6yl-dbjopSg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 autoplay muted loop class="object-cover h-full w-full"></video>
             <div class="hero_section_text">
                 <h1 class="heroTitle text-white text-center font-centabel">Overview</h1>
@@ -229,24 +229,378 @@
     </section>
 
     <section>
-        <div class="py-20 scrollEvent top-0 left" data-scrolly="100" data-addclass="fixed">
-            <div class="flex text-center relative moveBorder justify-center">
-                <p class="scrollToView text-opacity-60 duration-300 ease-linear moveBorderElemets text-[15px] cursor-pointer leading-[30px] text-secondary_clr px-[10px] mx-5"
-                    data-scrollTo="" data-activeclass="!text-opacity-100">Building a New India</p>
-                <p class="scrollToView text-opacity-60 duration-300 ease-linear moveBorderElemets text-[15px] cursor-pointer leading-[30px] text-secondary_clr px-[10px] mx-5"
-                    data-scrollTo="" data-activeclass="!text-opacity-100">Pillars of Strength</p>
-                <p class="scrollToView text-opacity-60 duration-300 ease-linear moveBorderElemets text-[15px] cursor-pointer leading-[30px] text-secondary_clr px-[10px] mx-5"
-                    data-scrollTo="" data-activeclass="!text-opacity-100">VISION & MISSION </p>
-                <p class="scrollToView text-opacity-60 duration-300 ease-linear moveBorderElemets text-[15px] cursor-pointer leading-[30px] text-secondary_clr px-[10px] mx-5"
-                    data-scrollTo="" data-activeclass="!text-opacity-100">Core Values</p>
-                <div
-                    class="activeBorder duration-300 ease-linear absolute bottom-[-5px] border-secondary_clr border-b-[1.5px] w-[150px] -left-full">
+        <div class="lg:h-[165px] flex items-center">
+            <div class=" scrollEvent duration-300  ease-linear scrollToView_block top-0 max-w-max z-20 relative left-[50%] translate-x-[-50%] lg:overflow-hidden overflow-scroll py-[30px] w-full no-scrollbar"
+                data-scrolly="selfElement" data-addclass="active">
+                <div class="flex text-center section_navs justify-center relative w-max">
+                    <p class="scrollToView  building_new_india" data-scrollto="building_new_india"
+                        data-activeclass="!text-opacity-100">Building a New India</p>
+                    <p class="scrollToView pillor_of_strength" data-scrollto="pillor_of_strength"
+                        data-activeclass="!text-opacity-100">Pillars of Strength</p>
+                    <p class="scrollToView vision_mission" data-scrollto="vision_mission"
+                        data-activeclass="!text-opacity-100">VISION & MISSION </p>
+                    <p class="scrollToView core_values" data-scrollto="core_values"
+                        data-activeclass="!text-opacity-100">Core Values</p>
+                    <div
+                        class="section_active_nav duration-300 ease-linear absolute top-[35px] border-secondary_clr border-b-[1.5px] w-[150px] -left-full lg:block hidden">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container section_nav_block scrollto-view-block" data-section_name="building_new_india">
+            <div class="flex flex-wrap mx-[-15px]">
+                <div class="lg:basis-6/12 basis-full overflow-hidden z-10 relative bg-white">
+                    <div
+                        class="zoomOnHover overflow-hidden relative h-[400px] lg:h-[570px] w-full animate translate_scale_up ">
+                        <img src="./uploads/fldCMS/building-new-india.png" alt=""
+                            class="zoomEffectImg h-full lg:absolute top-0 object-cover left-0 w-full ">
+                    </div>
+                </div>
+                <div class="lg:basis-6/12 basis-full lg:mt-0 mt-[40px]">
+                    <h2 class="sectionHeading text-secondary_clr uppercase animate translate_up_down ">
+                        Building a New India
+                    </h2>
+                    <div class="relative animate translate_up_down">
+                        <span class="up_arrow absolute lg:block hidden top-[-20px] right-[-2px]"><svg width="11" height="20"
+                                viewBox="0 0 22 40" fill="none" class="rotate-90" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.6367 0.474155L0.496906 18.7939C0.178308 19.1156 0 19.5472 0 19.9966C0 20.4459 0.178308 20.8775 0.496906 21.1993L18.6367 39.5258C18.7851 39.6759 18.9626 39.7952 19.1586 39.8766C19.3546 39.958 19.5652 40 19.7779 40C19.9907 40 20.2012 39.958 20.3972 39.8766C20.5932 39.7952 20.7707 39.6759 20.9191 39.5258C21.2244 39.2181 21.3953 38.805 21.3953 38.3748C21.3953 37.9447 21.2244 37.5316 20.9191 37.2238L3.86093 19.9966L20.9191 2.77273C21.2234 2.46516 21.3936 2.05278 21.3936 1.62344C21.3936 1.1941 21.2234 0.78173 20.9191 0.474155C20.7707 0.324098 20.5932 0.204831 20.3972 0.123394C20.2012 0.0419568 19.9907 0 19.7779 0C19.5652 0 19.3546 0.0419568 19.1586 0.123394C18.9626 0.204831 18.7851 0.324098 18.6367 0.474155Z"
+                                    fill="#3A3947" />
+                            </svg></span>
+                        <span class="up_arrow absolute lg:block hidden bottom-[-20px] right-[-4px]"><svg width="11" height="20"
+                                viewBox="0 0 22 40" fill="none" class="-rotate-90" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.6367 0.474155L0.496906 18.7939C0.178308 19.1156 0 19.5472 0 19.9966C0 20.4459 0.178308 20.8775 0.496906 21.1993L18.6367 39.5258C18.7851 39.6759 18.9626 39.7952 19.1586 39.8766C19.3546 39.958 19.5652 40 19.7779 40C19.9907 40 20.2012 39.958 20.3972 39.8766C20.5932 39.7952 20.7707 39.6759 20.9191 39.5258C21.2244 39.2181 21.3953 38.805 21.3953 38.3748C21.3953 37.9447 21.2244 37.5316 20.9191 37.2238L3.86093 19.9966L20.9191 2.77273C21.2234 2.46516 21.3936 2.05278 21.3936 1.62344C21.3936 1.1941 21.2234 0.78173 20.9191 0.474155C20.7707 0.324098 20.5932 0.204831 20.3972 0.123394C20.2012 0.0419568 19.9907 0 19.7779 0C19.5652 0 19.3546 0.0419568 19.1586 0.123394C18.9626 0.204831 18.7851 0.324098 18.6367 0.474155Z"
+                                    fill="#3A3947" />
+                            </svg></span>
+                        <div class="lg:theme_scroll_block lg:h-[300px] mt-[15px] overflow-y-auto  lg:pr-[30px]">
+
+
+                            <p class="sectionText text-secondary_clr lg:basis-10/12 px-0 lg:mb-[20px] mb-[15px]">
+                                Through a decade-long endeavor to ensure the highest possible quality of life to their
+                                patrons,
+                                Orris has quickly grown from being one of the top real estate property developers in
+                                Delhi/NCR
+                                to an organization well-diversified in the fields of Real estate, Entertainment,
+                                Hospitality,
+                                Warehousing Parks & Education.
+                            </p>
+
+                            <p
+                                class="sectionText text-secondary_clr mt-[15px] lg:basis-10/12 px-0 lg:mb-[20px] mb-[15px]">
+                                <span class="font-medium text-secondary_clr">
+                                    Incorporated in the year 2006
+                                </span>, Orris is driven by passion, commitment, quality and a relentless
+                                pursuit of perfection. One of India’s leading full-service real estate development
+                                companies, we
+                                offer a wide range of residential homes, commercial buildings and numerous retail
+                                projects
+                                in
+                                Delhi/NCR.
+                            </p>
+
+                            <p class="sectionText text-secondary_clr mt-[15px] lg:basis-10/12 px-0 ">
+                                <span class="font-medium text-secondary_clr"> The Group has delivered over 4 million sq.
+                                    ft.
+                                    of
+                                    property in NCR and another 10 million sq. ft.
+                                    is currently under construction.</span> They have gained quite a few accolades in
+                                relatively
+                                little
+                                time, including the prestigious award for being the best ‘Emerging Residential
+                                Infrastructure
+                                Company of the Year 2010’. Guided by a strong vision and the competencies to achieve
+                                excellence
+                                beyond expectations, the Group is poised to bring about a paradigm shift in the way
+                                quality
+                                is
+                                perceived and set high standards in every sphere.
+                            </p>
+                        </div>
+
+                    </div>
+
+
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="footer" class="mb-[400px]">
+
+    <div id="imageSlider">
+      <div class="sticky top-[50%] translate-y-[-50%]">
+        <div class="sliderContainer">
+            <!-- Add your images as individual slides -->
+            <div class="slide"><img src="/uploads/fldCMS/education.png" class="smg" alt="Image 1"></div>
+            <div class="slide"><img src="/uploads/fldCMS/education.png" class="smg" alt="Image 2"></div>
+            <div class="slide"><img src="/uploads/fldCMS/education.png" class="smg" alt="Image 3"></div>
+            <div class="slide"><img src="/uploads/fldCMS/education.png" class="smg" alt="Image 3"></div>  <div class="slide"><img src="/uploads/fldCMS/education.png" class="smg" alt="Image 3"></div>  <div class="slide"><img src="/uploads/fldCMS/education.png" class="smg" alt="Image 3"></div>
+            <!-- Add more slides as needed -->
+          </div>
+      </div>
+      </div>
+
+    <section class="counterSection animate">
+        <div class="container py-sectionPadding">
+            <div class="flex flex-wrap mx-[-15px]">
+                <div class="lg:basis-6/12 basis-full overflow-hidden lg:order-2 z-10 relative bg-white">
+                    <div
+                        class="zoomOnHover overflow-hidden relative h-[400px] lg:h-full w-full animate translate_scale_up">
+                        <img src="/uploads/fldCMS/happy_customers.jpg" alt=""
+                            class="zoomEffectImg h-full lg:absolute top-0 object-cover left-0 w-full ">
+                    </div>
+                </div>
+                <div class="lg:basis-6/12 basis-full lg:mt-0 mt-[40px]">
+                    <h2 class="sectionHeading text-secondary_clr uppercase animate translate_up_down">
+                        Consectetur adipiscing elit Sed lobortis nvallis
+                        <br class="hidden md:block" />
+                        veh iculaIn
+                    </h2>
+
+                    <p
+                        class="sectionText text-secondary_clr mt-[15px] lg:basis-10/12 px-0 lg:mb-[50px] mb-[40px] animate translate_up_down">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        lobortis convallis vehicula. In ullamcorper aliquet tortor nec
+                        maximus. Nam nec turpis sed magna posuere sagittis. Nam accumsan
+                        elit metus, cursus lacinia leo iaculis quis. Quisque sit amet nunc
+                        et odio ultrices dictum.
+                    </p>
+
+                    <div class="flex flex-wrap mx-[-15px] justify-between">
+                        <div
+                            class="text-[30px] lg:leading-[25px] leading-[25px] lg:text-[30px] text-primary_clr font-medium lg:basis-5/12 basis-6/12 lg:mb-[70px] animate translate translate_right_left mb-[40px]">
+                            <span
+                                class="counterUP text-[30px] lg:leading-[30px] leading-[25px] lg:text-[40px] text-primary_clr font-normal"
+                                counternumber="17">0</span><sup>+</sup>
+
+                            <p class="text-[15px] font-normal leading-[20px] text-secondary_clr mt-[12px] uppercase">
+                                Years of Experience
+                            </p>
+                        </div>
+
+                        <div
+                            class="text-[30px] lg:leading-[25px] leading-[25px] lg:text-[30px] text-primary_clr font-medium lg:basis-5/12 basis-6/12 lg:mb-[70px] animate translate translate_right_left mb-[40px]">
+                            <span
+                                class="counterUP text-[30px] lg:leading-[30px] leading-[25px] lg:text-[40px] text-primary_clr font-normal"
+                                counternumber="5000">0</span><sup>+</sup>
+
+                            <p class="text-[15px] font-normal leading-[20px] text-secondary_clr mt-[12px] uppercase">
+                                Happy Customers
+                            </p>
+
+                        </div>
+
+                        <div
+                            class="text-[30px] lg:leading-[25px] leading-[25px] lg:text-[30px] text-primary_clr font-medium lg:basis-5/12 basis-6/12 lg:mb-[70px] animate translate translate_right_left">
+                            <span
+                                class="counterUP text-[30px] lg:leading-[30px] leading-[25px] lg:text-[40px] text-primary_clr font-normal"
+                                counternumber="7">0</span><sup>+</sup>
+
+                            <p class="text-[15px] font-normal leading-[20px] text-secondary_clr mt-[12px] uppercase">
+                                Million Sq. Ft. Already Delivered
+                            </p>
+                        </div>
+
+                        <div
+                            class="text-[30px] lg:leading-[25px] leading-[25px] lg:text-[30px] text-primary_clr font-medium lg:basis-5/12 basis-6/12 lg:mb-[70px] animate translate translate_right_left">
+                            <span
+                                class="counterUP text-[30px] lg:leading-[30px] leading-[25px] lg:text-[40px] text-primary_clr font-normal"
+                                counternumber="20">0</span><sup>+</sup>
+
+                            <p class="text-[15px] font-normal leading-[20px] text-secondary_clr mt-[12px] uppercase">
+                                Million Sq. Ft. Under Construction
+                            </p>
+                        </div>
+                    </div>
+                </div>
+               
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container section_nav_block scrollto-view-block" data-section_name="pillor_of_strength">
+            <div>
+
+
+                <h2 class="sectionHeading text-secondary_clr uppercase text-center  animate translate_up_down"> Pillars of Strength </h2>
+
+                <p
+                    class="sectionText text-secondary_clr mt-[15px] px-0 lg:mb-[60px] mb-[40px] animate translate_up_down text-center">
+                    Orris is driven by passion, commitment, quality and a relentless pursuit of perfection. In our
+                    endeavor to offer quality life, we at Orris constantly work towards understanding and catering to
+                    the distinct needs of different types of customers. We firmly believe in engaging our customers with
+                    complete integrity, high morals and with a sense of total responsibility towards their requirements.
+                    With our ethical business practices we have earned the trust of hundreds of customers throughout our
+                    journey in the real estate segment. The pillars of strength that enable us to deliver on the
+                    expectations are:</p>
+
+
+                <div class="flex lg:justify-between items-center flex-wrap mx-[-15px]">
+                    <div class="mb-[40px] animate translate_right_left px-[15px]">
+                        <img src="/uploads/fldCMS/svg/land_mark.svg" alt="" class="h-[73px] mx-auto">
+                        <p class="text-[15px] leading-[25px] mb-0 sm:mt-3 mt-[20px]">
+                            One Of The Biggest Land Bank
+                        </p>
+                    </div>
+                    <div class="mb-[40px] animate translate_right_left delay-100 px-[15px]">
+                        <img src="/uploads/fldCMS/svg/committed_towards_elivery.svg" alt="" class="h-[73px] mx-auto">
+                        <p class="text-[15px] leading-[25px] mb-0 sm:mt-3 mt-[20px]">
+                            Committed Towards Delivery
+                        </p>
+                    </div>
+                    <div class="mb-[40px] animate translate_right_left delay-200 px-[15px]">
+                        <img src="/uploads/fldCMS/svg/stakeholder.svg" alt="" class="h-[73px] mx-auto">
+                        <p class="text-[15px] leading-[25px] mb-0 sm:mt-3 mt-[20px]">
+                            Maximum Roi To Stakeholders
+                        </p>
+                    </div>
+                    <div class="mb-[40px] animate translate_right_left delay-300 px-[15px]">
+                        <img src="/uploads/fldCMS/svg/robust_sustainability.svg" alt="" class="h-[73px] mx-auto">
+                        <p class="text-[15px] leading-[25px] mb-0 sm:mt-3 mt-[20px]">
+                            Robust Sustainability
+                        </p>
+                    </div>
+                    <div class="md:mb-[40px] animate translate_right_left delay-[400ms] px-[15px]">
+                        <img src="/uploads/fldCMS/svg/team.svg" alt="" class="h-[73px] mx-auto">
+                        <p class="text-[15px] leading-[25px] mb-0 sm:mt-3 mt-[20px]">
+                            Highly Experienced Team
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="relative container section_nav_block scrollto-view-block md:pt-[20px] lg:pt-[30px]" data-section_name="vision_mission">
+            <img src="/uploads/fldCMS/vision-mission.png" alt="Vision MISSION bg"
+                class="w-full object-cover object-center lg:h-[570px]">
+
+            <div class="absolute z-10 top-[50%] translate-y-[-50%] left-0 w-full text-center">
+                <p class="text-[15px] leading-[40px] text-white font-light uppercase">Vision</p>
+                <h3 class="text-[20px] leading-[32px] text-white">
+                    “To become one of the most admired corporates”
+                </h3>
+
+                <p class="text-[15px] leading-[40px] text-white font-light uppercase lg:mt-[60px]">Mission</p>
+                <h3 class="text-[20px] leading-[32px] text-white">“Collectively aiming to deliver the best in Real
+                    <br class="lg:block hidden"> estate, Entertainment, Hospitality, Warehousing
+                    Parks, Education.”
+                </h3>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+
+        <div class="container py-sectionPadding ">
+            <div class="section_nav_block scrollto-view-block" data-section_name="core_values">
+                <h2 class="sectionHeading text-secondary_clr uppercase translate_up_down animate text-center md:mb-[25px] mb-[25px]">
+                    Core Values</h2>
+                <div class="flex mx-[-10px] flex-wrap">
+                    <div class="lg:w-[20%] md:w-[33%] px-[10px] translate_up_down animate">
+                        <div class="zoomOnHover mb-[22px]">
+                        <img src="/uploads/fldCMS/Teamwork.png" class="mx-auto zoomEffectImg  w-full" alt="Teamwork">
+                        </div>
+                        <h4 class="uppercase text-secondary_clr text-[15px] leading-[30px] text-center">
+                            Teamwork
+                        </h4>
+                        <p class="text-[15px] leading-[26px] text-secondary_clr text-center font-light">
+                            A well synchronized team of talented professionals to deliver the best
+                        </p>
+                    </div>
+                    <div class="lg:w-[20%] md:w-[33%] px-[10px] translate_up_down animate delay-200">
+                        <div class="zoomOnHover mb-[22px]">
+                        <img src="/uploads/fldCMS/Relationship.png" class="mx-auto zoomEffectImg  w-full" alt="Teamwork">
+                        </div>
+                        <h4 class="uppercase text-secondary_clr text-[15px] leading-[30px] text-center">
+                            Relationship
+                        </h4>
+                        <p class="text-[15px] leading-[26px] text-secondary_clr text-center font-light">
+                            Creating a lasting relationship with our stakeholders, associates & customers
+                        </p>
+                    </div>
+
+                    <div class="lg:w-[20%] md:w-[33%] px-[10px] translate_up_down animate delay-[400ms]">
+                        <div class="zoomOnHover mb-[22px]">
+                        <img src="/uploads/fldCMS/Integrity.png" class="mx-auto zoomEffectImg  w-full" alt="Teamwork">
+                        </div>
+                        <h4 class="uppercase text-secondary_clr text-[15px] leading-[30px] text-center">
+                            Integrity
+                        </h4>
+                        <p class="text-[15px] leading-[26px] text-secondary_clr text-center font-light">
+                            Win trust by keeping honest and sincere approach
+
+                        </p>
+                    </div>
+
+                    <div class="lg:w-[20%] md:w-[33%] px-[10px] translate_up_down animate delay-[600ms]">
+                        <div class="zoomOnHover mb-[22px]">
+                        <img src="/uploads/fldCMS/Customer-Driven.png" class="mx-auto zoomEffectImg  w-full" alt="Teamwork">
+                        </div>
+                        <h4 class="uppercase text-secondary_clr text-[15px] leading-[30px] text-center">
+                            Customer Driven
+                        </h4>
+                        <p class="text-[15px] leading-[26px] text-secondary_clr text-center font-light">
+                            Providing premium services in the most responsive and communicative manner
+                        </p>
+                    </div>
+
+                    <div class="lg:w-[20%] md:w-[33%] px-[10px] translate_up_down animate delay-[800ms]">
+                        <div class="zoomOnHover mb-[22px]">
+                        <img src="/uploads/fldCMS/Excellence.png" class="mx-auto zoomEffectImg  w-full" alt="Teamwork">
+                        </div>
+                        <h4 class="uppercase text-secondary_clr text-[15px] leading-[30px] text-center">
+                            Excellence
+                        </h4>
+                        <p class="text-[15px] leading-[26px] text-secondary_clr text-center font-light">
+                            Achieve excellence by aiming for the highest possible standards
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mb-[130px]">
+            <div class="py-[15px] pr-[15px] relative animate translate_scale_up">
+                <div class="absolute right-0 top-0 h-full w-[40%] bg-primary_clr z-0"></div>
+                <img class="relative z-[1] object-cover w-full object-center" src="/uploads/fldCMS/overview-video.png"
+                    alt="Overview Video">
+                <div class="top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] absolute z-10 w-full px-[15px]">
+                    <h4 class="leading-[50px] md:text-[42px] text-[24px] font-medium text-white text-center">We are
+                        Orris - Expect The Best</h4>
+                    <a href="/uploads/fldCMS/youtube_video.png"
+                        class="venobox flex w-full mt-[25px] sm:mt-[15px] max-w-max sm:mx-auto px-[20px] py-[10px] items-center justify-center text-center  border-2 border-white rounded-md overflow-hidden bg-white bg-opacity-80 ">
+                        <p
+                            class="md:text-[20px] text-[18px] uppercase  text-black font-light mb-0 leading-[30px] whitespace-nowrap mr-4 w-full">
+                            Watch Video
+                        </p>
+                        <img src="/uploads/fldCMS/youtube-button.png"
+                            class="w-[30px] md:w-[30px] h-[20px] md:h-[30px] object-contain" alt="youtube">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
         <div class="relative overflow-hidden">
             <img src="/uploads/fldCMS/footer-bg.png"
                 class="absolute auto_Zoom_INOUT left-[0%] bottom-[0%] w-[100%] h-full object-cover object-center"
