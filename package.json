@@ -15,7 +15,7 @@
     "postcss": "^8.4.30",
     "sass": "^1.67.0",
     "tailwindcss": "^3.3.3",
-    "venobox": "^2.0.4",
+    "venobox": "^2.0.8",
     "vite": "^4.4.5"
   }
 }
