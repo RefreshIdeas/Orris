@@ -115,6 +115,7 @@ header.scrollActive {
   }
 
   img.navLogo {
-    height: 70px !important;
+    @include LARGER_THEN_md {height: 70px !important;}
+    height: 50px !important;
   }
 }
