@@ -23,30 +23,3 @@
 
 }
 
-
-#imageSlider {
-  width: 100vw;
-  height: 300vh;
-  overflow: hidden;
-  position: relative;
-  
-}
-
-.sliderContainer {
-  display: flex;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
-
-
-}
-
-.slide {
-  flex: 0 0 100%;
-  box-sizing: border-box;
-}
-
- img.smg {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
