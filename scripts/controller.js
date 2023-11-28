@@ -339,22 +339,3 @@ scrollNav.forEach((element) => {
   });
 });
 
-const sliderContainer = document.querySelector('.sliderContainer');
-let currentIndex = 0;
-
-// Attach a wheel event listener to the document for scrolling
-document.addEventListener('wheel', function (event) {
-  // Determine the direction of the scroll (up or down)
-  const scrollDirection = event.deltaY > 0 ? 'down' : 'up';
-
-  // Update the current index based on the scroll direction
-  currentIndex = scrollDirection === 'up' ? Math.max(currentIndex - 1, 0) : Math.min(currentIndex + 1, sliderContainer.children.length - 1);
-
-  // Slide to the current index
-  updateSlider();
-});
-
-function updateSlider() {
-  const translateValue = -currentIndex * 1598;
-  sliderContainer.style = `transform:translate(${translateValue}px)`;
-}

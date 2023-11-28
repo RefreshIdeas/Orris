@@ -1,21 +1,21 @@
 
-.scrollToView_block {
-  @include LARGER_THEN_lg {
-    &.active {
-      position: fixed !important;
-      border-radius: 20px;
-      transform: translate3d(-50%, 0, 0);
-      left: 50%;
-      padding: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgb(0 0 0 / 13%);
-      top: 96px;
-    }
-  }
-}
+// .scrollToView_block {
+//   @include LARGER_THEN_lg {
+//     &.active {
+//       position: fixed !important;
+//       border-radius: 20px;
+//       transform: translate3d(-50%, 0, 0);
+//       left: 50%;
+//       padding: 20px;
+//       background: white;
+//       border-radius: 10px;
+//       box-shadow: 0 0 10px rgb(0 0 0 / 13%);
+//       top: 96px;
+//     }
+//   }
+// }
 
 
 .scrollToView{
-  @apply lg:text-opacity-60 duration-300 ease-linear text-[15px] cursor-pointer leading-[30px]  lg:py-0 py-[5px] lg:bg-transparent bg-primary_clr  lg:text-secondary_clr text-white px-[14px] lg:px-[10px] mx-5 whitespace-nowrap 
+  @apply lg:text-opacity-60 duration-300 ease-linear text-[15px] cursor-pointer leading-[30px]  lg:py-0 py-[5px] text-secondary_clr px-[14px] lg:px-[10px] mx-5 whitespace-nowrap uppercase
 }
