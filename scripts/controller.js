@@ -146,7 +146,7 @@ window.addEventListener("scroll", function (e) {
 });
 
 const options = {
-  rootMargin: screen.width > 600 ? "-500px 0px -100px 0px" : "0px",
+  rootMargin: screen.width > 600 ? "0px 0px -80px 0px" : "0px",
   threshold: screen.width > 600 ? 0 : 0.1,
 };
 
@@ -155,7 +155,7 @@ function handleIntersection(entries) {
     if (entry.isIntersecting) {
       // FOR ANIMATED
       entry.target.classList.add("active");
-
+      console.log(entry);
       // FOR COUNTER
       if (entry.target.classList.contains("counterSection")) counterInit();
     }
@@ -338,4 +338,3 @@ scrollNav.forEach((element) => {
     });
   });
 });
-
