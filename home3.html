@@ -16,16 +16,13 @@
     @import url("venobox/dist/venobox.min.css");
     @import url("./content/scss/site.scss");
 
-    body{
-        scroll-behavior: smooth !important;
-    }
     .hero_right h1 {
       font-family: Helvetica, Arial, sans-serif;
       position: absolute;
       top: 45%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 60rem;
+
       letter-spacing: 22px;
       line-height: 48rem;
       text-align: center;
@@ -60,17 +57,15 @@
       object-fit: cover;
       z-index: 99;
       transition: all 0.9s;
-      clip-path: ellipse(191.423px 276.5px at 50% 44%);
+      clip-path: ellipse(25% 30% at 50% 46%);
     }
 
     .hero_left.active video {
-      clip-path: ellipse(80% 80% at 50% 546.5px);
+      clip-path: ellipse(80% 80% at 50% 50%);
     }
 
     .hero_right.active img {
-      clip-path: ellipse(80% 80% at 50% 546.5px);
-      border-radius: 0%;
-      padding: 0;
+      clip-path: ellipse(80% 80% at 50% 50%);
 
     }
 
@@ -78,13 +73,12 @@
       object-fit: cover;
       transition: all 0.9s;
       color: #fff;
-      clip-path: ellipse(191.423px 276.5px at 50% 44%);
+      clip-path: ellipse(25% 30% at 50% 46%);
 
 
     }
 
     .short-pera {
-      font-size: 26px;
       font-weight: 400;
       line-height: 1.42857em;
       letter-spacing: .02em;
@@ -93,11 +87,12 @@
 
     .hero_left h2 {
       font-family: Helvetica, Arial, sans-serif;
-      font-size: 10rem;
       color: #fff;
       top: 80%;
       right: 59px;
     }
+
+  
 
     @media screen and (max-device-width: 367px) {
       .hero_right h1 {
@@ -128,12 +123,7 @@
         display: none !important;
       }
 
-      .short-pera {
-        font-size: 20px;
-        width: 100%;
-        z-index: 9;
-        top: 44%;
-      }
+
 
       .horizontel_line::before {
         top: 43% !important;
@@ -200,7 +190,7 @@
       <div class="flex justify-between items-center py-5">
         <div class="hamburger_menu flex items-center cursor-pointer clickEvent toggle"
           data-toggleTO="navigationSection">
-          <p class="font-normal !text-white text-[18px] hover:!text-white">
+          <p class="font-normal !text-white text-[18px] ">
             MENU
           </p>
           <div class="toggle-button ClickTrigger ml-5">
@@ -395,29 +385,31 @@
 
     <div class="lg:basis-6/12 basis-full hero_right p-0 m-0">
       <div class="horizontel_line container">
-        <h1 class="text-[#fff] md:text-[50rem] ">Orris</h1>
+        <h1 class="text-[#fff] md:text-[50rem] text-[60rem] lg:text-[48rem] ">Orris</h1>
       </div>
       <div class="p-0 m-0 relative h-full w-full">
-        <img src="/uploads/fldCMS/Orris-gateway.png" alt="" class="lg:h-[100vh] w-full img_bg" draggable="false">
+        <img src="/uploads/fldCMS/woodview-residencies.png" alt=""
+          class="lg:h-[100vh] w-full img_bg lg:bg-clip-[ellipse(25% 30% at 50% 46%)]" draggable="false">
 
       </div>
-      <p class="pe-80 ps-[63px] pb-12 m-0 absolute lg:bottom-5 text-[#fff] text-left short-pera">
+      <p
+        class="pe-80 lg:ps-[35px] pb-12 m-0 lg:w-[80rem] absolute lg:bottom-1 text-[#fff] text-left short-pera lg:text-[20px] text-[26px]">
         The composition of the landscape is built on the contrast of architecture and nature, which do not oppose
         each
         other, but rather coexist harmoniously.
       </p>
     </div>
     <div class="lg:basis-6/12 basis-full hero_left p-0 m-0 relative">
-      <video autoplay muted playsinline="1" loop  preload="1"
+      <video autoplay="autoplay" muted="1" playsinline="1" loop="loop" disablepictureinpicture="1" preload="1"
         data-plugin="videoAutoPlay">
 
         <source data-src="uploads/fldCMS/Clip23.mp4"
           type="video/mp4" src="uploads/fldCMS/Clip23.mp4">
       </video>
-      <a href="#bottomDiv" class="bottom_icon">
-        <h2 class="absolute uppercase top-1.5 ">LIVE HERE</h2>
+      <div class="bottom_icon">
+        <h2 class="absolute uppercase top-1.5 lg:text-[8rem] text-[10rem]">LIVE HERE</h2>
 
-      </a>
+      </div>
     </div>
 
 
@@ -425,7 +417,7 @@
 
   <!-- featured section -->
 
-  <section class="feature_section" id="bottomDiv">
+  <section class="feature_section">
     <div class="container py-sectionPadding">
       <div class="flex flex-wrap mx-[-15px]">
         <div class="lg:basis-6/12 basis-full lg:order-2">
@@ -976,7 +968,8 @@
     <div class="h-full w-full absolute top-0 left-0 right-0 bottom-0 p-0 m-0">
       <video class="object-cover w-full h-full" autoplay="autoplay" muted="1" playsinline="1" loop="loop"
         disablepictureinpicture="1" preload="1" data-plugin="videoAutoPlay">
-        <source data-src="uploads/fldCMS/Clip23.mp4" type="video/mp4" src="uploads/fldCMS/Clip23.mp4">
+        <source data-src="uploads/fldCMS/video-construction-building.mp4" type="video/mp4"
+          src="uploads/fldCMS/video-construction-building.mp4">
       </video>
 
     </div>
