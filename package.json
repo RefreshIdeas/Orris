@@ -17,5 +17,8 @@
     "tailwindcss": "^3.3.3",
     "venobox": "^2.0.8",
     "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "gsap": "^3.12.3"
   }
 }

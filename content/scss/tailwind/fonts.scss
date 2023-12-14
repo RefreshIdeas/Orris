@@ -1,5 +1,5 @@
 .heroTitle {
-  @apply md:text-[5rem] text-[5rem] leading-[5rem] font-[500];
+  @apply md:text-[5rem] text-[3.5rem] leading-[5rem] font-light;
 }
 
 .heroTitleSub {
@@ -7,7 +7,7 @@
 }
 
 .sectionHeading {
-  @apply md:text-[2rem] text-[2rem] leading-[3.5rem] md:leading-[3.5rem] font-medium;
+  @apply md:text-[2rem] text-[2rem] leading-[2.5rem] md:leading-[2.7rem] font-normal;
 }
 
 .sectionSubHeading {
@@ -15,5 +15,5 @@
 }
 
 .sectionText {
-  @apply md:text-[1.5rem] text-[1.5rem] leading-[3.2rem] font-normal;
+  @apply md:text-[1.5rem] text-[1.5rem] leading-[2.5rem] font-light;
 }

@@ -1,3 +1,7 @@
+// IMPORTANT 🔴🔴🔴
+@import "utilities/plugins.scss";
+
+
 // custom
 @import "mixins/media_queries";
 @import "./mixins/keyFrames.scss";
@@ -12,8 +16,10 @@
 @import "modules/bodySections";
 @import "modules/hero_section";
 @import "modules/clickToScroll";
+@import "modules/tabs";
+@import "modules/ribbons";
 
 // tailwind
 @import "tailwind/tailwind.scss";
-@import "./testing.scss";
+// @import "./testing.scss";
 

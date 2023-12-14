@@ -1,0 +1,58 @@
+// defaoult tabs styling
+.tabs {
+    display: flex;
+  }
+  
+  .tablink {
+    cursor: pointer;
+  }
+  
+  .tabcontent {
+    display: none;
+  
+  }
+  
+
+  
+  .tabcontent.active {
+   display: block;
+}
+
+
+// custom tabs hero_section
+.heroSectionTabContent{
+
+}
+
+.heroSectionTabLinks{
+
+
+    .heroSectionTabLink {
+    @apply md:text-[25px] text-[20px] py-[10px] md:px-[40px] px-[20px] md:leading-[50px] leading-[30px] font-light text-white;
+    &.active{
+        @apply bg-white text-black;
+    }
+    }
+}
+
+
+
+// project overview
+.overviewTabContent{
+
+}
+
+.overviewTabLinks{
+    @apply flex justify-center;
+.overviewTabLink{
+    @apply border-r-[1px] border-secondary_border_clr text-[17px] leading-[50px] text-[#C1C1C1] px-[20px] uppercase;
+&:last-child{
+    border: none;
+}
+
+&.active{
+    @apply text-tertiary_clr
+}
+
+}
+}

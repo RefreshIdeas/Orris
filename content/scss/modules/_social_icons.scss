@@ -1,6 +1,6 @@
 .square_icons {
     .icons {
-        @apply border-[1px] border-white border-opacity-25 block max-w-max p-[9px] duration-300 hover:bg-white;
+        @apply border-[1px] border-transparent hover:border-white border-opacity-25 block max-w-max p-[8px] duration-300 hover:bg-white;
 
         &.facebook:hover {
             path {

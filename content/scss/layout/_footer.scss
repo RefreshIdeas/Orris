@@ -21,10 +21,10 @@ footer {
   }
 
   .footerSmallLinks {
-    @apply text-[16px] text-white font-extralight leading-[20px] mb-[20px] block relative max-w-max;
+    @apply md:text-[14px] text-[16px] md:border-0 max-[767px]:py-[20px] text-white font-extralight leading-[20px] md:mb-[15px] block w-full relative lg:max-w-max border-b-[1px] border-white border-opacity-10;
 
     &::after {
-      @apply left-0 h-[1px] w-0 duration-700 bg-tertiary_BG_clr absolute hover:w-[60%] -bottom-3;
+      @apply left-0 h-[1px] w-0 duration-700 bg-tertiary_BG_clr absolute hover:w-[60%] -bottom-3 max-[768px]:hidden;
       content: "";
     }
   }

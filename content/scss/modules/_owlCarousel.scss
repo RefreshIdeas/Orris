@@ -1,3 +1,52 @@
+// default
+
+.owl-dots button span {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: block;
+  height: 15px;
+  width: 15px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+}
+
+.owl-dots button.active span {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 122 127 / var(--tw-bg-opacity));
+}
+
+.mobile_common_dots{
+ .owl-dots {
+    position: relative;
+    margin-top: 40px;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+.mobile_common_arrows .owl-nav {
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%, 50%, 0);
+  bottom: 7px;
+  z-index: 20;
+  display: flex;
+  width: 160px;
+  align-items: center;
+  justify-content: space-between;
+}
+.desktop_common_dots{
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+ }
+ }
+
+
 //
 // white_Arrow_Vcenter
 
@@ -28,25 +77,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @apply md:bottom-[50%] bottom-[-50px] z-20 items-center justify-between flex  md:w-[100%] w-[240px];
+    @apply lg:bottom-[50%] bottom-[7px] z-20 items-center justify-between flex lg:w-[82%] xl:w-[82%] 2xl:w-[69%] w-[160px];
     button {
-      &.owl-next,
-      &.owl-prev {
-        background-color: rgba(255, 255, 255, 0.481) !important;
-        padding: 18px 25px !important;
-      }
-
       svg {
-        @apply text-black max-[768px]:h-[30px] max-[1290px]:h-[65px] max-[1290px]:w-[65px];
+        @apply text-black ;
       }
     }
   }
 
   .owl-dots {
-    @apply flex justify-center md:justify-end items-center md:mt-[-60px] mt-[40px] md:mr-[30px] relative;
+    @apply flex justify-center lg:justify-end items-center lg:mt-[-60px] mt-[40px] mr-0 relative;
     button {
       span {
-        @apply h-[15px] w-[15px] rounded-full md:bg-white bg-neutral-300 block mx-2;
+        @apply h-[15px] w-[15px] rounded-full bg-neutral-300 block mx-2;
       }
       &.active {
         span {
@@ -93,55 +136,69 @@
 }
 
 // CUSTOM CHANGES
-.testimonial_slider {
-  // .owl-stage-outer {
-  //   overflow-y: visible !important;
-  // }
-  .owl-nav {
-    position: absolute;
-    left: unset;
-    right: 0;
-    transform: none !important;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @apply md:bottom-[50%] bottom-[7px] z-20 items-center justify-between flex md:w-[100%] w-[70px];
-    button {
-      svg {
-        @apply max-[768px]:h-[20px] max-[768px]:w-[20px];
-      }
-      &.owl-next,
-      &.owl-prev {
-        @include SMALLER_THEN_md {
-          padding: 0 !important;
-        }
-      }
-    }
-  }
-}
 
 .featured_projects {
   position: unset !important;
-
+.owl-item{
+  opacity: 0.8;
+  &.active{
+    opacity: 1;
+  }
+}
   .owl-stage-outer {
     overflow: visible !important;
     position: unset !important;
     .item {
       position: relative;
-      &::after {
-        background-image: linear-gradient(
-          360deg,
-          rgb(0 0 0 / 40%) 16%,
-          rgba(255, 255, 255, 0) 24%
-        );
-        content: " ";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-      }
+    
     }
+  }
+}
+
+.what_we_do{
+ .owl-stage-outer{
+  @include LARGER_THEN_lg{
+  overflow: visible !important;}
+ }
+ .owl-item{
+  transition: 0.3s linear;
+  &.center + .active{
+    transform: translateX(3vw) !important;
+  }
+  &.active.previous-slide{
+    transform: translateX(-3vw);
+  }
+  &.center{
+    video{
+      @apply 2xl:scale-x-[1.6] xl:scale-x-[1.4] lg:scale-x-[1.4] 2xl:scale-y-[2.2] xl:scale-y-[2] lg:scale-y-[1.8];
+  transition: 0.3s linear;
+      
+    }
+    p{
+      @apply 2xl:mt-[110px] xl:mt-[100px] lg:mt-[80px];
+  transition: 0.3s linear;
+
+      text-align: center;
+    }
+  }
+  &.center{
+  padding: 0 !important;
+  }
+  &{
+    @apply lg:px-[2vw];
+    .item{
+    @apply lg:h-[160px];
+    video{
+      @apply lg:h-full h-[300px]
+    }
+    
+    }
+    }
+ }
+}
+
+.financialPartners{
+  .owl-item img{
+    width: auto !important;
   }
 }

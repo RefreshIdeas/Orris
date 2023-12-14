@@ -15,7 +15,7 @@
   }
 
   &.primary {
-    @apply hover:bg-tertiary_BG_clr hover:border-tertiary_BG_clr text-secondary_clr hover:text-secondary_clr border-secondary_clr;
+    @apply hover:bg-[#808080] hover:border-[#808080] text-secondary_clr hover:text-secondary_clr border-secondary_clr hover:shadow-[0_5px_10px_#00000036];
   }
   &.secondary {
     @apply hover:text-tertiary_BG_clr max-w-full justify-center hover:border-opacity-100 leading-[40px] font-thin;
@@ -46,6 +46,6 @@
   }
 
   &.lg {
-    @apply py-[10px]  px-[20px] rounded-none border-[1px] uppercase flex items-center justify-center break-keep max-w-full text-[24px];
+    @apply py-[8px]  px-[20px] rounded-none border-[1px] uppercase flex items-center justify-center break-keep max-w-full text-[20px];
   }
 }

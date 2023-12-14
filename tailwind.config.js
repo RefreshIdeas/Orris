@@ -28,10 +28,11 @@ module.exports = {
 
       colors: {
         primary_clr: "#007A7F",
-        secondary_clr: "#3A3947",
+        secondary_clr: "#444444",
+        tertiary_clr: "#3A3947",
 
         // bg colors
-        primary_BG_clr: "#F5F8FF",
+        primary_BG_clr: "#F0ECE7",
         secondary_BG_clr: "#F5F4F4",
         tertiary_BG_clr: "#FFB400",
         quartary_BG_clr: "#B87A02",
@@ -40,7 +41,7 @@ module.exports = {
 
         // border colors
         primary_border_clr: "#D9D9D9",
-        secondary_border_clr: "rgba(#fff,0.25)",
+        secondary_border_clr: "#E1E1E1",
 
         // borderClrs
       },

@@ -12,7 +12,7 @@
 
     nav.mainNavs {
       .nav {
-        @apply sm:text-[20px] text-[20px] leading-[50px] py-[5px] duration-300 text-black flex items-center sm:pl-[45px] pl-[25px] pr-[20px] cursor-pointer font-light uppercase;
+        @apply sm:text-[18px] text-[18px] leading-[45px] py-[5px] duration-300 text-black flex items-center sm:pl-[45px] pl-[25px] pr-[20px] cursor-pointer font-light uppercase;
 
         svg {
           @apply sm:ml-[25px] ml-[20px] max-[640px]:w-[30px];
@@ -50,7 +50,7 @@
         }
 
         .subNav a {
-          @apply text-[20px] font-thin text-white leading-[50px] sm:py-[10px] py-[20px];
+          @apply text-[18px] font-thin text-white leading-[45px] sm:py-[10px] py-[20px];
         }
       }
     }
