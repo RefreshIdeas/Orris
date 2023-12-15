@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReadMore } from "./readmore";
 import { tabs } from "./tabs";
 import "./customScroll";
+import { accordianInit } from "./accordian";
 
 $(".white_Arrow_Vcenter").owlCarousel({
   loop: true,
@@ -28,6 +29,37 @@ $(".white_Arrow_Vcenter").owlCarousel({
 });
 
 $(".featured_projects").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  autoplayHoverPause: true,
+  dots: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    991: {
+      margin: 80,
+      items: 1,
+      dots: false,
+    },
+    1280: {
+      margin: 100,
+      dots: false,
+      items: 1,
+    },
+    1536: {
+      margin: 200,
+      dots: false,
+      items: 1,
+    },
+  },
+});
+
+$(".galery_slider").owlCarousel({
   loop: true,
   margin: 10,
   nav: true,
@@ -196,6 +228,30 @@ $(".financialPartners").owlCarousel({
     },
     1000: {
       items: 5,
+    },
+  },
+});
+
+$(".specification_slider").owlCarousel({
+  loop: true,
+  margin: 15,
+  nav: true,
+  dots: false,
+  dotsEach: 2,
+  autoplay: true,
+
+  slideTransition: "linear",
+  autoplaySpeed: 5000,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      margin: 20,
+      items: 3,
     },
   },
 });
@@ -436,7 +492,13 @@ scrollNav.forEach((element) => {
 // read more
 customElements.define("read-more", ReadMore);
 // tabs
-tabs(".tablink", ".tabcontent");
+tabs(".overviewTabLink", ".overviewTabContent");
+tabs(".galleryTabLink", ".galleryTabContent");
+tabs(".cunstructionTabLink", ".cunstructionTabContent");
+tabs(".partnersTabLink", ".partnersTabContent");
+
+//accordian init
+accordianInit(".accordian_tab");
 
 // sccroll gsap
 // gsap.registerPlugin(ScrollTrigger);

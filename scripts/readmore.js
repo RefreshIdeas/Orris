@@ -35,7 +35,7 @@ export class ReadMore extends HTMLElement {
       if (!this.isOpen) {
         // Closed
         this.innerHTML = `
-            <p class="text-tertiary_clr text-[14px] leading-[25px] ">
+            <p class="">
               ${this.originalTextContent.trim().slice(0, this.limit)}&hellip;
               <button type="button" class="text-primary_clr">${
                 this.more

@@ -37,13 +37,16 @@
 
 
 
+
+
+
 // project overview
 .overviewTabContent{
 
 }
 
 .overviewTabLinks{
-    @apply flex justify-center;
+    @apply  md:flex hidden justify-center;
 .overviewTabLink{
     @apply border-r-[1px] border-secondary_border_clr text-[17px] leading-[50px] text-[#C1C1C1] px-[20px] uppercase;
 &:last-child{
@@ -56,3 +59,34 @@
 
 }
 }
+
+
+// gallery
+.galleryTabLinks{
+    @apply flex justify-center;
+.galleryTabLink{
+    @apply border-b-[2px] border-b-white md:text-[20px] text-[14px] w-max leading-[20px] md:leading-[50px] text-[#C1C1C1] md:px-[20px] px-[10px] uppercase;
+
+
+&.active{
+    @apply text-tertiary_clr border-b-[1px] border-b-black
+}
+
+}
+}
+
+
+// gallery
+.partnersTabLinks{
+    @apply flex justify-center;
+.partnersTabLink{
+    @apply border-b-[2px] border-b-white md:text-[18px] text-[14px] w-max leading-[20px] md:leading-[40px] text-[#C1C1C1] md:px-[20px] px-[10px] uppercase;
+
+
+&.active{
+    @apply text-tertiary_clr border-b-[1px] border-b-black
+}
+
+}
+}
+

@@ -4,8 +4,8 @@
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   display: block;
-  height: 15px;
-  width: 15px;
+  height: 13px;
+  width: 13px;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 212 / var(--tw-bg-opacity));
@@ -68,7 +68,23 @@
   }
 }
 
-.black_Arrow_Vcenter {
+.center_slide {
+  position: unset !important;
+  .owl-item{
+    opacity: 0.8;
+    &.active{
+      opacity: 1;
+    }
+  }
+
+  .owl-stage-outer {
+    overflow: visible !important;
+    position: unset !important;
+    .item {
+      position: relative;
+    
+    }
+  }
   .owl-nav {
     position: absolute;
     left: 50%;
@@ -84,17 +100,25 @@
       }
     }
   }
-
   .owl-dots {
-    @apply flex justify-center lg:justify-end items-center lg:mt-[-60px] mt-[40px] mr-0 relative;
-    button {
-      span {
-        @apply h-[15px] w-[15px] rounded-full bg-neutral-300 block mx-2;
-      }
-      &.active {
-        span {
-          @apply bg-primary_clr;
-        }
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+ }
+
+}
+
+
+.white_bg-Arrow{
+  .owl-nav {
+    
+
+    
+    @apply flex justify-between items-center lg:bottom-[50%] bottom-[7px] z-20  lg:w-[100%] w-[130px] mx-auto lg:absolute lg:left-[-50%] lg:translate-x-[50%] lg:translate-y-[50%] lg:mt-0 mt-[20px];
+    button.owl-prev,button.owl-next {
+      @apply lg:w-[75px] w-[60px]  lg:h-[75px] h-[60px]  flex items-center justify-center bg-white opacity-60 shadow-xl;
+      svg {
+        @apply text-black ;
       }
     }
   }
@@ -138,21 +162,8 @@
 // CUSTOM CHANGES
 
 .featured_projects {
-  position: unset !important;
-.owl-item{
-  opacity: 0.8;
-  &.active{
-    opacity: 1;
-  }
-}
-  .owl-stage-outer {
-    overflow: visible !important;
-    position: unset !important;
-    .item {
-      position: relative;
-    
-    }
-  }
+ 
+  
 }
 
 .what_we_do{
