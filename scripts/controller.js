@@ -7,6 +7,7 @@ import { ReadMore } from "./readmore";
 import { tabs } from "./tabs";
 import "./customScroll";
 import { accordianInit } from "./accordian";
+import Lenis from "@studio-freight/lenis";
 
 $(".white_Arrow_Vcenter").owlCarousel({
   loop: true,
@@ -164,7 +165,7 @@ $(".what_we_do").owlCarousel({
   margin: 10,
   nav: true,
   autoplayHoverPause: true,
-
+  onDrag: false,
   dots: true,
   dotsEach: 2,
   onInitialized: function (event) {
@@ -258,17 +259,17 @@ $(".specification_slider").owlCarousel({
 
 $(".owl-prev").html(
   `
-  <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path id="Vector" d="M13.5 3.11083V3.11161L13.5 15.3884L13.5 15.3892C13.5006 15.7713 13.3848 16.1487 13.1619 16.4779C12.9388 16.8073 12.6164 17.0764 12.228 17.2493C11.7509 17.4583 11.2181 17.5396 10.691 17.482C10.1647 17.4245 9.66971 17.2314 9.26161 16.9285L1.2626 10.7962C1.02045 10.6003 0.828869 10.3608 0.69834 10.0953C0.567108 9.82838 0.5 9.54024 0.5 9.25C0.5 8.95976 0.567108 8.67162 0.69834 8.40471C0.828868 8.13923 1.02045 7.89975 1.2626 7.70382L9.2616 1.57149C9.66971 1.2686 10.1647 1.07552 10.691 1.01801C11.2181 0.960424 11.751 1.04167 12.2281 1.25072C12.6164 1.42364 12.9388 1.69267 13.1619 2.02206C13.3848 2.35133 13.5006 2.72873 13.5 3.11083ZM14 3.11161L14 15.3884C14.0008 15.8731 13.8537 16.348 13.5759 16.7583L14 3.11161Z" stroke="#007A7F"/>
-  </svg>
-  `
+    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="Vector" d="M13.5 3.11083V3.11161L13.5 15.3884L13.5 15.3892C13.5006 15.7713 13.3848 16.1487 13.1619 16.4779C12.9388 16.8073 12.6164 17.0764 12.228 17.2493C11.7509 17.4583 11.2181 17.5396 10.691 17.482C10.1647 17.4245 9.66971 17.2314 9.26161 16.9285L1.2626 10.7962C1.02045 10.6003 0.828869 10.3608 0.69834 10.0953C0.567108 9.82838 0.5 9.54024 0.5 9.25C0.5 8.95976 0.567108 8.67162 0.69834 8.40471C0.828868 8.13923 1.02045 7.89975 1.2626 7.70382L9.2616 1.57149C9.66971 1.2686 10.1647 1.07552 10.691 1.01801C11.2181 0.960424 11.751 1.04167 12.2281 1.25072C12.6164 1.42364 12.9388 1.69267 13.1619 2.02206C13.3848 2.35133 13.5006 2.72873 13.5 3.11083ZM14 3.11161L14 15.3884C14.0008 15.8731 13.8537 16.348 13.5759 16.7583L14 3.11161Z" stroke="#007A7F"/>
+    </svg>
+    `
 );
 $(".owl-next").html(
   `
-  <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path id="Vector" d="M0.500003 14.8892V14.8884L0.500004 2.61161L0.500002 2.61083C0.499407 2.22873 0.615159 1.85133 0.838146 1.52206C1.06122 1.19265 1.38362 0.923612 1.77199 0.750693C2.24905 0.541662 2.78192 0.460426 3.30901 0.518016C3.8353 0.575518 4.33029 0.768597 4.73839 1.07149L12.7374 7.20382C12.9796 7.39974 13.1711 7.63923 13.3017 7.90471C13.4329 8.17162 13.5 8.45976 13.5 8.75C13.5 9.04024 13.4329 9.32838 13.3017 9.59529C13.1711 9.86077 12.9796 10.1003 12.7374 10.2962L4.7384 16.4285C4.33029 16.7314 3.83531 16.9245 3.30902 16.982C2.7819 17.0396 2.24901 16.9583 1.77192 16.7493C1.38359 16.5764 1.06121 16.3073 0.838146 15.9779C0.615159 15.6487 0.499407 15.2713 0.500003 14.8892ZM2.86102e-06 14.8884L2.86102e-06 2.61161C-0.000752449 2.12694 0.146302 1.65197 0.424147 1.2417L2.86102e-06 14.8884Z" stroke="#007A7F"/>
-  </svg>
-  `
+    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="Vector" d="M0.500003 14.8892V14.8884L0.500004 2.61161L0.500002 2.61083C0.499407 2.22873 0.615159 1.85133 0.838146 1.52206C1.06122 1.19265 1.38362 0.923612 1.77199 0.750693C2.24905 0.541662 2.78192 0.460426 3.30901 0.518016C3.8353 0.575518 4.33029 0.768597 4.73839 1.07149L12.7374 7.20382C12.9796 7.39974 13.1711 7.63923 13.3017 7.90471C13.4329 8.17162 13.5 8.45976 13.5 8.75C13.5 9.04024 13.4329 9.32838 13.3017 9.59529C13.1711 9.86077 12.9796 10.1003 12.7374 10.2962L4.7384 16.4285C4.33029 16.7314 3.83531 16.9245 3.30902 16.982C2.7819 17.0396 2.24901 16.9583 1.77192 16.7493C1.38359 16.5764 1.06121 16.3073 0.838146 15.9779C0.615159 15.6487 0.499407 15.2713 0.500003 14.8892ZM2.86102e-06 14.8884L2.86102e-06 2.61161C-0.000752449 2.12694 0.146302 1.65197 0.424147 1.2417L2.86102e-06 14.8884Z" stroke="#007A7F"/>
+    </svg>
+    `
 );
 $(".what_we_do .item").click((e) => {
   $(".what_we_do").trigger(
@@ -466,39 +467,40 @@ function section_nav_active_handler(element) {
   )}px;width:${elementDTL.width}px`;
 }
 
-// custom dropdown
-
-const dropDown_tab = document.querySelectorAll(".dropDown_tab");
 const dropdown_btn = document.querySelector(".dropdown-btn");
+// custom dropdown
+if (dropdown_btn) {
+  const dropDown_tab = document.querySelectorAll(".dropDown_tab");
+  const dropdown_btn = document.querySelector(".dropdown-btn");
 
-dropDown_tab.forEach((val) => {
-  val.addEventListener("click", () => {
-    selectOption(val.getAttribute("data-dropdown"));
+  dropDown_tab.forEach((val) => {
+    val.addEventListener("click", () => {
+      selectOption(val.getAttribute("data-dropdown"));
+    });
   });
-});
 
-dropdown_btn.addEventListener("click", toggleDropdown);
-
-function toggleDropdown() {
-  const dropdownContent = document.getElementById("dropdownOptions");
-  dropdownContent.style.display =
-    dropdownContent.style.display === "block" ? "none" : "block";
-}
-
-function selectOption(option) {
-  const dropdownBtn = document.querySelector(".dropdown-btn");
-  dropdownBtn.textContent = option;
-  toggleDropdown();
-}
-
-// Close the dropdown when clicking outside of it
-document.addEventListener("click", function (event) {
-  const dropdown = document.getElementById("optionsDropdown");
-  if (!dropdown.contains(event.target)) {
+  dropdown_btn.addEventListener("click", toggleDropdown);
+  function toggleDropdown() {
     const dropdownContent = document.getElementById("dropdownOptions");
-    dropdownContent.style.display = "none";
+    dropdownContent.style.display =
+      dropdownContent.style.display === "block" ? "none" : "block";
   }
-});
+
+  function selectOption(option) {
+    const dropdownBtn = document.querySelector(".dropdown-btn");
+    dropdownBtn.textContent = option;
+    toggleDropdown();
+  }
+
+  // Close the dropdown when clicking outside of it
+  document.addEventListener("click", function (event) {
+    const dropdown = document.getElementById("optionsDropdown");
+    if (!dropdown.contains(event.target)) {
+      const dropdownContent = document.getElementById("dropdownOptions");
+      dropdownContent.style.display = "none";
+    }
+  });
+}
 
 // external includes 🔴🔴🔴
 
@@ -524,6 +526,7 @@ scrollNav.forEach((element) => {
 // read more
 customElements.define("read-more", ReadMore);
 // tabs
+tabs(".heroSectionTabLink", ".heroSectionTabContent");
 tabs(".overviewTabLink", ".overviewTabContent");
 tabs(".galleryTabLink", ".galleryTabContent");
 tabs(".cunstructionTabLink", ".cunstructionTabContent");
@@ -548,3 +551,66 @@ accordianInit(".accordian_tab");
 // tl.to(".testinbg", {
 //   x: 100,
 // });
+
+gsap.registerPlugin(ScrollTrigger);
+
+const heroSection = document.querySelector(".hero_Section");
+const contentSection = document.querySelector(".feature_section");
+gsap.utils.toArray(".fadeUp").forEach((element) => {
+  gsap.set(element, {
+    opacity: 0,
+    translateY: 40,
+    // Add other initial styles as needed
+  });
+
+  gsap.to(element, {
+    opacity: 1,
+    translateY: 0,
+    scrub: true,
+    scrollTrigger: {
+      trigger: element,
+      start: "top 80%",
+      end: "top 70%",
+      scrub: true,
+      markers: true,
+    },
+  });
+});
+
+gsap.to(".hero_Section video", {
+  scale: 1.2,
+  opacity: 1,
+  scrollTrigger: {
+    trigger: heroSection,
+    start: "center center",
+    end: "180% 90%",
+    scrub: true,
+  },
+});
+
+// gsap.to(".feature_section", {
+//   scale: 1.1,
+//   background: "white",
+//   scrollTrigger: {
+//     trigger: contentSection,
+//     start: screen.width > 1280 ? "bottom 30%" : "top center",
+//     end: "bottom top",
+//     markers: true,
+//     end: "end 0",
+//     scrub: true,
+//   },
+// });
+
+// smooth scroll
+const lenis = new Lenis();
+
+lenis.on("scroll", (e) => {
+  console.log(e);
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
