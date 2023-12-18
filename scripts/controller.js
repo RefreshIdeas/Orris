@@ -466,7 +466,41 @@ function section_nav_active_handler(element) {
   )}px;width:${elementDTL.width}px`;
 }
 
-// section nav
+// custom dropdown
+
+const dropDown_tab = document.querySelectorAll(".dropDown_tab");
+const dropdown_btn = document.querySelector(".dropdown-btn");
+
+dropDown_tab.forEach((val) => {
+  val.addEventListener("click", () => {
+    selectOption(val.getAttribute("data-dropdown"));
+  });
+});
+
+dropdown_btn.addEventListener("click", toggleDropdown);
+
+function toggleDropdown() {
+  const dropdownContent = document.getElementById("dropdownOptions");
+  dropdownContent.style.display =
+    dropdownContent.style.display === "block" ? "none" : "block";
+}
+
+function selectOption(option) {
+  const dropdownBtn = document.querySelector(".dropdown-btn");
+  dropdownBtn.textContent = option;
+  toggleDropdown();
+}
+
+// Close the dropdown when clicking outside of it
+document.addEventListener("click", function (event) {
+  const dropdown = document.getElementById("optionsDropdown");
+  if (!dropdown.contains(event.target)) {
+    const dropdownContent = document.getElementById("dropdownOptions");
+    dropdownContent.style.display = "none";
+  }
+});
+
+// external includes 🔴🔴🔴
 
 // scroll to view
 
@@ -478,9 +512,7 @@ scrollNav.forEach((element) => {
     );
     let elementDimention = elements.getBoundingClientRect();
     let showOnCenter =
-      screen.width > 1024
-        ? (elementDimention.height - screen.height) / 2
-        : -150;
+      screen.width > 1024 ? (elementDimention.height - screen.height) / 2 : -85;
     window.scrollTo({
       top: window.pageYOffset + elementDimention.top + showOnCenter,
       left: 0,

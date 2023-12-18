@@ -3,6 +3,9 @@ import "https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.
 (function ($) {
   $(window).on("load", function () {
     $(".content").mCustomScrollbar({});
-    console.log("aaa");
+    $(".content_with_scroll_buttons").mCustomScrollbar({
+      scrollButtons: { enable: true },
+      scrollInertia: 1,
+    });
   });
 })(jQuery);
