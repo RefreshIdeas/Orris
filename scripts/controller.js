@@ -544,7 +544,7 @@ accordianInit(".accordian_tab");
 //     start: "center 80%", // when the top of the trigger hits the top of the viewport
 //     end: "center 82%", // end after scrolling 500px beyond the start
 //     scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-//     markers: true,
+    markers: true,
 //   },
 // });
 
@@ -569,10 +569,53 @@ gsap.utils.toArray(".fadeUp").forEach((element) => {
     scrub: true,
     scrollTrigger: {
       trigger: element,
-      start: "top 80%",
+      start: "top 85%",
       end: "top 70%",
       scrub: true,
-      markers: true,
+      // markers: true,
+    },
+  });
+});
+
+gsap.utils.toArray(".fadeUp-early").forEach((element) => {
+  gsap.set(element, {
+    opacity: 0,
+    translateY: 40,
+    // Add other initial styles as needed
+  });
+
+  gsap.to(element, {
+    opacity: 1,
+    translateY: 0,
+    scrub: true,
+    scrollTrigger: {
+      trigger: element,
+      start: "top 95%",
+      end: "top 85%",
+      scrub: true,
+      // markers: true,
+    },
+  });
+});
+
+gsap.utils.toArray(".scaleUp").forEach((element) => {
+  gsap.set(element, {
+    opacity: 0,
+    rotateX: 40,
+    transformOrigin:"top"
+    // Add other initial styles as needed
+  });
+
+  gsap.to(element, {
+    opacity: 1,
+    rotateX: 0,
+    scrub: true,
+    scrollTrigger: {
+      trigger: element,
+      start: "top 80%",
+      end: "top 65%",
+      scrub: true,
+      // markers: true,
     },
   });
 });
@@ -595,7 +638,7 @@ gsap.to(".hero_Section video", {
 //     trigger: contentSection,
 //     start: screen.width > 1280 ? "bottom 30%" : "top center",
 //     end: "bottom top",
-//     markers: true,
+    // markers: true,
 //     end: "end 0",
 //     scrub: true,
 //   },
