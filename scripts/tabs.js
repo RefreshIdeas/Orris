@@ -13,6 +13,13 @@ export let tabs = (tabButton, tabBlock) => {
         e.classList.remove("active");
       });
       document.querySelector(`#${dataset}`).classList.add("active");
+
+      // custum for monthList
+      let monthList = document.querySelector(".monthListTabLinks");
+      if (monthList && target.classList.contains("yearListTabLink")) {
+        let activeTab = document.querySelector(".yearListTabContent.active");
+        activeTab.querySelector(".monthListTabLinks").children[0].click();
+      }
     });
   });
 };

@@ -90,3 +90,39 @@
 }
 }
 
+
+
+// yearList
+
+@include LARGER_THEN_md{
+.yearListTabLinks{
+    @apply flex justify-start;
+.yearListTabLink{
+    @apply border-b-[2px] border-b-white md:text-[20px] text-[14px] w-max leading-[20px] md:leading-[40px] text-[#C1C1C1] md:px-[10px] px-[10px] uppercase;
+
+
+&.active{
+    @apply text-tertiary_clr border-b-[1px] border-b-black
+}
+
+}
+}
+}
+
+// monthList
+
+
+@include LARGER_THEN_md{
+    .monthListTabLinks{
+        @apply flex justify-start border-b-[1px] border-[#80808039] p-0;
+    .monthListTabLink{
+        @apply  md:text-[20px] text-[14px] w-max leading-[20px] md:leading-[40px] text-[#C1C1C1] md:px-[14px] px-[10px] capitalize;
+    
+    
+    &.active{
+        @apply text-white bg-[#808080]
+    }
+    
+    }
+    }
+}

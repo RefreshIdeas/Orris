@@ -42,6 +42,7 @@ module.exports = {
         // border colors
         primary_border_clr: "#D9D9D9",
         secondary_border_clr: "#E1E1E1",
+        teritary_border_clr: "#DFDFDF",
 
         // borderClrs
       },

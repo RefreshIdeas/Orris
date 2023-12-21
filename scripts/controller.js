@@ -35,6 +35,7 @@ $(".featured_projects").owlCarousel({
   nav: true,
   autoplayHoverPause: true,
   dots: true,
+  autoplay:true,
   responsive: {
     0: {
       items: 1,
@@ -531,6 +532,10 @@ tabs(".overviewTabLink", ".overviewTabContent");
 tabs(".galleryTabLink", ".galleryTabContent");
 tabs(".cunstructionTabLink", ".cunstructionTabContent");
 tabs(".partnersTabLink", ".partnersTabContent");
+tabs(".yearListTabLink", ".yearListTabContent");
+tabs(".monthListTabLink", ".monthListTabContent");
+
+
 
 //accordian init
 accordianInit(".accordian_tab");
@@ -544,15 +549,15 @@ accordianInit(".accordian_tab");
 //     start: "center 80%", // when the top of the trigger hits the top of the viewport
 //     end: "center 82%", // end after scrolling 500px beyond the start
 //     scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-    markers: true,
-//   },
-// });
+markers: true,
+  //   },
+  // });
 
-// tl.to(".testinbg", {
-//   x: 100,
-// });
+  // tl.to(".testinbg", {
+  //   x: 100,
+  // });
 
-gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
 const heroSection = document.querySelector(".hero_Section");
 const contentSection = document.querySelector(".feature_section");
@@ -602,7 +607,7 @@ gsap.utils.toArray(".scaleUp").forEach((element) => {
   gsap.set(element, {
     opacity: 0,
     rotateX: 40,
-    transformOrigin:"top"
+    transformOrigin: "top",
     // Add other initial styles as needed
   });
 
@@ -620,7 +625,7 @@ gsap.utils.toArray(".scaleUp").forEach((element) => {
   });
 });
 
-gsap.to(".hero_Section video", {
+gsap.to(".hero_Section video,.hero_Section img", {
   scale: 1.2,
   opacity: 1,
   scrollTrigger: {
@@ -638,7 +643,7 @@ gsap.to(".hero_Section video", {
 //     trigger: contentSection,
 //     start: screen.width > 1280 ? "bottom 30%" : "top center",
 //     end: "bottom top",
-    // markers: true,
+// markers: true,
 //     end: "end 0",
 //     scrub: true,
 //   },
