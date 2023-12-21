@@ -1,4 +1,4 @@
-import "../content/scss/site.scss";
+// import "../content/scss/site.scss";
 
 import "owl.carousel"; // Owl Carousel JavaScript
 import "./events";
@@ -469,40 +469,45 @@ function section_nav_active_handler(element) {
     parent_postiion - elementDTL.left
   )}px;width:${elementDTL.width}px`;
 }
+const dropdownContainers = document.querySelectorAll(".dropdown-container");
 
-const dropdown_btn = document.querySelector(".dropdown-btn");
-// custom dropdown
-if (dropdown_btn) {
-  const dropDown_tab = document.querySelectorAll(".dropDown_tab");
-  const dropdown_btn = document.querySelector(".dropdown-btn");
+// Initialize each dropdown
+dropdownContainers.forEach((container) => {
+  setupCustomDropdown(container);
+});
 
-  dropDown_tab.forEach((val) => {
-    val.addEventListener("click", () => {
-      selectOption(val.getAttribute("data-dropdown"));
+function setupCustomDropdown(container) {
+  const dropdownBtn = container.querySelector(".dropdown-btn");
+  const dropDownTabs = container.querySelectorAll(".dropDown_tab");
+  const dropdownContent = container.querySelector(".dropdown-content");
+
+  if (dropdownBtn && dropDownTabs.length > 0) {
+    dropDownTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        selectOption(tab.getAttribute("data-dropdown"), container);
+      });
     });
-  });
 
-  dropdown_btn.addEventListener("click", toggleDropdown);
-  function toggleDropdown() {
-    const dropdownContent = document.getElementById("dropdownOptions");
+    dropdownBtn.addEventListener("click", () => toggleDropdown(container));
+
+    document.addEventListener("click", function (event) {
+      if (!container.contains(event.target)) {
+        dropdownContent.style.display = "none";
+      }
+    });
+  }
+
+  function toggleDropdown(container) {
+    const dropdownContent = container.querySelector(".dropdown-content");
     dropdownContent.style.display =
       dropdownContent.style.display === "block" ? "none" : "block";
   }
 
-  function selectOption(option) {
-    const dropdownBtn = document.querySelector(".dropdown-btn");
+  function selectOption(option, container) {
+    const dropdownBtn = container.querySelector(".dropdown-btn");
     dropdownBtn.textContent = option;
-    toggleDropdown();
+    toggleDropdown(container);
   }
-
-  // Close the dropdown when clicking outside of it
-  document.addEventListener("click", function (event) {
-    const dropdown = document.getElementById("optionsDropdown");
-    if (!dropdown.contains(event.target)) {
-      const dropdownContent = document.getElementById("dropdownOptions");
-      dropdownContent.style.display = "none";
-    }
-  });
 }
 
 // external includes 🔴🔴🔴
@@ -652,9 +657,7 @@ gsap.to(".hero_Section video,.hero_Section img", {
 // smooth scroll
 const lenis = new Lenis();
 
-lenis.on("scroll", (e) => {
-  console.log(e);
-});
+lenis.on("scroll", (e) => {});
 
 function raf(time) {
   lenis.raf(time);
