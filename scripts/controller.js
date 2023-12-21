@@ -1,3 +1,5 @@
+import "../content/scss/site.scss";
+
 import "owl.carousel"; // Owl Carousel JavaScript
 import "./events";
 import VenoBox from "venobox";
@@ -35,7 +37,7 @@ $(".featured_projects").owlCarousel({
   nav: true,
   autoplayHoverPause: true,
   dots: true,
-  autoplay:true,
+  autoplay: true,
   responsive: {
     0: {
       items: 1,
@@ -534,8 +536,6 @@ tabs(".cunstructionTabLink", ".cunstructionTabContent");
 tabs(".partnersTabLink", ".partnersTabContent");
 tabs(".yearListTabLink", ".yearListTabContent");
 tabs(".monthListTabLink", ".monthListTabContent");
-
-
 
 //accordian init
 accordianInit(".accordian_tab");

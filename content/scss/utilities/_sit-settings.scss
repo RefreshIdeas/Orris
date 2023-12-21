@@ -7,7 +7,7 @@ html {
 // fonts setting
 @font-face {
   font-family: "Centabel";
-  src: url("/content/fonts/centabel.ttf");
+  src: url("./content/fonts/centabel.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -36,5 +36,5 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cursor_circle_view {
-  cursor: url("/uploads/fldCMS/svg/viewCursor.svg") 64 64, pointer;
+  cursor: url("./uploads/fldCMS/svg/viewCursor.svg") 64 64, pointer;
 }
