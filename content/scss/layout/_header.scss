@@ -101,6 +101,33 @@ header{
   }
 }
 
+.white_nav_hamburger{
+  .hamburger_menu{
+    .text-secondary_clr{
+      @apply duration-500 text-white
+    }
+    .toggle{
+
+      .line-toggle{
+        @apply duration-500 bg-white
+      }
+    }
+
+    &:hover{
+      .text-secondary_clr{
+        @apply text-tertiary_BG_clr
+      }
+      .toggle{
+  
+        .line-toggle{
+          @apply bg-tertiary_BG_clr
+        }
+      }
+  
+    }
+  }
+}
+
 //fixed on scroll
 header.scrollActive {
   // transition: 0.3s linear;

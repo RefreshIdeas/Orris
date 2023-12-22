@@ -50,7 +50,7 @@
         }
 
         .subNav a {
-          @apply text-[18px] font-thin text-white leading-[45px] sm:py-[10px] py-[20px];
+          @apply text-[18px] font-thin text-white leading-[45px] sm:py-[10px] py-[20px] duration-500 hover:text-tertiary_BG_clr;
         }
       }
     }
