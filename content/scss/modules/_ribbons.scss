@@ -18,11 +18,17 @@
       polygon(100% 0,0 0,0 calc(100% - var(--f)),100% calc(100% - var(--f)),
         calc(100% - var(--r)) calc(50% - var(--f)/2));
         &.deliverd{
-            @apply bg-tertiary_BG_clr
+          @apply bg-primary_clr
             }
 
-            &.joint-venture{
-                @apply bg-primary_clr
+            &.possision_started{
+              @apply bg-tertiary_BG_clr
+              
                 }
+
+                &.joint-venture{
+                  @apply bg-[#D2AF6F]
+                  
+                    }
   }
  

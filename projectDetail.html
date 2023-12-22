@@ -217,13 +217,15 @@
 
     <section class="hero_Section inner_page">
 
-        <div class="relative h-[70vh] w-full overflow-hidden">
+        <div class="relative md:h-[70vh] h-[55vh] w-full overflow-hidden">
             <video autoplay muted loop
                 src="https://s3-figma-videos-production-sig.figma.com/video/1097853230729768743/TEAM/8e5c/a6d5/-832d-4881-b477-130655a0e053?Expires=1703462400&Signature=H3oR3eBUBcI968XK8eDsJLPxGEJOk2~RJ8XcD5o~tl5z2Ya5z5r-ZpyJynrqxK8eVJapf8jipCKeSmfnV5K-ztUSO6SsrZjjctw12QLaN2xVixFpZuMo56E~MyqV0LA-lxcXSBkwuu92jDkIVovPY5AEu0fp20-eF3Q7Y3f0b2LYqkclxDPIQlIzTrxRTrdHreDLygjk08vpDlwfTmQ2z50iQOIu-o1UiNmE5~-1YAtiiWvNIcouOpZN1OR7SrZjS8c0D2VGtblWzxDUp9a0i6Cd5CzM945rQePrRAvVfpnRmRi5XkELBoNz-TTSoS4lGKOKvZyHCGuzBpULa4fdpA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 class="object-cover h-full w-full "></video>
-            <div class="hero_section_text container">
-                <div> <img src="./uploads/fldCMS/aster-court-premier-batch.png" alt=""
-                        class="md:md:mb-[40px] mb-[30px]"></div>
+            <div class="hero_section_text ">
+                <div class="container heroTitle active"> <img src="./uploads/fldCMS/aster-court-premier-batch.png"
+                        alt=""
+                        class="md:mb-[40px] mb-[30px] max-w-full !scale-100 md:bg-transparent bg-black bg-opacity-40">
+                </div>
             </div>
         </div>
 
@@ -232,14 +234,15 @@
     <section>
         <div class="container py-sectionPadding">
             <div class="flex flex-wrap mx-[-15px]">
-                <div class="lg:basis-5/12 basis-full lg:mb-0 mb-[15px]">
+                <div class="lg:basis-5/12 basis-full lg:mb-0 mb-[15px] fadeUp">
                     <div class="border-secondary_border_clr border-[1px] h-full flex justify-center items-center">
                         <img src="https://www.orris.in/common/images/Location_th.jpg" alt="">
                     </div>
                 </div>
                 <div class="lg:basis-7/12 basis-full">
                     <div>
-                        <div class="border-secondary_border_clr border-[1px] md:p-5 px-5 py-1 md:mb-[30px] mb-[15px]">
+                        <div
+                            class="border-secondary_border_clr border-[1px] md:p-5 px-5 py-1 md:mb-[30px] mb-[15px] fadeUp">
 
                             <div class="tablinks overviewTabLinks">
                                 <button class="tablink overviewTabLink active" data-tab="Overview">Overview</button>
@@ -440,7 +443,7 @@
 
                         </div>
 
-                        <div class="border-secondary_border_clr border-[1px] px-5 pt-[30px] pb-[35px]">
+                        <div class="border-secondary_border_clr border-[1px] px-5 pt-[30px] pb-[35px] fadeUp">
                             <h3 class="text-tertiary_clr text-[1.7rem] font-normal text-center uppercase">
                                 Project Resources
                             </h3>
@@ -476,23 +479,26 @@
 
 
     <section>
-        <div class="container">
-            <div class="tablinks galleryTabLinks">
-                <button class="tablink galleryTabLink active" data-tab="Gallery">Gallery</button>
-                <button class="tablink galleryTabLink" data-tab="possessions">possessions</button>
-                <button class="tablink galleryTabLink" data-tab="constuction-update">constuction update</button>
+        <div class="container px-0">
+            <div class="tablinks galleryTabLinks px-[10px] fadeUp">
+                <button class="tablink max-[640px]:!text-[12px] galleryTabLink active"
+                    data-tab="Gallery">Gallery</button>
+                <button class="tablink max-[640px]:!text-[12px] galleryTabLink"
+                    data-tab="possessions">possessions</button>
+                <a href="#" class="tablink max-[640px]:!text-[12px] galleryTabLink"
+                    data-tab="constuction-update">constuction update</a>
 
             </div>
 
         </div>
 
-        <div id="Gallery" class="tabcontent md:mt-[40px] mt-[20px] md:mb-0 mb-[20px] galleryTabContent active">
+        <div id="Gallery" class="tabcontent md:mt-[40px] mt-[20px] md:mb-0 mb-[20px] galleryTabContent active fadeUp">
             <div class="relative lg:overflow-hidden">
                 <div
-                    class="owl-carousel owl-theme center_slide galery_slider  md:mb-0 container mb-0 lg:max-w-[75%] 2xl:max-w-[60%] mx-auto lg:overflow-visible ">
+                    class="owl-carousel owl-theme center_slide galery_slider  md:mb-0 container  max-w-[80%] mb-0 lg:max-w-[75%] 2xl:max-w-[60%] mx-auto lg:overflow-visible ">
                     <div class="item relative zoomOnHover group  overflow-hidden">
                         <div class="bg-black featured_media relative z-10  ">
-                            <img class="h-[400px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
+                            <img class="h-[320px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
                                 src="https://orris.in/images/project_gallery/157199676820191025.jpg" />
 
                         </div>
@@ -501,7 +507,7 @@
 
                     <div class="item relative zoomOnHover group  overflow-hidden">
                         <div class="bg-black featured_media relative z-10  ">
-                            <img class="h-[400px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
+                            <img class="h-[320px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
                                 src="https://orris.in/images/project_gallery/157199674520191025.jpg" />
 
                         </div>
@@ -509,7 +515,7 @@
                     </div>
                     <div class="item relative zoomOnHover group  overflow-hidden">
                         <div class="bg-black featured_media relative z-10  ">
-                            <img class="h-[400px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
+                            <img class="h-[320px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
                                 src="https://orris.in/images/project_gallery/157199672520191025.jpg" />
 
                         </div>
@@ -520,7 +526,7 @@
         </div>
 
 
-        <div id="possessions" class="tabcontent md:mt-[40px] mt-[20px] md:mb-0 mb-[20px] galleryTabContent ">
+        <div id="possessions" class="tabcontent md:mt-[40px] mt-[20px] md:mb-0 mb-[20px] galleryTabContent fadeUp">
             <div class="container">
                 <div class="owl-carousel owl-theme testimonial_slider desktop_common_dots mobile_common_arrows">
                     <div class="item relative zoomOnHover">
@@ -561,7 +567,7 @@
 
         </div>
 
-        <div id="constuction-update" class="tabcontent md:mt-[40px] mt-[20px] md:mb-0 mb-[20px] galleryTabContent ">
+        <!-- <div id="constuction-update" class="tabcontent md:mt-[40px] mt-[20px] md:mb-0 mb-[20px] galleryTabContent ">
 
             <div class="lg:max-w-[75%] 2xl:max-w-[60%] mx-auto px-[10px] mb-[20px] container">
                 <div class="tablinks flex px-0 mx-0 ">
@@ -604,7 +610,7 @@
                         class="owl-carousel owl-theme center_slide galery_slider  md:mb-0 container mb-0 lg:max-w-[75%] 2xl:max-w-[60%] mx-auto lg:overflow-visible ">
                         <div class="item relative zoomOnHover group  overflow-hidden">
                             <div class="bg-black featured_media relative z-10  ">
-                                <img class="h-[400px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
+                                <img class="h-[320px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
                                     src="https://orris.in/images/project_gallery/157199676820191025.jpg" />
 
                             </div>
@@ -613,7 +619,7 @@
 
                         <div class="item relative zoomOnHover group  overflow-hidden">
                             <div class="bg-black featured_media relative z-10  ">
-                                <img class="h-[400px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
+                                <img class="h-[320px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
                                     src="https://orris.in/images/project_gallery/157199674520191025.jpg" />
 
                             </div>
@@ -621,7 +627,7 @@
                         </div>
                         <div class="item relative zoomOnHover group  overflow-hidden">
                             <div class="bg-black featured_media relative z-10  ">
-                                <img class="h-[400px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
+                                <img class="h-[320px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
                                     src="https://orris.in/images/project_gallery/157199672520191025.jpg" />
 
                             </div>
@@ -641,7 +647,7 @@
                         class="owl-carousel owl-theme center_slide galery_slider  md:mb-0 container mb-0 lg:max-w-[75%] 2xl:max-w-[60%] mx-auto lg:overflow-visible ">
                         <div class="item relative zoomOnHover group  overflow-hidden">
                             <div class="bg-black featured_media relative z-10  ">
-                                <img class="h-[400px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
+                                <img class="h-[320px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
                                     src="https://orris.in/images/project_gallery/157199676820191025.jpg" />
 
                             </div>
@@ -650,7 +656,7 @@
 
                         <div class="item relative zoomOnHover group  overflow-hidden">
                             <div class="bg-black featured_media relative z-10  ">
-                                <img class="h-[400px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
+                                <img class="h-[320px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
                                     src="https://orris.in/images/project_gallery/157199674520191025.jpg" />
 
                             </div>
@@ -658,7 +664,7 @@
                         </div>
                         <div class="item relative zoomOnHover group  overflow-hidden">
                             <div class="bg-black featured_media relative z-10  ">
-                                <img class="h-[400px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
+                                <img class="h-[320px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
                                     src="https://orris.in/images/project_gallery/157199672520191025.jpg" />
 
                             </div>
@@ -667,7 +673,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
     </section>
@@ -675,7 +681,7 @@
 
     <section>
         <div class="container pt-sectionPadding">
-            <h2 class="sectionHeading text-tertiary_clr uppercase text-center ">
+            <h2 class="sectionHeading text-tertiary_clr uppercase text-center fadeUp">
                 Key Distances
             </h2>
 
@@ -683,12 +689,12 @@
                 <div class="lg:basis-4/12 md:basis-6/12 basis-full lg:mb-20 md:mb-[25px] mb-[20px]">
 
                     <div class="border-secondary_border_clr border-t-[1px] pt-[20px]">
-                        <h3 class="text-tertiary_clr text-[1.8rem] font-normal uppercase mb-2">
+                        <h3 class="text-tertiary_clr text-[1.8rem] font-normal uppercase mb-2 fadeUp">
                             05 Minutes
                         </h3>
 
                         <read-more limit="160" more="Read More +" less="Read Less -"
-                            class=" block text-tertiary_clr !text-[15px] leading-[25px] font-light">
+                            class=" block text-tertiary_clr !text-[15px] leading-[25px] font-light fadeUp-early bg-white">
                             <p> Delhi Public School, Sector-84,
                                 Gurugram <br>
                                 St. Xavier's High School, Sector-81, Gurugram<br>
@@ -700,12 +706,12 @@
                 <div class="lg:basis-4/12 md:basis-6/12 basis-full lg:mb-20 md:mb-[25px] mb-[20px]">
 
                     <div class="border-secondary_border_clr border-t-[1px] pt-[20px]">
-                        <h3 class="text-tertiary_clr text-[1.8rem] font-normal uppercase mb-2">
+                        <h3 class="text-tertiary_clr text-[1.8rem] font-normal uppercase mb-2 fadeUp">
                             05 Minutes
                         </h3>
 
                         <read-more limit="160" more="Read More +" less="Read Less -"
-                            class=" block text-tertiary_clr !text-[15px] leading-[25px] font-light">
+                            class=" block text-tertiary_clr !text-[15px] leading-[25px] font-light fadeUp-early bg-white">
                             <p> Aarvy Healthcare Super Specialty Hospital, Sector 90, Gurugram</p>
                         </read-more>
                     </div>
@@ -714,12 +720,12 @@
                 <div class="lg:basis-4/12 md:basis-6/12 basis-full lg:mb-20 md:mb-[25px] mb-[20px]">
 
                     <div class="border-secondary_border_clr border-t-[1px] pt-[20px]">
-                        <h3 class="text-tertiary_clr text-[1.8rem] font-normal uppercase mb-2">
+                        <h3 class="text-tertiary_clr text-[1.8rem] font-normal uppercase mb-2 fadeUp">
                             15 Minutes
                         </h3>
 
                         <read-more limit="160" more="Read More +" less="Read Less -"
-                            class=" block text-tertiary_clr !text-[15px] leading-[25px] font-light">
+                            class=" block text-tertiary_clr !text-[15px] leading-[25px] font-light fadeUp-early bg-white">
                             <p>Rockland Hospital, IMT Manesar, Gurugram </p>
                         </read-more>
                     </div>
@@ -729,12 +735,12 @@
                 <div class="lg:basis-4/12 md:basis-6/12 basis-full lg:mb-20 md:mb-[25px] mb-[20px]">
 
                     <div class="border-secondary_border_clr border-t-[1px] pt-[20px]">
-                        <h3 class="text-tertiary_clr text-[1.8rem] font-normal uppercase mb-2">
+                        <h3 class="text-tertiary_clr text-[1.8rem] font-normal uppercase mb-2 fadeUp">
                             25 Minutes
                         </h3>
 
                         <read-more limit="160" more="Read More +" less="Read Less -"
-                            class=" block text-tertiary_clr !text-[15px] leading-[25px] font-light">
+                            class=" block text-tertiary_clr !text-[15px] leading-[25px] font-light fadeUp-early bg-white">
                             <p>Medanta, The Medicity, Gurugram</p>
                         </read-more>
                     </div>
@@ -744,12 +750,12 @@
                 <div class="lg:basis-4/12 md:basis-6/12 basis-full lg:mb-20 md:mb-[25px] mb-[20px]">
 
                     <div class="border-secondary_border_clr border-t-[1px] pt-[20px]">
-                        <h3 class="text-tertiary_clr text-[1.8rem] font-normal uppercase mb-2">
+                        <h3 class="text-tertiary_clr text-[1.8rem] font-normal uppercase mb-2 fadeUp">
                             3
                         </h3>
 
                         <read-more limit="160" more="Read More +" less="Read Less -"
-                            class=" block text-tertiary_clr !text-[15px] leading-[25px] font-light">
+                            class=" block text-tertiary_clr !text-[15px] leading-[25px] font-light fadeUp-early bg-white">
                             <p>Cyber City, Gurugram </p>
                         </read-more>
                     </div>
@@ -759,12 +765,12 @@
                 <div class="lg:basis-4/12 md:basis-6/12 basis-full lg:mb-20 md:mb-[25px] mb-[20px]">
 
                     <div class="border-secondary_border_clr border-t-[1px] pt-[20px]">
-                        <h3 class="text-tertiary_clr text-[1.8rem] font-normal uppercase mb-2">
+                        <h3 class="text-tertiary_clr text-[1.8rem] font-normal uppercase mb-2 fadeUp">
                             35 Minutes
                         </h3>
 
                         <read-more limit="160" more="Read More +" less="Read Less -"
-                            class=" block text-tertiary_clr !text-[15px] leading-[25px] font-light">
+                            class=" block text-tertiary_clr !text-[15px] leading-[25px] font-light fadeUp-early bg-white">
                             <p>IGI Airport, New Delhi.</p>
                         </read-more>
                     </div>
@@ -778,10 +784,10 @@
 
     <section>
         <div class="container pb-sectionPadding pt-[30px]">
-            <h2 class="sectionHeading text-tertiary_clr uppercase text-center ">
+            <h2 class="sectionHeading text-tertiary_clr uppercase text-center fadeUp">
                 Virtual Tour-Apartment
             </h2>
-            <iframe width='100%' class="mt-[25px] md:mt-[30px] lg:h-[700px] md:[450px] h-[300px] shadow-md"
+            <iframe width='100%' class="mt-[25px] md:mt-[30px] lg:h-[700px] md:[450px] h-[400px] shadow-md fadeUp"
                 src='https://nsventures.in/Aster-court/'></iframe>
         </div>
     </section>
@@ -789,41 +795,42 @@
 
     <section>
         <div class="relative py-sectionPadding">
-            <h2 class="sectionHeading text-white uppercas  text-center">Specifications</h2>
+            <h2 class="sectionHeading text-white uppercas  text-center fadeUp">Specifications</h2>
             <img src="./uploads/fldCMS/specifications-section-bg.png"
                 class="absolute w-full h-full left-0 top-0 object-cover object-center z-[-1]" alt="">
 
             <div class="container">
                 <div class="white_bg-Arrow owl-carousel owl-theme specification_slider mt-[25px]">
-                    <div class="item p-[22px] border-white border-[1px]">
-                        <div class="bg-white text-center px-[20px] pt-[10px] pb-[20px]">
-                            <h4 class="border-secondary_border_clr border-b-[1px] pb-[0px] text-[18px] leading-[50px]">
+                    <div class="item p-[22px] border-white border-[1px] fadeUp">
+                        <div class="bg-white text-center px-[20px] pt-[10px] pb-[20px] fadeUp">
+                            <h4
+                                class="border-secondary_border_clr border-b-[1px] pb-[0px] text-[18px] leading-[50px] fadeUp">
                                 COMMON</h4>
 
 
                             <div class="speci_scroltx">
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Ceiling: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Oil Bound Distemper</p>
                                 </div>
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Walls: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">PoP punning with Acrylic
                                         Emulsion Paint</p>
                                 </div>
 
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">External Doors/ Windows: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">UPVC frames &amp; shutters with
                                         clear glass</p>
                                 </div>
 
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Doors: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Laminated Flush Doors</p>
                                 </div>
 
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Electrical Fittings: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Modular fittings and fixtures
                                     </p>
@@ -836,35 +843,36 @@
                         </div>
                     </div>
 
-                    <div class="item p-[22px] border-white border-[1px]">
-                        <div class="bg-white text-center px-[20px] pt-[10px] pb-[20px]">
-                            <h4 class="border-secondary_border_clr border-b-[1px] pb-[0px] text-[18px] leading-[50px]">
+                    <div class="item p-[22px] border-white border-[1px] fadeUp">
+                        <div class="bg-white text-center px-[20px] pt-[10px] pb-[20px] fadeUp">
+                            <h4
+                                class="border-secondary_border_clr border-b-[1px] pb-[0px] text-[18px] leading-[50px] fadeUp">
                                 COMMON</h4>
 
 
                             <div class="speci_scroltx">
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Ceiling: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Oil Bound Distemper</p>
                                 </div>
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Walls: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">PoP punning with Acrylic
                                         Emulsion Paint</p>
                                 </div>
 
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">External Doors/ Windows: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">UPVC frames &amp; shutters with
                                         clear glass</p>
                                 </div>
 
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Doors: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Laminated Flush Doors</p>
                                 </div>
 
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Electrical Fittings: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Modular fittings and fixtures
                                     </p>
@@ -877,35 +885,36 @@
                         </div>
                     </div>
 
-                    <div class="item p-[22px] border-white border-[1px]">
-                        <div class="bg-white text-center px-[20px] pt-[10px] pb-[20px]">
-                            <h4 class="border-secondary_border_clr border-b-[1px] pb-[0px] text-[18px] leading-[50px]">
+                    <div class="item p-[22px] border-white border-[1px] fadeUp">
+                        <div class="bg-white text-center px-[20px] pt-[10px] pb-[20px] fadeUp">
+                            <h4
+                                class="border-secondary_border_clr border-b-[1px] pb-[0px] text-[18px] leading-[50px] fadeUp">
                                 COMMON</h4>
 
 
                             <div class="speci_scroltx">
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Ceiling: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Oil Bound Distemper</p>
                                 </div>
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Walls: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">PoP punning with Acrylic
                                         Emulsion Paint</p>
                                 </div>
 
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">External Doors/ Windows: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">UPVC frames &amp; shutters with
                                         clear glass</p>
                                 </div>
 
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Doors: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Laminated Flush Doors</p>
                                 </div>
 
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Electrical Fittings: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Modular fittings and fixtures
                                     </p>
@@ -918,35 +927,36 @@
                         </div>
                     </div>
 
-                    <div class="item p-[22px] border-white border-[1px]">
-                        <div class="bg-white text-center px-[20px] pt-[10px] pb-[20px]">
-                            <h4 class="border-secondary_border_clr border-b-[1px] pb-[0px] text-[18px] leading-[50px]">
+                    <div class="item p-[22px] border-white border-[1px] fadeUp">
+                        <div class="bg-white text-center px-[20px] pt-[10px] pb-[20px] fadeUp">
+                            <h4
+                                class="border-secondary_border_clr border-b-[1px] pb-[0px] text-[18px] leading-[50px] fadeUp">
                                 COMMON</h4>
 
 
                             <div class="speci_scroltx">
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Ceiling: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Oil Bound Distemper</p>
                                 </div>
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Walls: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">PoP punning with Acrylic
                                         Emulsion Paint</p>
                                 </div>
 
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">External Doors/ Windows: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">UPVC frames &amp; shutters with
                                         clear glass</p>
                                 </div>
 
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Doors: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Laminated Flush Doors</p>
                                 </div>
 
-                                <div class="mt-[15px]">
+                                <div class="mt-[15px] fadeUp">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Electrical Fittings: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Modular fittings and fixtures
                                     </p>
@@ -969,8 +979,8 @@
 
     <section>
         <div class="relative py-sectionPadding container">
-            <h2 class="sectionHeading text-tertiary_clr uppercas  text-center">Virtual Tour-Apartment</h2>
-            <iframe width='100%' class="mt-[20px] md:mt-[25px] lg:h-[700px] md:[450px] h-[300px] shadow-md"
+            <h2 class="sectionHeading text-tertiary_clr uppercas  text-center fadeUp">Virtual Tour-Apartment</h2>
+            <iframe width='100%' class="mt-[20px] md:mt-[25px] lg:h-[700px] md:[450px] h-[400px] shadow-md fadeUp"
                 src='https://digitour.housing.com/projects/Orris_Group/Sample_Apartment'></iframe>
 
         </div>

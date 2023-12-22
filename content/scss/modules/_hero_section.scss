@@ -1,4 +1,12 @@
 .inner_page {
+
+
+  .heroTitle{
+    @apply fadeInUp;
+  }
+  .heroTitleSub {
+    @apply  fadeInUp;
+  }
   .hero_section_text {
     @apply absolute bottom-0  w-full left-[50%] translate-x-[-50%] z-10 ;
     background-image: linear-gradient(
