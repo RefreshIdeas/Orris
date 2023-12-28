@@ -11,6 +11,21 @@
   }
 }
 
+@mixin fadeOutDown {
+  @keyframes fadeOutDown {
+    0% {
+      opacity: 0;
+      transform: none;
+
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 100%, 0);
+
+    }
+  }
+}
+
 @mixin auto_Zoom_INOUT {
   @keyframes auto_Zoom_INOUT {
     0% {

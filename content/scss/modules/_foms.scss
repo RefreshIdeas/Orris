@@ -1,5 +1,5 @@
 .input_row{
     input,textarea,select{
-        @apply border-secondary_border_clr border-[1px] px-[15px] pb-5 w-full
+        @apply border-secondary_border_clr  border-b-[1px]  pb-2 w-full focus:border-secondary_border_clr focus:border-b-[1px] outline-none
     }
 }

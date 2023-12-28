@@ -12,6 +12,16 @@
   }
 }
 
+
+.fadeOutDown {
+  @apply opacity-0;
+  &.active {
+    animation: fadeOutDown 1s;
+    animation-fill-mode: both;
+    @include fadeOutDown;
+  }
+}
+
 .zoomIn {
   opacity: 0;
   &.active {

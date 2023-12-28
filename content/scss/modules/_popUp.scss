@@ -1,0 +1,18 @@
+.popUp{
+    @apply invisible opacity-0 delay-200 ease-linear duration-300;
+.popUpInnerBlock{
+    @apply opacity-100;
+      animation: fadeOutDown 1s;
+      animation-fill-mode: both;
+      @include fadeOutDown;
+    }
+    &.active{
+        @apply visible opacity-100 ease-linear delay-0;
+        .popUpInnerBlock{
+          animation: fadeInUp 1s;
+          animation-fill-mode: both;
+          @include fadeInUp;
+        }
+     
+    }
+}
