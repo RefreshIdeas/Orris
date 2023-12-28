@@ -5,12 +5,12 @@ html {
 }
 
 // fonts setting
-@font-face {
-  font-family: "Centabel";
-  src: url("./content/fonts/centabel.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: "Centabel";
+//   src: url("./content/fonts/centabel.ttf");
+//   font-weight: normal;
+//   font-style: normal;
+// }
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
 
 body {
@@ -36,5 +36,5 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cursor_circle_view {
-  cursor: url("./uploads/fldCMS/svg/viewCursor.svg") 64 64, pointer;
+  cursor: url("/upload/fldCMS/svg/viewCursor.svg") 64 64, pointer;
 }

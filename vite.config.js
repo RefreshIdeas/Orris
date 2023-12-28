@@ -11,6 +11,13 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "./index.html"),
         about: resolve(__dirname, "./overview.html"),
+        team: resolve(__dirname, "./ourTeam.html"),
+        realestate: resolve(__dirname, "./realEstate.html"),
+        csr: resolve(__dirname, "./csr.html"),
+        hospitality: resolve(__dirname, "./hospitality.html"),
+        education: resolve(__dirname, "./education.html"),
+        entertainment: resolve(__dirname, "./entertainment.html"),
+        warehousing: resolve(__dirname, "./warehousing-parks.html"),
       },
     },
   },

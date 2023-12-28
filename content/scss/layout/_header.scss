@@ -94,10 +94,10 @@ header{
 }
 .hamburger_menu:hover {
   p {
-    @apply text-primary_clr;
+    @apply text-tertiary_BG_clr;
   }
   .line-toggle {
-    @apply bg-primary_clr;
+    @apply bg-tertiary_BG_clr;
   }
 }
 

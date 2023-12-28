@@ -34,7 +34,7 @@ module.exports = {
         // bg colors
         primary_BG_clr: "#F0ECE7",
         secondary_BG_clr: "#F5F4F4",
-        tertiary_BG_clr: "#FFB400",
+        tertiary_BG_clr: "#FFA800",
         quartary_BG_clr: "#B87A02",
         senary_BG_clr: "#D2AF6F",
         septenary_BG_clr: "#5B5B5B",
@@ -59,7 +59,7 @@ module.exports = {
       },
       // font fontFamily start
       fontFamily: {
-        centabel: ["centabel", ...defaultTheme.fontFamily.sans],
+        // centabel: ["centabel", ...defaultTheme.fontFamily.sans],
       },
     },
   },

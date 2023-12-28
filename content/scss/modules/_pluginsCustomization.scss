@@ -1,0 +1,5 @@
+.vbox-container{
+    @apply flex justify-center items-center;
+    .vbox-content{
+    @apply h-[500px] max-w-[600px] mx-auto}
+}
