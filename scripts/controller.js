@@ -1,15 +1,30 @@
-// import "../content/scss/site.scss";
+import "../content/scss/site.scss";
 
 import "owl.carousel"; // Owl Carousel JavaScript
 import "./events";
 import VenoBox from "venobox";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lenis from "@studio-freight/lenis";
 import { ReadMore } from "./readmore";
 import { tabs } from "./tabs";
 import "./customScroll";
 import { accordianInit } from "./accordian";
-import Lenis from "@studio-freight/lenis";
+gsap.registerPlugin(ScrollTrigger);
+
+// smooth scroll
+const lenis = new Lenis();
+lenis.on("scroll", (e) => {
+  {
+  }
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
 
 $(".white_Arrow_Vcenter").owlCarousel({
   loop: true,
@@ -554,15 +569,13 @@ accordianInit(".accordian_tab");
 //     start: "center 80%", // when the top of the trigger hits the top of the viewport
 //     end: "center 82%", // end after scrolling 500px beyond the start
 //     scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-markers: true,
-  //   },
-  // });
+// markers: true,
+//   },
+// });
 
-  // tl.to(".testinbg", {
-  //   x: 100,
-  // });
-
-  gsap.registerPlugin(ScrollTrigger);
+// tl.to(".testinbg", {
+//   x: 100,
+// });
 
 const heroSection = document.querySelector(".hero_Section");
 const contentSection = document.querySelector(".feature_section");
@@ -576,7 +589,6 @@ gsap.utils.toArray(".fadeUp").forEach((element) => {
   gsap.to(element, {
     opacity: 1,
     translateY: 0,
-    scrub: true,
     scrollTrigger: {
       trigger: element,
       start: "top 85%",
@@ -597,7 +609,6 @@ gsap.utils.toArray(".fadeUp-early").forEach((element) => {
   gsap.to(element, {
     opacity: 1,
     translateY: 0,
-    scrub: true,
     scrollTrigger: {
       trigger: element,
       start: "top 95%",
@@ -619,7 +630,6 @@ gsap.utils.toArray(".scaleUp").forEach((element) => {
   gsap.to(element, {
     opacity: 1,
     rotateX: 0,
-    scrub: true,
     scrollTrigger: {
       trigger: element,
       start: "top 80%",
@@ -641,6 +651,18 @@ gsap.to(".hero_Section video,.hero_Section img", {
   },
 });
 
+const resizeObserver = new ResizeObserver((entries) => {
+  ScrollTrigger.refresh();
+});
+
+// Specify the elements to observe
+const elementsToObserve = document.querySelectorAll(".resizeDetect");
+
+// Start observing
+elementsToObserve.forEach((element) => {
+  resizeObserver.observe(element);
+});
+
 // gsap.to(".feature_section", {
 //   scale: 1.1,
 //   background: "white",
@@ -653,15 +675,3 @@ gsap.to(".hero_Section video,.hero_Section img", {
 //     scrub: true,
 //   },
 // });
-
-// smooth scroll
-const lenis = new Lenis();
-
-lenis.on("scroll", (e) => {});
-
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-
-requestAnimationFrame(raf);

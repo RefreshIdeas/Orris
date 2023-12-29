@@ -18,6 +18,8 @@ export default defineConfig({
         education: resolve(__dirname, "./education.html"),
         entertainment: resolve(__dirname, "./entertainment.html"),
         warehousing: resolve(__dirname, "./warehousing-parks.html"),
+        projectList: resolve(__dirname, "./projectList.html"),
+        projectDetail: resolve(__dirname, "./projectDetail.html"),
       },
     },
   },
