@@ -17,11 +17,11 @@
     clip-path: 
       polygon(100% 0,0 0,0 calc(100% - var(--f)),100% calc(100% - var(--f)),
         calc(100% - var(--r)) calc(50% - var(--f)/2));
-        &.deliverd{
+        &.delivered{
           @apply bg-primary_clr
             }
 
-            &.possision_started{
+            &.possession-started{
               @apply bg-tertiary_BG_clr
               
                 }

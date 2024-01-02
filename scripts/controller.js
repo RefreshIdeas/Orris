@@ -1,4 +1,4 @@
-import "../content/scss/site.scss";
+// import "../content/scss/site.scss";
 
 import "owl.carousel"; // Owl Carousel JavaScript
 import "./events";
@@ -550,6 +550,7 @@ scrollNav.forEach((element) => {
 customElements.define("read-more", ReadMore);
 // tabs
 tabs(".heroSectionTabLink", ".heroSectionTabContent");
+tabs(".heroSectionImgTabLink", ".heroSectionImgTabContent");
 tabs(".overviewTabLink", ".overviewTabContent");
 tabs(".galleryTabLink", ".galleryTabContent");
 tabs(".cunstructionTabLink", ".cunstructionTabContent");
