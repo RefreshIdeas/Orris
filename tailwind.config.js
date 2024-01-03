@@ -30,7 +30,7 @@ module.exports = {
         primary_clr: "#007A7F",
         secondary_clr: "#444444",
         tertiary_clr: "#3A3947",
-
+        quartary_clr: "#9A9A9A",
         // bg colors
         primary_BG_clr: "#F0ECE7",
         secondary_BG_clr: "#F5F4F4",

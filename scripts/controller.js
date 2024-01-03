@@ -257,6 +257,7 @@ $(".specification_slider").owlCarousel({
   nav: true,
   dots: false,
   dotsEach: 2,
+  // autoHeight: true,
   autoplay: true,
 
   slideTransition: "linear",
@@ -271,6 +272,27 @@ $(".specification_slider").owlCarousel({
     1000: {
       margin: 20,
       items: 3,
+    },
+  },
+});
+
+$(".relatedPostSlider").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  autoplayHoverPause: true,
+  dotsEach: 2,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    800: {
+      items: 2,
+    },
+    1000: {
+      dotsEach: 1,
+      margin: 50,
+      items: 2,
     },
   },
 });
@@ -436,7 +458,15 @@ subNavBlock.forEach((element) => {
 
 // veno box for pop image and video
 new VenoBox({
-  selctor: ".venobox",
+  selector: ".venobox",
+});
+
+new VenoBox({
+  selector: ".venobox_events_gallery",
+  numeration: true,
+  infinigall: true,
+  share: true,
+  spinner: "rotating-plane",
 });
 
 // section nav

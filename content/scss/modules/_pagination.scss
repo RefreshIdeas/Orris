@@ -1,0 +1,23 @@
+.pagination{
+
+   a{
+        @apply md:text-[18px] text-[15px] text-tertiary_clr md:h-[37px] h-[30px] md:w-[37px] w-[30px] flex justify-center items-center;
+
+        &:hover,&.active{
+            @apply  border-tertiary_clr border-[1px]
+        }
+
+       
+
+    }
+
+    li{
+        @apply md:mr-3 mr-1 ;
+        &:first-child,&:last-child{
+            @apply mr-0;
+         a{
+            @apply hover:border-none w-auto
+         }
+        }
+    }
+}

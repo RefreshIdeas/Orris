@@ -28,13 +28,13 @@
 }
 
 .mobile_common_arrows .owl-nav {
+  @apply md:w-[250px] w-[160px];
   position: absolute;
   left: 50%;
   transform: translate3d(-50%, 50%, 0);
   bottom: 7px;
   z-index: 20;
   display: flex;
-  width: 160px;
   align-items: center;
   justify-content: space-between;
 }
@@ -211,5 +211,12 @@
 .financialPartners{
   .owl-item img{
     width: auto !important;
+  }
+}
+
+
+.specification_slider{
+  .owl-stage{
+    @apply flex
   }
 }
