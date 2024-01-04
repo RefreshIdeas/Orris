@@ -46,37 +46,37 @@ $(".white_Arrow_Vcenter").owlCarousel({
   },
 });
 
-$(".featured_projects").owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  autoplayHoverPause: true,
-  dots: true,
-  autoplay: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    991: {
-      margin: 80,
-      items: 1,
-      dots: false,
-    },
-    1280: {
-      margin: 100,
-      dots: false,
-      items: 1,
-    },
-    1536: {
-      margin: 200,
-      dots: false,
-      items: 1,
-    },
-  },
-});
+// $(".featured_projects").owlCarousel({
+//   loop: true,
+//   margin: 10,
+//   nav: true,
+//   autoplayHoverPause: true,
+//   dots: true,
+//   autoplay: true,
+//   responsive: {
+//     0: {
+//       items: 1,
+//     },
+//     600: {
+//       items: 1,
+//     },
+//     991: {
+//       margin: 80,
+//       items: 1,
+//       dots: false,
+//     },
+//     1280: {
+//       margin: 100,
+//       dots: false,
+//       items: 1,
+//     },
+//     1536: {
+//       margin: 200,
+//       dots: false,
+//       items: 1,
+//     },
+//   },
+// });
 
 $(".galery_slider").owlCarousel({
   loop: true,
@@ -465,7 +465,10 @@ new VenoBox({
   selector: ".venobox_events_gallery",
   numeration: true,
   infinigall: true,
-  share: true,
+  share: false,
+  titlePosition: "top",
+  // titleattr:'venotitile',
+  titleStyle: "block",
   spinner: "rotating-plane",
 });
 
@@ -553,6 +556,17 @@ function setupCustomDropdown(container) {
     dropdownBtn.textContent = option;
     toggleDropdown(container);
   }
+}
+
+if (document.querySelectorAll(".inputFileUpload").length > 0) {
+  let inputFile = document.getElementsByClassName("inputFileUpload");
+  console.log(inputFile[0]);
+  inputFile[0].addEventListener("change", function (param) {
+    let filename = param.target.value.split("\\").pop();
+
+    document.getElementById("uploadedFileName").textContent = filename;
+    // document.getElementById("uploadedFileNameMessage").textContent = "";
+  });
 }
 
 // external includes 🔴🔴🔴
@@ -684,6 +698,7 @@ gsap.to(".hero_Section video,.hero_Section img", {
 
 const resizeObserver = new ResizeObserver((entries) => {
   ScrollTrigger.refresh();
+  console.log("resized");
 });
 
 // Specify the elements to observe

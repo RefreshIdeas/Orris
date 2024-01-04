@@ -1,5 +1,34 @@
 .vbox-container{
+   
     @apply flex justify-center items-center;
     .vbox-content{
-    @apply h-[500px] max-w-[600px] mx-auto}
+    @apply h-[500px] max-w-[800px] mx-auto;
+margin-left:auto !important ;
+margin-right:auto !important ;
+
 }
+}
+.vbox-title{
+    @apply md:text-[18px] text-[14px] leading-[25px];
+
+    &::after{
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        height: 49px;
+        width: 100%;
+        background-color:#3A3947 ;
+        content: "";
+    z-index: -1;
+
+    }
+        }
+
+        .vbox-num{
+            @apply md:text-[18px] text-[14px] leading-[25px];
+  
+        }
+        .vbox-close{
+            @apply top-3
+        }

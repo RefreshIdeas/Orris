@@ -45,6 +45,26 @@
     }
   }
 
+  &.tertiary {
+    @apply border-white text-white  border-[1.5px]  border-opacity-25 rounded-none font-thin hover:text-tertiary_BG_clr hover:border-opacity-100;
+    svg {
+      g {
+        @apply fill-white;
+      }
+    }
+    &:hover {
+      svg {
+        path {
+          @apply fill-tertiary_BG_clr;
+        }
+      }
+    }
+  }
+
+  &.quartary{
+    @apply hover:bg-[#808080] hover:border-[#808080] text-primary_clr hover:text-secondary_clr border-primary_clr hover:shadow-[0_5px_10px_#00000036];
+  }
+
   &.lg {
     @apply py-[8px]  px-[20px] rounded-none border-[1px] uppercase flex items-center justify-center break-keep max-w-full text-[20px];
   }
