@@ -66,6 +66,10 @@
   }
 
   &.lg {
-    @apply py-[8px]  px-[20px] rounded-none border-[1px] uppercase flex items-center justify-center break-keep max-w-full text-[20px];
+    @apply py-[8px]  px-[20px] rounded-none border-[1px] uppercase flex items-center justify-center break-keep max-w-full text-[13px];
+  }
+
+  &.sm {
+    @apply px-[38px] py-[10px] text-[13px];
   }
 }

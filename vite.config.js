@@ -20,6 +20,8 @@ export default defineConfig({
         warehousing: resolve(__dirname, "./warehousing-parks.html"),
         projectList: resolve(__dirname, "./projectList.html"),
         projectDetail: resolve(__dirname, "./projectDetail.html"),
+        events: resolve(__dirname, "./events.html"),
+        lifeatorris: resolve(__dirname, "./lifeatorris.html"),
         cunstructionDetail: resolve(__dirname, "./cunstructionUpdate.html"),
         cunstructionupdateDetail: resolve(
           __dirname,

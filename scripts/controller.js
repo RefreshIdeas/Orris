@@ -1,4 +1,4 @@
-// import "../content/scss/site.scss";
+import "../content/scss/site.scss";
 
 import "owl.carousel"; // Owl Carousel JavaScript
 import "./events";
@@ -45,38 +45,6 @@ $(".white_Arrow_Vcenter").owlCarousel({
     },
   },
 });
-
-// $(".featured_projects").owlCarousel({
-//   loop: true,
-//   margin: 10,
-//   nav: true,
-//   autoplayHoverPause: true,
-//   dots: true,
-//   autoplay: true,
-//   responsive: {
-//     0: {
-//       items: 1,
-//     },
-//     600: {
-//       items: 1,
-//     },
-//     991: {
-//       margin: 80,
-//       items: 1,
-//       dots: false,
-//     },
-//     1280: {
-//       margin: 100,
-//       dots: false,
-//       items: 1,
-//     },
-//     1536: {
-//       margin: 200,
-//       dots: false,
-//       items: 1,
-//     },
-//   },
-// });
 
 $(".galery_slider").owlCarousel({
   loop: true,
@@ -156,28 +124,6 @@ $(".theme_dot_Hleft").owlCarousel({
   },
 });
 
-$(".testimonial_slider").owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  autoplayHoverPause: true,
-  dotsEach: 2,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 2,
-    },
-    1000: {
-      nav: false,
-      dotsEach: 1,
-      margin: 20,
-      items: 4,
-    },
-  },
-});
-
 $(".what_we_do").owlCarousel({
   loop: true,
   margin: 10,
@@ -226,27 +172,24 @@ $(".what_we_do").owlCarousel({
   },
 });
 
-$(".financialPartners").owlCarousel({
+$(".projectpossession_slider").owlCarousel({
   loop: true,
   margin: 10,
-  nav: false,
-  dots: false,
+  nav: true,
+  autoplayHoverPause: true,
   dotsEach: 2,
-  autoplay: true,
-  touchDrag: false,
-  mouseDrag: false,
-
-  slideTransition: "linear",
-  autoplaySpeed: 5000,
   responsive: {
     0: {
-      items: 2,
+      items: 1,
     },
     600: {
-      items: 4,
+      items: 2,
     },
     1000: {
-      items: 5,
+      nav: false,
+      dotsEach: 1,
+      margin: 20,
+      items: 4,
     },
   },
 });
