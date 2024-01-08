@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  @apply hover:text-tertiary_BG_clr;
+  @apply hover:text-tertiary_BG_clr text-tertiary_BG_clr;
 }
 
 body::-webkit-scrollbar {

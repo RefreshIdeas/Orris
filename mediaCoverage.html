@@ -214,7 +214,7 @@
 
     <section class="hero_Section inner_page">
 
-        <div class="relative xl:h-[70vh] h-[55vh] w-full overflow-hidden">a
+        <div class="relative xl:h-[70vh] h-[55vh] w-full overflow-hidden">
             <img src="/upload/fldCMS/media-coverage_hero_bg.jpg" class="object-cover h-full w-full" />
             <div class="hero_section_text">
                 <h1 class="heroTitle text-white text-center font-centabel active">Media Coverage</h1>
@@ -224,16 +224,13 @@
         </div>
     </section>
 
-
-
-
     <section class="relative  bg-white">
         <div class="container py-sectionPadding relative z-[10]">
             <div>
                 <div
                     class="news_filter bg-primary_BG_clr flex md:flex-nowrap flex-wrap xl:py-[30px] py-[20px] md:px-[25px] px-[0px] ">
                     <div class="md:basis-5/12 basis-6/12 sm:mb-0 mb-[10px]">
-                        <div class="custom-dropdown mb-[10px] relative  dropdown-container"
+                        <div class="custom-dropdown cursor-pointer mb-[10px] relative  dropdown-container"
                             data-dropdown-id="yearsDropDown">
                             <div class="flex border-[#9A9A9A] border-b-[1px] items-center py-3 px-[10px]">
                                 <div class="dropdown-btn w-full !text-[15px] text-tertiary_clr">Year </div>
@@ -246,8 +243,8 @@
                                     </svg>
                                 </span>
                             </div>
-                            <div class="dropdown-content w-full bg-white z-[99] shadow-xl px-[10px] container mx-auto "
-                                id="firstDropdown-Options">
+                            <div class="dropdown-content cursor-pointer w-full bg-white z-[99] shadow-xl px-[10px] container mx-auto "
+                                id="yearsDropDown">
                                 <p class="dropDown_tab tablink yearListTabLink !text-[15px] !text-tertiary_clr !py-[10px] !px-0 !mx-0"
                                     data-tab="year_2023" data-dropdown="2023">2023</p>
 
@@ -262,8 +259,8 @@
                     </div>
 
                     <div class="md:basis-5/12 basis-6/12 sm:mb-0 mb-[10px]">
-                        <div class="custom-dropdown  mb-[10px] relative  dropdown-container"
-                            data-dropdown-id="monthsDropDown">
+                        <div class="custom-dropdown cursor-pointer  mb-[10px] relative dropdown-container tabcontent yearListTabContent active"
+                            data-dropdown-id="monthsDropDown_2023" id="year_2023">
                             <div class="flex border-[#9A9A9A] border-b-[1px] items-center py-3 px-[10px]">
                                 <div class="dropdown-btn w-full !text-[15px] text-tertiary_clr">Month </div>
                                 <span>
@@ -275,19 +272,81 @@
                                     </svg>
                                 </span>
                             </div>
-                            <div class="dropdown-content w-full bg-white z-[99] shadow-xl px-[10px] container mx-auto "
-                                id="firstDropdown-Options">
-                                <p class="dropDown_tab tablink yearListTabLink !text-[15px] !text-tertiary_clr !py-[10px] !px-0 !mx-0"
-                                    data-tab="year_2023" data-dropdown="2023">January</p>
+                            <div class="dropdown-content cursor-pointer w-full bg-white z-[99] shadow-xl px-[10px] container mx-auto monthListTabLinks"
+                                id="monthsDropDown_2023">
+                                <p class="dropDown_tab !text-[15px] !text-tertiary_clr !py-[10px] !px-0 !mx-0"
+                                    data-tab="year_2023" data-dropdown="jan_year_2023">January</p>
 
-                                <p class="dropDown_tab tablink yearListTabLink !text-[15px] !text-tertiary_clr !py-[10px] !px-0 !mx-0"
-                                    data-tab="year_2022" data-dropdown="2022">Februray</p>
+                                <p class="dropDown_tab !text-[15px] !text-tertiary_clr !py-[10px] !px-0 !mx-0"
+                                    data-tab="year_2022" data-dropdown="feb_year_2023">Februray</p>
 
-                                <p class="dropDown_tab tablink yearListTabLink !text-[15px] !text-tertiary_clr !py-[10px] !px-0 !mx-0"
-                                    data-tab="year_2021" data-dropdown="2021">March</p>
+                                <p class="dropDown_tab !text-[15px] !text-tertiary_clr !py-[10px] !px-0 !mx-0"
+                                    data-tab="year_2021" data-dropdown="mar_year_2023">March</p>
 
                             </div>
                         </div>
+
+
+
+                        <div class="custom-dropdown cursor-pointer  mb-[10px] relative dropdown-container tabcontent yearListTabContent "
+                            data-dropdown-id="monthsDropDown_2022" id="year_2022">
+                            <div class="flex border-[#9A9A9A] border-b-[1px] items-center py-3 px-[10px]">
+                                <div class="dropdown-btn w-full !text-[15px] text-tertiary_clr">Month </div>
+                                <span>
+                                    <svg width="12" height="15" class="rotate-[-90deg]" viewBox="0 0 14 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path id="Vector"
+                                            d="M13.5 3.11083V3.11161L13.5 15.3884L13.5 15.3892C13.5006 15.7713 13.3848 16.1487 13.1619 16.4779C12.9388 16.8073 12.6164 17.0764 12.228 17.2493C11.7509 17.4583 11.2181 17.5396 10.691 17.482C10.1647 17.4245 9.66971 17.2314 9.26161 16.9285L1.2626 10.7962C1.02045 10.6003 0.828869 10.3608 0.69834 10.0953C0.567108 9.82838 0.5 9.54024 0.5 9.25C0.5 8.95976 0.567108 8.67162 0.69834 8.40471C0.828868 8.13923 1.02045 7.89975 1.2626 7.70382L9.2616 1.57149C9.66971 1.2686 10.1647 1.07552 10.691 1.01801C11.2181 0.960424 11.751 1.04167 12.2281 1.25072C12.6164 1.42364 12.9388 1.69267 13.1619 2.02206C13.3848 2.35133 13.5006 2.72873 13.5 3.11083ZM14 3.11161L14 15.3884C14.0008 15.8731 13.8537 16.348 13.5759 16.7583L14 3.11161Z"
+                                            stroke="#9A9A9A" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="dropdown-content cursor-pointer w-full bg-white z-[99] shadow-xl px-[10px] container mx-auto monthListTabLinks"
+                                id="monthsDropDown_2022">
+                                <p class="dropDown_tab !text-[15px] !text-tertiary_clr !py-[10px] !px-0 !mx-0"
+                                    data-tab="year_2022" data-dropdown="march_year_2022">march</p>
+
+                                <p class="dropDown_tab !text-[15px] !text-tertiary_clr !py-[10px] !px-0 !mx-0"
+                                    data-tab="year_2022" data-dropdown="mApril_year_2022">April</p>
+
+                                <p class="dropDown_tab !text-[15px] !text-tertiary_clr !py-[10px] !px-0 !mx-0"
+                                    data-tab="year_2022" data-dropdown="may_year_2022">may</p>
+
+                            </div>
+                        </div>
+
+
+                        <div class="custom-dropdown cursor-pointer  mb-[10px] relative dropdown-container tabcontent yearListTabContent "
+                            data-dropdown-id="monthsDropDown_2021" id="year_2021">
+                            <div class="flex border-[#9A9A9A] border-b-[1px] items-center py-3 px-[10px]">
+                                <div class="dropdown-btn w-full !text-[15px] text-tertiary_clr">Month </div>
+                                <span>
+                                    <svg width="12" height="15" class="rotate-[-90deg]" viewBox="0 0 14 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path id="Vector"
+                                            d="M13.5 3.11083V3.11161L13.5 15.3884L13.5 15.3892C13.5006 15.7713 13.3848 16.1487 13.1619 16.4779C12.9388 16.8073 12.6164 17.0764 12.228 17.2493C11.7509 17.4583 11.2181 17.5396 10.691 17.482C10.1647 17.4245 9.66971 17.2314 9.26161 16.9285L1.2626 10.7962C1.02045 10.6003 0.828869 10.3608 0.69834 10.0953C0.567108 9.82838 0.5 9.54024 0.5 9.25C0.5 8.95976 0.567108 8.67162 0.69834 8.40471C0.828868 8.13923 1.02045 7.89975 1.2626 7.70382L9.2616 1.57149C9.66971 1.2686 10.1647 1.07552 10.691 1.01801C11.2181 0.960424 11.751 1.04167 12.2281 1.25072C12.6164 1.42364 12.9388 1.69267 13.1619 2.02206C13.3848 2.35133 13.5006 2.72873 13.5 3.11083ZM14 3.11161L14 15.3884C14.0008 15.8731 13.8537 16.348 13.5759 16.7583L14 3.11161Z"
+                                            stroke="#9A9A9A" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="dropdown-content cursor-pointer w-full bg-white z-[99] shadow-xl px-[10px] container mx-auto monthListTabLinks"
+                                id="monthsDropDown_2021">
+                                <p class="dropDown_tab !text-[15px] !text-tertiary_clr !py-[10px] !px-0 !mx-0"
+                                    data-tab="year_2021" data-dropdown="mar_year_2021">march</p>
+
+                                <p class="dropDown_tab !text-[15px] !text-tertiary_clr !py-[10px] !px-0 !mx-0"
+                                    data-tab="year_2021" data-dropdown="apr_year_2021">April</p>
+
+                                <p class="dropDown_tab !text-[15px] !text-tertiary_clr !py-[10px] !px-0 !mx-0"
+                                    data-tab="year_2021" data-dropdown="may_year_2021">may</p>
+
+                            </div>
+                        </div>
+
+
+
+
+
                     </div>
 
                     <div class="md:basis-2/12 sm:basis-full basis-full  sm:mb-0 mb-[10px]">
@@ -323,7 +382,9 @@
 
                     <div class="lg:basis-9/12  md:basis-7/12 basis-full md:mt-0 mt-[10px]">
                         <div class="pt-[15px]">
-                            <h2 class="sectionHeading text-tertiary_clr uppercase hover:text-tertiary_BG_clr duration-300 ease-linear">Greenopolis for Green Living:
+                            <h2
+                                class="sectionHeading text-tertiary_clr uppercase hover:text-tertiary_BG_clr duration-300 ease-linear">
+                                Greenopolis for Green Living:
                                 Experience the Eco-friendly Habitat in Gurgaon</h2>
 
                             <div class="flex mx-[-15px] flex-wrap">
@@ -372,7 +433,8 @@
 
                     <div class="lg:basis-9/12  md:basis-7/12 basis-full  md:mt-0 mt-[10px]">
                         <div class="pt-[15px]">
-                            <h2 class="sectionHeading text-tertiary_clr uppercase hover:tertiary_BG_clr">Greenopolis for Green Living:
+                            <h2 class="sectionHeading text-tertiary_clr uppercase hover:tertiary_BG_clr">Greenopolis for
+                                Green Living:
                                 Experience the Eco-friendly Habitat in Gurgaon</h2>
 
                             <div class="flex mx-[-15px] flex-wrap">

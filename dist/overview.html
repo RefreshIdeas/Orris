@@ -364,6 +364,9 @@ body {
   overflow: hidden;
   scroll-behavior: smooth;
 }
+a{
+  --tw-text-opacity: 1;
+  color: rgb(255 168 0 / var(--tw-text-opacity)); }
 a:hover{
   --tw-text-opacity: 1;
   color: rgb(255 168 0 / var(--tw-text-opacity)); }
@@ -736,12 +739,17 @@ a{
   background-color: rgb(0 122 127/var(--tw-bg-opacity));
 }
 .mobile_common_dots .owl-dots {
-  position: relative;
   margin-top: 40px;
   margin-right: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 40;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 .mobile_common_arrows .owl-nav{
   width: 160px; }
@@ -762,6 +770,12 @@ a{
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  position: relative;
+  z-index: 40;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 .white_Arrow_Vcenter .owl-nav {
   position: absolute;
@@ -813,7 +827,7 @@ a{
 }
 @media (min-width: 1024px){
   .center_slide .owl-nav{
-    bottom: 50%;
+    bottom: 55%;
     width: 82%; } }
 @media (min-width: 1280px){
   .center_slide .owl-nav{
@@ -828,6 +842,12 @@ a{
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  position: relative;
+  z-index: 40;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 .white_bg-Arrow .owl-nav{
   bottom: 7px;
@@ -1417,6 +1437,7 @@ a{
   }
 }
 .pagination a{
+  margin-right: 0.25rem;
   display: flex;
   height: 30px;
   width: 30px;
@@ -1427,6 +1448,7 @@ a{
   color: rgb(58 57 71 / var(--tw-text-opacity)); }
 @media (min-width: 768px){
   .pagination a{
+    margin-right: 0.75rem;
     height: 37px;
     width: 37px;
     font-size: 18px; } }
@@ -1434,16 +1456,9 @@ a{
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(58 57 71 / var(--tw-border-opacity)); }
-.pagination li{
-  margin-right: 0.25rem; }
-@media (min-width: 768px){
-  .pagination li{
-    margin-right: 0.75rem; } }
-.pagination li:first-child, .pagination li:last-child{
-  margin-right: 0px; }
-.pagination li:first-child a, .pagination li:last-child a{
+.pagination li:first-child a.prev, .pagination li:first-child a.next, .pagination li:last-child a.prev, .pagination li:last-child a.next{
   width: auto; }
-.pagination li:first-child a:hover, .pagination li:last-child a:hover{
+.pagination li:first-child a.prev:hover, .pagination li:first-child a.next:hover, .pagination li:last-child a.prev:hover, .pagination li:last-child a.next:hover{
   border-style: none; }
 /*! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
  */
@@ -2067,6 +2082,8 @@ video {
   margin-top: 40px; }
 .mt-\[50px\]{
   margin-top: 50px; }
+.mt-\[6px\]{
+  margin-top: 6px; }
 .block{
   display: block; }
 .flex{
@@ -2470,6 +2487,9 @@ video {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem; }
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem; }
 .py-\[10px\]{
   padding-top: 10px;
   padding-bottom: 10px; }
@@ -2632,6 +2652,8 @@ video {
   font-weight: 500; }
 .font-normal{
   font-weight: 400; }
+.font-semibold{
+  font-weight: 600; }
 .font-thin{
   font-weight: 100; }
 .uppercase{
@@ -2656,6 +2678,8 @@ video {
   line-height: 18px; }
 .leading-\[20px\]{
   line-height: 20px; }
+.leading-\[24px\]{
+  line-height: 24px; }
 .leading-\[25px\]{
   line-height: 25px; }
 .leading-\[26px\]{
@@ -3250,6 +3274,9 @@ video {
   .md\:py-0{
     padding-top: 0px;
     padding-bottom: 0px; }
+  .md\:py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; }
   .md\:py-\[10px\]{
     padding-top: 10px;
     padding-bottom: 10px; }
@@ -3319,6 +3346,8 @@ video {
     font-size: 45px; }
   .md\:leading-\[20px\]{
     line-height: 20px; }
+  .md\:leading-\[30px\]{
+    line-height: 30px; }
   .md\:leading-\[35px\]{
     line-height: 35px; }
   .md\:leading-\[36px\]{
@@ -3436,6 +3465,10 @@ video {
     overflow: hidden; }
   .lg\:overflow-visible{
     overflow: visible; }
+  .lg\:border-b-0{
+    border-bottom-width: 0px; }
+  .lg\:border-r-\[1px\]{
+    border-right-width: 1px; }
   .lg\:p-\[35px\]{
     padding: 35px; }
   .lg\:px-0{
@@ -3484,6 +3517,8 @@ video {
     max-width: 100%; }
   .xl\:basis-4\/12{
     flex-basis: 33.333333%; }
+  .xl\:basis-5\/12{
+    flex-basis: 41.666667%; }
   .xl\:basis-6\/12{
     flex-basis: 50%; }
   .xl\:basis-7\/12{
@@ -3522,8 +3557,8 @@ video {
     padding-bottom: 5rem; } }
     
 /*# sourceMappingURL=overview.html?html-proxy&inline-css&index=0.css.map */</style>
-  <script type="module" crossorigin src="/controller-2945b125.js"></script>
-  <link rel="stylesheet" href="/controller-2e81afb0.css">
+  <script type="module" crossorigin src="/controller-d1f852e8.js"></script>
+  <link rel="stylesheet" href="/controller-c0aec104.css">
 </head>
 
 <body class="white_nav_hamburger">

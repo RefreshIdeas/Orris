@@ -24,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @apply mx-auto z-40 relative max-w-max
 }
 }
 
@@ -43,6 +44,7 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    @apply mx-auto z-40 relative max-w-max
  }
  }
 
@@ -93,7 +95,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @apply lg:bottom-[50%] bottom-[7px] z-20 items-center justify-between flex lg:w-[82%] xl:w-[82%] 2xl:w-[69%] w-[160px];
+    @apply lg:bottom-[55%] bottom-[7px] z-20 items-center justify-between flex lg:w-[82%] xl:w-[82%] 2xl:w-[69%] w-[160px];
     button {
       svg {
         @apply text-black ;
@@ -104,6 +106,7 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    @apply mx-auto z-40 relative max-w-max
  }
 
 }
@@ -161,10 +164,7 @@
 
 // CUSTOM CHANGES
 
-.featured_projects {
- 
-  
-}
+
 
 .what_we_do{
  .owl-stage-outer{
