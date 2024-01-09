@@ -417,7 +417,7 @@ body::-webkit-scrollbar-thumb{
   text-transform: uppercase;
   line-height: 45px;
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(58 57 71 / var(--tw-text-opacity));
   transition-duration: 300ms; }
 @media (min-width: 640px){
   .navigationSection .navBlock nav.mainNavs .nav{
@@ -532,6 +532,7 @@ header {
 .toggle-button .line-toggle {
   border-radius: 1px;
   left: 0;
+  transition-duration: 500ms;
 }
 .toggle-button .line-toggle:first-child {
   width: 25px;
@@ -596,10 +597,10 @@ header {
 }
 .hamburger_menu:hover p{
   --tw-text-opacity: 1;
-  color: rgb(255 168 0 / var(--tw-text-opacity)); }
+  color: rgb(128 128 128 / var(--tw-text-opacity)); }
 .hamburger_menu:hover .line-toggle{
   --tw-bg-opacity: 1;
-  background-color: rgb(255 168 0 / var(--tw-bg-opacity)); }
+  background-color: rgb(128 128 128 / var(--tw-bg-opacity)); }
 .white_nav_hamburger .hamburger_menu .text-secondary_clr{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -610,10 +611,10 @@ header {
   transition-duration: 500ms; }
 .white_nav_hamburger .hamburger_menu:hover .text-secondary_clr{
   --tw-text-opacity: 1;
-  color: rgb(255 168 0 / var(--tw-text-opacity)); }
+  color: rgb(128 128 128 / var(--tw-text-opacity)); }
 .white_nav_hamburger .hamburger_menu:hover .toggle .line-toggle{
   --tw-bg-opacity: 1;
-  background-color: rgb(255 168 0 / var(--tw-bg-opacity)); }
+  background-color: rgb(128 128 128 / var(--tw-bg-opacity)); }
 header.scrollActive {
   animation-fill-mode: both;
   animation: fixed;
@@ -1099,7 +1100,7 @@ a{
   transition-duration: 500ms; }
 .white_nav_hamburger .hamburger_menu:hover .scrollToView{
   --tw-text-opacity: 1;
-  color: rgb(255 168 0 / var(--tw-text-opacity)); }
+  color: rgb(128 128 128 / var(--tw-text-opacity)); }
 @media (min-width: 1024px){
   .scrollToView{
     padding-top: 0px;
@@ -1157,6 +1158,9 @@ a{
   line-height: 50px;
   --tw-text-opacity: 1;
   color: rgb(193 193 193 / var(--tw-text-opacity)); }
+@media (min-width: 768px){
+  .overviewTabLinks .overviewTabLink{
+    line-height: 40px; } }
 .overviewTabLinks .overviewTabLink:last-child {
   border: none;
 }
@@ -2120,12 +2124,16 @@ video {
   height: 320px; }
 .h-\[35px\]{
   height: 35px; }
+.h-\[360px\]{
+  height: 360px; }
 .h-\[365px\]{
   height: 365px; }
 .h-\[400px\]{
   height: 400px; }
 .h-\[40px\]{
   height: 40px; }
+.h-\[44px\]{
+  height: 44px; }
 .h-\[47vh\]{
   height: 47vh; }
 .h-\[50px\]{
@@ -2917,7 +2925,7 @@ video {
   transition-duration: 500ms; }
 .white_nav_hamburger .hamburger_menu:hover .btn{
   --tw-text-opacity: 1;
-  color: rgb(255 168 0 / var(--tw-text-opacity)); }
+  color: rgb(128 128 128 / var(--tw-text-opacity)); }
 .btn:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity)); }
@@ -2949,7 +2957,7 @@ video {
   transition-duration: 500ms; }
 .white_nav_hamburger .hamburger_menu:hover .btn.primary{
   --tw-text-opacity: 1;
-  color: rgb(255 168 0 / var(--tw-text-opacity)); }
+  color: rgb(128 128 128 / var(--tw-text-opacity)); }
 .btn.primary:hover{
   --tw-border-opacity: 1;
   border-color: rgb(128 128 128 / var(--tw-border-opacity));
@@ -2963,7 +2971,7 @@ video {
 .btn.secondary{
   max-width: 100%;
   justify-content: center;
-  font-weight: 100;
+  font-weight: 400;
   line-height: 40px; }
 .btn.secondary:hover{
   color: rgb(255 168 0 / var(--tw-text-opacity));
@@ -2980,23 +2988,6 @@ video {
   border-width: 1.5px;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   --tw-border-opacity: 0.25;
-  font-weight: 100;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity)); }
-.btn.tertiary:hover{
-  --tw-border-opacity: 1;
-  --tw-text-opacity: 1;
-  color: rgb(255 168 0 / var(--tw-text-opacity)); }
-.btn.tertiary svg g{
-  fill: #fff; }
-.btn.tertiary:hover svg path{
-  fill: #FFA800; }
-.btn.tertiary{
-  border-radius: 0px;
-  border-width: 1.5px;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-  --tw-border-opacity: 0.25;
-  font-weight: 100;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity)); }
 .btn.tertiary:hover{
@@ -3053,6 +3044,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow); }
 .group:hover .group-hover\:fill-tertiary_BG_clr{
   fill: #FFA800; }
+.group:hover .group-hover\:text-tertiary_BG_clr{
+  --tw-text-opacity: 1;
+  color: rgb(255 168 0 / var(--tw-text-opacity)); }
+.group:hover .group-hover\:opacity-50{
+  opacity: 0.5; }
 .group:hover .group-hover\:opacity-80{
   opacity: 0.8; }
 .group.active .group-\[\.active\]\:block{
@@ -3262,15 +3258,15 @@ video {
   .md\:px-\[10px\]{
     padding-left: 10px;
     padding-right: 10px; }
-  .md\:px-\[20px\]{
-    padding-left: 20px;
-    padding-right: 20px; }
   .md\:px-\[25px\]{
     padding-left: 25px;
     padding-right: 25px; }
   .md\:px-\[30px\]{
     padding-left: 30px;
     padding-right: 30px; }
+  .md\:px-\[50px\]{
+    padding-left: 50px;
+    padding-right: 50px; }
   .md\:py-0{
     padding-top: 0px;
     padding-bottom: 0px; }
@@ -3504,6 +3500,9 @@ video {
       flex-basis: 50%; } }
   .xl\:order-1{
     order: 1; }
+  .xl\:mx-\[-40px\]{
+    margin-left: -40px;
+    margin-right: -40px; }
   .xl\:my-\[100px\]{
     margin-top: 100px;
     margin-bottom: 100px; }
@@ -3525,6 +3524,9 @@ video {
     flex-basis: 58.333333%; }
   .xl\:basis-8\/12{
     flex-basis: 66.666667%; }
+  .xl\:px-\[40px\]{
+    padding-left: 40px;
+    padding-right: 40px; }
   .xl\:py-\[30px\]{
     padding-top: 30px;
     padding-bottom: 30px; }
@@ -3557,9 +3559,9 @@ video {
     padding-bottom: 5rem; } }
   
 /*# sourceMappingURL=index.html?html-proxy&inline-css&index=0.css.map */</style>
-  <script type="module" crossorigin src="/controller-d1f852e8.js"></script>
-  <script type="module" crossorigin src="/unsharable-42e584e2.js"></script>
-  <link rel="stylesheet" href="/controller-c0aec104.css">
+  <script type="module" crossorigin src="/controller-c316033b.js"></script>
+  <script type="module" crossorigin src="/unsharable-52d3c842.js"></script>
+  <link rel="stylesheet" href="/controller-5933357c.css">
 </head>
 
 <body>
@@ -3569,7 +3571,7 @@ video {
       <div class="flex justify-between items-center py-5">
         <div class="hamburger_menu flex items-center cursor-pointer clickEvent toggle"
           data-toggleTO="navigationSection">
-          <p class="font-normal text-secondary_clr text-[18px] hover:text-primary_clr">
+          <p class="font-normal text-secondary_clr text-[18px] hover:text-primary_clr duration-500">
             MENU
           </p>
           <div class="toggle-button ClickTrigger ml-5">
@@ -3610,7 +3612,7 @@ video {
               <div class="flex justify-between items-center">
                 <div
                   class="flex items-center justify-between w-full cursor-pointer mb-4 sm:pl-[45px] pl-[30px] pr-[20px]">
-                  <p class="current_page text-[16px] leading-[30px] font-light">
+                  <p class="current_page text-[16px] leading-[30px] font-light text-tertiary_clr">
                     HOME
                   </p>
 
@@ -3848,38 +3850,38 @@ video {
         <div class="relative lg:overflow-hidden ">
           <div
             class="owl-carousel owl-theme center_slide featured_projects mt-[25px] md:mb-0 max-w-[80%] mb-0 lg:max-w-[75%] 2xl:max-w-[60%] mx-auto lg:overflow-visible ">
-            <div class="item relative group cursor_circle_view  overflow-hidden ">
-              <div class="bg-black featured_media relative z-10  fadeUp">
+            <div class="item relative overflow-hidden">
+              <div class="bg-black featured_media relative z-10 fadeUp group">
                 <video
-                  class="h-[320px] md:h-[500px] lg:h-[540px] w-full object-cover object-center duration-200 ease-linear "
+                  class="h-[320px] md:h-[500px] lg:h-[540px] w-full object-cover object-center duration-500 ease-linear group-hover:opacity-50 cursor_circle_view"
                   src="/featured_project_video_1-7b789783.mp4" autoplay muted loop></video>
-
               </div>
-              <div class="fadeUp-early lg:px-0 px-2">
+              <div class="fadeUp-early lg:px-0 px-2 group cursor-pointer">
                 <h3
-                  class="md:text-[25px] text-[20px] text-tertiary_clr font-normal mb-0 leading-[30px] uppercase z-10 relative mt-[20px] ">
+                  class="md:text-[25px] text-[20px] text-tertiary_clr font-normal mb-0 leading-[30px] uppercase z-10 relative mt-[20px]  group-hover:text-tertiary_BG_clr duration-300 ease-linear">
                   ASTER COURT PREMIER
                 </h3>
-                <p class="text-[14px] uppercase text-tertiary_clr z-10 relative lg:leading-[30px] leading-[10px] mt-2">
+                <p
+                  class="text-[14px] uppercase text-tertiary_clr z-10 relative lg:leading-[30px] leading-[10px] mt-2 group-hover:text-tertiary_BG_clr duration-300 ease-linear">
                   SECTOR-85, NEW GURUGRAM
                 </p>
               </div>
             </div>
 
-            <div class="item  relative group cursor_circle_view  overflow-hidden">
-              <div class="bg-black featured_media relative z-10  fadeUp">
+            <div class="item relative overflow-hidden">
+              <div class="bg-black featured_media relative z-10 fadeUp group">
                 <video
-                  class="h-[320px] md:h-[500px] lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
-                  src="/Orris2-228de376.mp4" autoplay muted loop></video>
-
+                  class="h-[320px] md:h-[500px] lg:h-[540px] w-full object-cover object-center duration-500 ease-linear group-hover:opacity-50 cursor_circle_view"
+                  src="/featured_project_video_1-7b789783.mp4" autoplay muted loop></video>
               </div>
-              <div class="fadeUp-early lg:px-0 px-2">
+              <div class="fadeUp-early lg:px-0 px-2 group cursor-pointer">
                 <h3
-                  class="md:text-[25px] text-[20px] text-tertiary_clr font-normal mb-0 leading-[30px] uppercase z-10 relative mt-[20px] ">
-                  Orris Gateway
+                  class="md:text-[25px] text-[20px] text-tertiary_clr font-normal mb-0 leading-[30px] uppercase z-10 relative mt-[20px]  group-hover:text-tertiary_BG_clr duration-300 ease-linear">
+                  ASTER COURT PREMIER
                 </h3>
-                <p class="text-[14px] uppercase text-tertiary_clr z-10 relative lg:leading-[30px] leading-[10px] mt-2">
-                  SECTOR-82a, GURUGRAM
+                <p
+                  class="text-[14px] uppercase text-tertiary_clr z-10 relative lg:leading-[30px] leading-[10px] mt-2 group-hover:text-tertiary_BG_clr duration-300 ease-linear">
+                  SECTOR-85, NEW GURUGRAM
                 </p>
               </div>
             </div>
@@ -3984,7 +3986,7 @@ video {
                 class="h-full zoomEffectImg max-[768px]:h-[300px]  object-cover group-hover:opacity-80 duration-200 ease-linear object-center"
                 alt="" /> -->
               <video
-                class="h-[320px] md:h-[490px] zoomEffectImg  object-cover group-hover:opacity-80 duration-200 ease-linear object-top w-full"
+                class="h-[320px] md:h-[490px] zoomEffectImg  object-cover group-hover:opacity-50 duration-200 ease-linear object-top w-full"
                 src="/residential_video-87d3f4a0.mp4" muted autoplay loop></video>
             </a>
           </div>
@@ -4002,7 +4004,7 @@ video {
                 class="h-full zoomEffectImg object-center group-hover:opacity-80 duration-200 ease-linear object-cover"
                 alt="" /> -->
               <video
-                class="h-[320px] md:h-[490px] zoomEffectImg  object-cover group-hover:opacity-80 duration-200 ease-linear object-top w-full"
+                class="h-[320px] md:h-[490px] zoomEffectImg  object-cover group-hover:opacity-50 duration-200 ease-linear object-top w-full"
                 src="/commercial_video-c6f861ca.mp4" muted autoplay loop></video>
             </a>
           </div>
@@ -4084,11 +4086,12 @@ video {
             <img class="relative z-[1] max-w-full lg:h-[180px] lg:delay-200 object-cover mb-6"
               src="https://orris.in/images/media_specification/thumb/162547343820210705.jpeg" alt="" />
             <read-more limit="90" more="Read more" less="Read less"
-              class="px-[10px] block text-tertiary_clr text-[14px] leading-[25px] ">
-              <p class="text-tertiary_clr text-[14px] leading-[25px]"> This is an appreciation post for the entire  Thanks to Vikas Jha, Nidhi and Hitesh for
+              class="px-[10px] block sectionText text-tertiary_clr">
+              <p class="sectionText text-tertiary_clr"> This is an appreciation post for the entire
+                Thanks to Vikas Jha, Nidhi and Hitesh for
                 timely handover and finishing formalities
 
-                <span class="font-medium pb-3 pt-1 block text-tertiary_clr">Ashish Gola</span>
+                <span class="pb-3 pt-1 block text-tertiary_clr font-normal">Ashish Gola</span>
               </p>
             </read-more>
           </div>
@@ -4097,8 +4100,8 @@ video {
             <img class="relative z-[1] max-w-full lg:h-[180px] lg:delay-200 object-cover mb-6"
               src="https://orris.in/images/media_specification/thumb/162522229120210702.jpeg" alt="" />
             <read-more limit="90" more="Read more" less="Read less"
-              class="px-[10px] block text-tertiary_clr text-[14px] leading-[25px] ">
-              <p class="text-tertiary_clr text-[14px] leading-[25px]"> Feeling good while taking possession and support
+              class="px-[10px] block sectionText text-tertiary_clr">
+              <p class="sectionText text-tertiary_clr"> Feeling good while taking possession and support
                 from CRM & facility team is satisfactory and somehow amazing. Thanks to Vikas Jha, Nidhi and Hitesh for
                 timely handover and finishing formalities.</p>
             </read-more>
@@ -4108,8 +4111,8 @@ video {
             <img class="relative z-[1] max-w-full lg:h-[180px] lg:delay-200 object-cover mb-6"
               src="https://orris.in/images/media_specification/thumb/162522221820210702.jpeg" alt="" />
             <read-more limit="90" more="Read more" less="Read less"
-              class="px-[10px] block text-tertiary_clr text-[14px] leading-[25px] ">
-              <p class="text-tertiary_clr text-[14px] leading-[25px]"> The layout of the society is very neat and clean.
+              class="px-[10px] block sectionText text-tertiary_clr">
+              <p class="sectionText text-tertiary_clr"> The layout of the society is very neat and clean.
                 The floor plan is the best in this segment. I would like to highly appreciate Gaurav for continuous
                 support during the entire period.</p>
             </read-more>
@@ -4119,8 +4122,8 @@ video {
             <img class="relative z-[1] max-w-full lg:h-[180px] lg:delay-200 object-cover mb-6"
               src="https://orris.in/images/media_specification/thumb/162522212820210702.jpg" alt="" />
             <read-more limit="90" more="Read more" less="Read less"
-              class="px-[10px] block text-tertiary_clr text-[14px] leading-[25px] ">
-              <p class="text-tertiary_clr text-[14px] leading-[25px]">I am proud of the fact that I have two flats in
+              class="px-[10px] block sectionText text-tertiary_clr">
+              <p class="sectionText text-tertiary_clr">I am proud of the fact that I have two flats in
                 Orris Aster Court Premier. The Staff and workers have been very professional and cordial. I would like
                 to be associated with Orris family for future projects.</p>
             </read-more>
@@ -4130,8 +4133,8 @@ video {
             <img class="relative z-[1] max-w-full lg:h-[180px] lg:delay-200 object-cover mb-6"
               src="https://orris.in/images/media_specification/thumb/162790480720210802.jpeg" alt="" />
             <read-more limit="90" more="Read more" less="Read less"
-              class="px-[10px] block text-tertiary_clr text-[14px] leading-[25px] ">
-              <p class="text-tertiary_clr text-[14px] leading-[25px]"> Very understanding and co-operative staff, we are
+              class="px-[10px] block sectionText text-tertiary_clr">
+              <p class="sectionText text-tertiary_clr"> Very understanding and co-operative staff, we are
                 overall satisfied with our purchase & handover experience. Thank you team.</p>
             </read-more>
           </div>
@@ -4221,7 +4224,7 @@ video {
                 <a href="#" class="footerSmallLinks"> Events </a>
               </div>
 
-            
+
 
               <div class="lg:basis-auto md:basis-auto basis-full">
                 <a href="#" class="footerSmallLinks"> Why Join Us </a>

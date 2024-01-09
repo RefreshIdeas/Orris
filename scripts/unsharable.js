@@ -132,8 +132,10 @@ $(".white_Arrow_Vcenter").owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
+    autoplay:true,
     autoplayHoverPause: true,
     dotsEach: 2,
+    autoplaySpeed:2000,
     responsive: {
       0: {
         items: 1,

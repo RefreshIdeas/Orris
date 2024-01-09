@@ -28,6 +28,7 @@ header{
     @apply bg-secondary_clr hover:bg-primary_clr;
     border-radius: 1px;
     left: 0;
+    @apply duration-500;
     // transition: all 0.6s;
   }
 
@@ -94,10 +95,10 @@ header{
 }
 .hamburger_menu:hover {
   p {
-    @apply text-tertiary_BG_clr;
+    @apply text-[#808080];
   }
   .line-toggle {
-    @apply bg-tertiary_BG_clr;
+    @apply bg-[#808080];
   }
 }
 
@@ -115,12 +116,12 @@ header{
 
     &:hover{
       .text-secondary_clr{
-        @apply text-tertiary_BG_clr
+        @apply text-[#808080]
       }
       .toggle{
   
         .line-toggle{
-          @apply bg-tertiary_BG_clr
+          @apply bg-[#808080]
         }
       }
   

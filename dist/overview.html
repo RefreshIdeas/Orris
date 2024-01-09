@@ -417,7 +417,7 @@ body::-webkit-scrollbar-thumb{
   text-transform: uppercase;
   line-height: 45px;
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(58 57 71 / var(--tw-text-opacity));
   transition-duration: 300ms; }
 @media (min-width: 640px){
   .navigationSection .navBlock nav.mainNavs .nav{
@@ -532,6 +532,7 @@ header {
 .toggle-button .line-toggle {
   border-radius: 1px;
   left: 0;
+  transition-duration: 500ms;
 }
 .toggle-button .line-toggle:first-child {
   width: 25px;
@@ -596,10 +597,10 @@ header {
 }
 .hamburger_menu:hover p{
   --tw-text-opacity: 1;
-  color: rgb(255 168 0 / var(--tw-text-opacity)); }
+  color: rgb(128 128 128 / var(--tw-text-opacity)); }
 .hamburger_menu:hover .line-toggle{
   --tw-bg-opacity: 1;
-  background-color: rgb(255 168 0 / var(--tw-bg-opacity)); }
+  background-color: rgb(128 128 128 / var(--tw-bg-opacity)); }
 .white_nav_hamburger .hamburger_menu .text-secondary_clr{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -610,10 +611,10 @@ header {
   transition-duration: 500ms; }
 .white_nav_hamburger .hamburger_menu:hover .text-secondary_clr{
   --tw-text-opacity: 1;
-  color: rgb(255 168 0 / var(--tw-text-opacity)); }
+  color: rgb(128 128 128 / var(--tw-text-opacity)); }
 .white_nav_hamburger .hamburger_menu:hover .toggle .line-toggle{
   --tw-bg-opacity: 1;
-  background-color: rgb(255 168 0 / var(--tw-bg-opacity)); }
+  background-color: rgb(128 128 128 / var(--tw-bg-opacity)); }
 header.scrollActive {
   animation-fill-mode: both;
   animation: fixed;
@@ -1099,7 +1100,7 @@ a{
   transition-duration: 500ms; }
 .white_nav_hamburger .hamburger_menu:hover .scrollToView{
   --tw-text-opacity: 1;
-  color: rgb(255 168 0 / var(--tw-text-opacity)); }
+  color: rgb(128 128 128 / var(--tw-text-opacity)); }
 @media (min-width: 1024px){
   .scrollToView{
     padding-top: 0px;
@@ -1157,6 +1158,9 @@ a{
   line-height: 50px;
   --tw-text-opacity: 1;
   color: rgb(193 193 193 / var(--tw-text-opacity)); }
+@media (min-width: 768px){
+  .overviewTabLinks .overviewTabLink{
+    line-height: 40px; } }
 .overviewTabLinks .overviewTabLink:last-child {
   border: none;
 }
@@ -2120,12 +2124,16 @@ video {
   height: 320px; }
 .h-\[35px\]{
   height: 35px; }
+.h-\[360px\]{
+  height: 360px; }
 .h-\[365px\]{
   height: 365px; }
 .h-\[400px\]{
   height: 400px; }
 .h-\[40px\]{
   height: 40px; }
+.h-\[44px\]{
+  height: 44px; }
 .h-\[47vh\]{
   height: 47vh; }
 .h-\[50px\]{
@@ -2917,7 +2925,7 @@ video {
   transition-duration: 500ms; }
 .white_nav_hamburger .hamburger_menu:hover .btn{
   --tw-text-opacity: 1;
-  color: rgb(255 168 0 / var(--tw-text-opacity)); }
+  color: rgb(128 128 128 / var(--tw-text-opacity)); }
 .btn:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity)); }
@@ -2949,7 +2957,7 @@ video {
   transition-duration: 500ms; }
 .white_nav_hamburger .hamburger_menu:hover .btn.primary{
   --tw-text-opacity: 1;
-  color: rgb(255 168 0 / var(--tw-text-opacity)); }
+  color: rgb(128 128 128 / var(--tw-text-opacity)); }
 .btn.primary:hover{
   --tw-border-opacity: 1;
   border-color: rgb(128 128 128 / var(--tw-border-opacity));
@@ -2963,7 +2971,7 @@ video {
 .btn.secondary{
   max-width: 100%;
   justify-content: center;
-  font-weight: 100;
+  font-weight: 400;
   line-height: 40px; }
 .btn.secondary:hover{
   color: rgb(255 168 0 / var(--tw-text-opacity));
@@ -2980,23 +2988,6 @@ video {
   border-width: 1.5px;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   --tw-border-opacity: 0.25;
-  font-weight: 100;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity)); }
-.btn.tertiary:hover{
-  --tw-border-opacity: 1;
-  --tw-text-opacity: 1;
-  color: rgb(255 168 0 / var(--tw-text-opacity)); }
-.btn.tertiary svg g{
-  fill: #fff; }
-.btn.tertiary:hover svg path{
-  fill: #FFA800; }
-.btn.tertiary{
-  border-radius: 0px;
-  border-width: 1.5px;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-  --tw-border-opacity: 0.25;
-  font-weight: 100;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity)); }
 .btn.tertiary:hover{
@@ -3053,6 +3044,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow); }
 .group:hover .group-hover\:fill-tertiary_BG_clr{
   fill: #FFA800; }
+.group:hover .group-hover\:text-tertiary_BG_clr{
+  --tw-text-opacity: 1;
+  color: rgb(255 168 0 / var(--tw-text-opacity)); }
+.group:hover .group-hover\:opacity-50{
+  opacity: 0.5; }
 .group:hover .group-hover\:opacity-80{
   opacity: 0.8; }
 .group.active .group-\[\.active\]\:block{
@@ -3262,15 +3258,15 @@ video {
   .md\:px-\[10px\]{
     padding-left: 10px;
     padding-right: 10px; }
-  .md\:px-\[20px\]{
-    padding-left: 20px;
-    padding-right: 20px; }
   .md\:px-\[25px\]{
     padding-left: 25px;
     padding-right: 25px; }
   .md\:px-\[30px\]{
     padding-left: 30px;
     padding-right: 30px; }
+  .md\:px-\[50px\]{
+    padding-left: 50px;
+    padding-right: 50px; }
   .md\:py-0{
     padding-top: 0px;
     padding-bottom: 0px; }
@@ -3504,6 +3500,9 @@ video {
       flex-basis: 50%; } }
   .xl\:order-1{
     order: 1; }
+  .xl\:mx-\[-40px\]{
+    margin-left: -40px;
+    margin-right: -40px; }
   .xl\:my-\[100px\]{
     margin-top: 100px;
     margin-bottom: 100px; }
@@ -3525,6 +3524,9 @@ video {
     flex-basis: 58.333333%; }
   .xl\:basis-8\/12{
     flex-basis: 66.666667%; }
+  .xl\:px-\[40px\]{
+    padding-left: 40px;
+    padding-right: 40px; }
   .xl\:py-\[30px\]{
     padding-top: 30px;
     padding-bottom: 30px; }
@@ -3557,8 +3559,8 @@ video {
     padding-bottom: 5rem; } }
     
 /*# sourceMappingURL=overview.html?html-proxy&inline-css&index=0.css.map */</style>
-  <script type="module" crossorigin src="/controller-d1f852e8.js"></script>
-  <link rel="stylesheet" href="/controller-c0aec104.css">
+  <script type="module" crossorigin src="/controller-c316033b.js"></script>
+  <link rel="stylesheet" href="/controller-5933357c.css">
 </head>
 
 <body class="white_nav_hamburger">

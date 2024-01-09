@@ -18,7 +18,7 @@
     @apply hover:bg-[#808080] hover:border-[#808080] text-secondary_clr hover:text-secondary_clr border-secondary_clr hover:shadow-[0_5px_10px_#00000036];
   }
   &.secondary {
-    @apply hover:text-tertiary_BG_clr max-w-full justify-center hover:border-opacity-100 leading-[40px] font-thin;
+    @apply hover:text-tertiary_BG_clr max-w-full justify-center hover:border-opacity-100 leading-[40px] font-normal;
 
     @apply hover:bg-tertiary_BG_clr hover:border-tertiary_BG_clr hover:text-secondary_clr;
 
@@ -29,24 +29,9 @@
     }
   }
 
-  &.tertiary {
-    @apply border-white text-white  border-[1.5px]  border-opacity-25 rounded-none font-thin hover:text-tertiary_BG_clr hover:border-opacity-100;
-    svg {
-      g {
-        @apply fill-white;
-      }
-    }
-    &:hover {
-      svg {
-        path {
-          @apply fill-tertiary_BG_clr;
-        }
-      }
-    }
-  }
 
   &.tertiary {
-    @apply border-white text-white  border-[1.5px]  border-opacity-25 rounded-none font-thin hover:text-tertiary_BG_clr hover:border-opacity-100;
+    @apply border-white text-white  border-[1.5px]  border-opacity-25 rounded-none hover:text-tertiary_BG_clr hover:border-opacity-100;
     svg {
       g {
         @apply fill-white;

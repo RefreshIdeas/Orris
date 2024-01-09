@@ -428,6 +428,20 @@ new VenoBox({
   selector: ".venobox",
 });
 
+window.addEventListener("popstate", function (event) {
+  new VenoBox({
+    selector: ".venobox_events_gallery",
+    numeration: true,
+    infinigall: true,
+    share: false,
+    titlePosition: "top",
+    // titleattr:'venotitile',
+    titleStyle: "block",
+    spinner: "rotating-plane",
+  });
+  console.log("================================");
+});
+
 new VenoBox({
   selector: ".venobox_events_gallery",
   numeration: true,
@@ -688,3 +702,46 @@ elementsToObserve.forEach((element) => {
 //     scrub: true,
 //   },
 // });
+
+document
+  .getElementById("addQueryStringButton")
+  .addEventListener("click", function () {
+    // Get the current URL
+    var currentUrl = window.location.href;
+
+    // Add or update the query string parameter
+    var updatedUrl =
+      currentUrl + (currentUrl.includes("?") ? "&" : "?") + "ashu=123";
+
+    // Use pushState to update the URL without reloading the page
+    history.pushState({}, "", updatedUrl);
+  });
+
+
+
+  window.onpopstate = function(event) {
+    // The event.state will contain the state object
+    // You can access the updated query string using window.location.search
+    console.log("Query string changed:", window.location.search);
+};
+
+window.onhashchange = function() {
+  // The window.location.hash will contain the new query string
+  console.log("Query string changed:", window.location.hash);
+};
+
+// You can also use the addEventListener method
+// window.addEventListener('popstate', function(event) {
+//     console.log("Query string changed:", window.location.search);
+// });
+
+
+//   function handleQueryStringChange() {
+//     console.log("Query string changed:", window.location.search);
+// }
+
+// // Example of updating the query string using pushState
+// // This won't trigger the popstate event, so we call our function manually
+// history.pushState({}, '', '/new-path?param=value');
+// handleQueryStringChange();
+
