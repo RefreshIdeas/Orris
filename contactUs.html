@@ -334,20 +334,35 @@
                                         </div>
                                     </div>
 
-                                    <div class="basis-full mb-[30px] flex -mx-[15px]">
-                                        <div class="input_row basis-8/12">
-                                            <label for="captcha"
-                                                class="text-secondary_clr text-[17px] mb-2 block">Please enter the
-                                                security code:</label>
-                                            <input type="text" id="captcha"
-                                                class="theme_input text-[14px] text-secondary_clr font-light" />
-                                            <span class="text-red-500 text-[12px] pt-2 block"> </span>
+                                    <div class="basis-full mb-[30px] flex flex-wrap px-0">
+                                        <div class="input_row sm:basis-9/12 basis-full">
+                                            <label class="text-quartary_clr text-[15px] mb-2 block font-light" for="JobApplicationDetails_CaptchaCode">
+                                                Please enter
+                                                the
+                                                security code:
+                                            </label>
+                        
+                                            <input type="text" class="theme_input text-[14px] text-secondary_clr font-light" maxlength="4" autocomplete="off" data-val="true" data-val-length="The field CaptchaCode must be a string with a maximum length of 4." data-val-length-max="4" data-val-required=" Captcha Code field is required." id="JobApplicationDetails_CaptchaCode" name="JobApplicationDetails.CaptchaCode" value="">
+                        
+                                          
+                        
+                                            <span class="text-red-500 text-[12px] pt-2 block field-validation-valid" data-valmsg-for="JobApplicationDetails.CaptchaCode" data-valmsg-replace="true"> </span>
                                         </div>
-                                        <div class="basis-4/12"></div>
+                                        <div class="sm:basis-3/12 basis-full sm:px-0 sm:mt-0 mt-4">
+                                            <div class="input-group-prepend rounded-sm overflow-hidden max-[1024px]:order-1 flex">
+                                                <img id="img-captcha" src="http://localhost:5259/get-captcha-image?1704970999418" class="h-[40px] mr-3 sm:w-full">
+                                                <div class="h-[35px] w-[35px] cursor-pointer" onclick="$('#img-captcha').click()">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                                                        <path class=" fill-primary_clr" d="M17.65 6.35A7.958 7.958 0 0 0 12 4a8 8 0 0 0-8 8a8 8 0 0 0 8 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18a6 6 0 0 1-6-6a6 6 0 0 1 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <div class="basis-full">
-                                        <a href="#" class="btn primary group">Submit </a>
+                                        <a href="#"
+                                            class="btn primary group !max-w-[170px] w-full justify-center">Submit </a>
                                     </div>
                                 </div>
                             </div>
@@ -459,33 +474,33 @@
 
                                 <div class="flex items-center justify-between w-[180px]">
                                     <a href="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35"
+                                        <svg class="group" xmlns="http://www.w3.org/2000/svg" width="40" height="35"
                                             viewBox="0 0 50 50">
-                                            <path class="fill-[#9A9A9A]"
+                                            <path class="fill-[#9A9A9A] group-hover:fill-tertiary_BG_clr duration-300"
                                                 d="M26 20v-3c0-1.3.3-2 2.4-2H31v-5h-4c-5 0-7 3.3-7 7v3h-4v5h4v15h6V25h4.4l.6-5z" />
                                         </svg>
                                     </a>
 
                                     <a href="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35"
+                                        <svg class="group" xmlns="http://www.w3.org/2000/svg" width="27" height="35"
                                             viewBox="0 0 24 24">
-                                            <path class="fill-[#9A9A9A]"
+                                            <path class="fill-[#9A9A9A] group-hover:fill-tertiary_BG_clr duration-300"
                                                 d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
                                         </svg>
                                     </a>
 
                                     <a href="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26"
+                                        <svg class="group" xmlns="http://www.w3.org/2000/svg" width="40" height="26"
                                             viewBox="0 0 24 24">
-                                            <path class="fill-[#9A9A9A]"
+                                            <path class="fill-[#9A9A9A] group-hover:fill-tertiary_BG_clr duration-300"
                                                 d="M12.244 4c.534.003 1.87.016 3.29.073l.504.022c1.429.067 2.857.183 3.566.38c.945.266 1.687 1.04 1.938 2.022c.4 1.56.45 4.602.456 5.339l.001.152v.174c-.007.737-.057 3.78-.457 5.339c-.254.985-.997 1.76-1.938 2.022c-.709.197-2.137.313-3.566.38l-.504.023c-1.42.056-2.756.07-3.29.072l-.235.001h-.255c-1.13-.007-5.856-.058-7.36-.476c-.944-.266-1.687-1.04-1.938-2.022c-.4-1.56-.45-4.602-.456-5.339v-.326c.006-.737.056-3.78.456-5.339c.254-.985.997-1.76 1.939-2.021c1.503-.419 6.23-.47 7.36-.476zM9.999 8.5v7l6-3.5z" />
                                         </svg>
                                     </a>
 
                                     <a href="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        <svg class="group" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24">
-                                            <path class="fill-[#9A9A9A]"
+                                            <path class="fill-[#9A9A9A] group-hover:fill-tertiary_BG_clr duration-300"
                                                 d="M13.028 2c1.125.003 1.696.009 2.189.023l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.012.266.022.487.03.712l.006.194c.015.492.021 1.063.023 2.188l.001.746v1.31a78.831 78.831 0 0 1-.023 2.188l-.006.194c-.008.225-.018.446-.03.712c-.05 1.065-.22 1.79-.466 2.428a4.883 4.883 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465a72.11 72.11 0 0 1-.712.03l-.194.006c-.493.014-1.064.021-2.189.023l-.746.001h-1.309a78.43 78.43 0 0 1-2.189-.023l-.194-.006a63.036 63.036 0 0 1-.712-.031c-1.064-.05-1.79-.218-2.428-.465a4.889 4.889 0 0 1-1.771-1.153a4.904 4.904 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.428a74.1 74.1 0 0 1-.03-.712l-.005-.194A79.047 79.047 0 0 1 2 13.028v-2.056a78.82 78.82 0 0 1 .022-2.188l.007-.194c.008-.225.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.88 4.88 0 0 1 3.68 3.678a4.897 4.897 0 0 1 1.77-1.153c.638-.247 1.363-.415 2.428-.465c.266-.012.488-.022.712-.03l.194-.006a79 79 0 0 1 2.188-.023zM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m0 2a3 3 0 1 1 .001 6a3 3 0 0 1 0-6m5.25-3.5a1.25 1.25 0 0 0 0 2.5a1.25 1.25 0 0 0 0-2.5" />
                                         </svg>
                                     </a>

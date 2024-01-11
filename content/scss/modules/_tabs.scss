@@ -65,7 +65,7 @@
 .galleryTabLinks{
     @apply flex justify-center;
 .galleryTabLink{
-    @apply border-b-[2px] border-b-white md:text-[20px] text-[14px] w-max leading-[20px] md:leading-[50px] text-[#C1C1C1] md:px-[20px] px-[10px] uppercase;
+    @apply border-b-[2px] border-b-white md:text-[16px] text-[14px] w-max leading-[20px] md:leading-[50px] text-[#C1C1C1] md:mx-[20px] mx-[10px] uppercase;
 
 
 &.active{
@@ -80,11 +80,18 @@
 .partnersTabLinks{
     @apply flex justify-center;
 .partnersTabLink{
-    @apply border-b-[2px] border-b-white md:text-[18px] text-[14px] w-max leading-[20px] md:leading-[40px] text-[#C1C1C1] md:px-[20px] px-[10px] uppercase;
-
+    @apply border-b-[2px] border-b-white md:text-[16px] text-[14px] w-max leading-[20px] md:leading-[30px] text-[#C1C1C1] md:px-[20px] px-[10px] uppercase border-r-[1px] border-secondary_border_clr relative;
+    &:last-child{
+        border: none;
+    }
 
 &.active{
-    @apply text-tertiary_clr border-b-[1px] border-b-black
+@apply text-tertiary_clr;
+&::after{
+    content: '';
+    @apply absolute bottom-[-8px] h-[1px] bg-black w-[calc(100%-40px)] translate-x-[-50%] left-[50%] ;
+
+}
 }
 
 }

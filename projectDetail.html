@@ -16,7 +16,204 @@
 <body class="resizeDetect">
 
 
-    <button id="addQueryStringButton">Add Query String</button>
+    <header class="fixed w-full left-0 top-0 scrollEvent" data-scrolly="100" data-addclass="scrollActive">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center py-5">
+                <div class="hamburger_menu flex items-center cursor-pointer clickEvent toggle"
+                    data-toggleTO="navigationSection">
+                    <p class="font-normal text-secondary_clr text-[18px] hover:text-primary_clr duration-500">
+                        MENU
+                    </p>
+                    <div class="toggle-button ClickTrigger ml-5">
+                        <div class="toggle">
+                            <span class="line-toggle"></span>
+                            <span class="line-toggle"></span>
+                            <span class="line-toggle"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="/" class="">
+                    <img src="/content/images/orris-icon.png"
+                        class="md:w-[132px] md:h-auto h-[50px] object-contain duration-700 navLogo" alt="Logo" />
+                    <span class="opacity-0 h-0 w-0 block overflow-hidden">LOGO</span>
+                </a>
+
+                <div class="hamburger_menu items-center cursor-pointer navEvent open lg:flex hidden opacity-0">
+                    <div class="hamburger_menu flex items-center">
+                        <p class="font-normal text-secondary_clr text-[18px] hover:text-primary_clr">
+                            MENU
+                        </p>
+                        <div class="toggle-button ClickTrigger ml-5">
+                            <div class="toggle">
+                                <span class="line-toggle"></span>
+                                <span class="line-toggle"></span>
+                                <span class="line-toggle"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fixed top-0 h-screen w-full overflow-auto navigationSection">
+                <div class="relative all_Nav_block z-30 overflow-auto sm:h-screen h-[90vh] flex items-start">
+                    <div class="navBlock pt-[15px] flex flex-col justify-between">
+                        <div class="navUpperBlock">
+                            <div class="flex justify-between items-center">
+                                <div
+                                    class="flex items-center justify-between w-full cursor-pointer mb-4 sm:pl-[45px] pl-[30px] pr-[20px]">
+                                    <p class="current_page text-[16px] leading-[30px] font-light text-tertiary_clr">
+                                        HOME
+                                    </p>
+
+                                    <svg class="clickEvent toggle" data-toggleTO="navigationSection" width="20"
+                                        height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.40434 0.545454L9.92387 12.0671H10.0606L17.5801 0.545454H19.4569L11.0922 13.2727L19.4569 26H17.5801L10.0606 14.5529H9.92387L2.40434 26H0.527566L8.96684 13.2727L0.527566 0.545454H2.40434Z"
+                                            fill="#3A3947" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <nav class="mainNavs">
+                                <ul class="px-0 mx-0 navs h-full">
+                                    <li class="nav block" data-main_nav_of="nav1">
+                                        About Us
+                                        <span class="navIndicator">
+                                            <!-- <svg width="35" height="25" viewBox="0 0 44 25" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
+                              fill="fill-secondary_clr"></path>
+                          </svg> -->
+                                        </span>
+                                    </li>
+
+                                    <li class="nav block" data-main_nav_of="nav2">
+                                        What We Do
+                                        <span class="navIndicator">
+                                            <!-- <svg width="35" height="25" viewBox="0 0 44 25" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
+                              fill="fill-secondary_clr"></path>
+                          </svg> -->
+                                        </span>
+                                    </li>
+
+                                    <li class="nav block" data-main_nav_of="nav3">
+                                        Group of companies
+                                        <span class="navIndicator">
+                                            <!-- <svg width="35" height="25" viewBox="0 0 44 25" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
+                              fill="fill-secondary_clr"></path>
+                          </svg> -->
+                                        </span>
+                                    </li>
+
+                                    <li class="nav block" data-main_nav_of="nav4">
+                                        Press & media
+                                        <span class="navIndicator">
+                                            <!-- <svg width="35" height="25" viewBox="0 0 44 25" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
+                              fill="fill-secondary_clr"></path>
+                          </svg> -->
+                                        </span>
+                                    </li>
+
+                                    <li class="nav block" data-main_nav_of="nav5">
+                                        Careers
+                                        <span class="navIndicator">
+                                            <!-- <svg width="35" height="25" viewBox="0 0 44 25" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
+                              fill="fill-secondary_clr"></path>
+                          </svg> -->
+                                        </span>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="navLowerBlock py-[25px] sm:px-[45px] px-[25px] bg-secondary_BG_clr">
+                            <a href="mailto:mail@orris.in" class="hover-tertiary_BG_clr btn lg  mb-[2rem] secondary border-[1.5px] border-primary_border_clr
+                     rounded-none w-full block text-[20px] ">Quick
+                                Enquiry
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ml-[18px]" width="28" height="28"
+                                    viewBox="0 0 26 26">
+                                    <path fill="currentColor"
+                                        d="M3 4C1.344 4 0 5.344 0 7v12c0 1.656 1.344 3 3 3h20c1.656 0 3-1.344 3-3V7c0-1.656-1.344-3-3-3H3zm0 2h20c.551 0 1 .449 1 1v.5l-11 5.938L2 7.5V7c0-.551.449-1 1-1zM2 7.781l6.531 5.094l-6.406 6.563l7.813-5.563L13 15.844l3.063-1.969l7.812 5.563l-6.406-6.563L24 7.781V19a.95.95 0 0 1-.125.438c-.165.325-.486.562-.875.562H3c-.389 0-.71-.237-.875-.563A.95.95 0 0 1 2 19V7.781z">
+                                    </path>
+                                </svg></a>
+
+                            <a href="mailto:mail@orris.in"
+                                class="hover-tertiary_BG_clr btn lg secondary border-[1.5px] border-primary_border_clr  rounded-none w-full block text-[22px] ">Contact
+                                Us
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ml-[18px]" width="28" height="28"
+                                    viewBox="0 0 16 16">
+                                    <path fill="currentColor"
+                                        d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576L6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76l7.494-7.493Z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="subNav_block py-[15px] sm:px-[45px] px-[30px] bg-septenary_BG_clr clickEvent toggle ease-linear duration-300"
+                        data-toggleTO="subNav_block">
+                        <div class="navUpperBlock sm:hidden block">
+                            <div class="flex items-center cursor-pointer">
+                                <svg class="rotate-180" width="35" height="25" viewBox="0 0 44 25"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M30.0701 24.5152C30.0054 24.4548 29.9541 24.3831 29.919 24.3042C29.884 24.2253 29.866 24.1407 29.866 24.0552C29.866 23.9698 29.884 23.8852 29.919 23.8063C29.9541 23.7273 30.0054 23.6556 30.0701 23.5952L41.4105 13.003L1.65886 13.003C1.47425 13.003 1.29721 12.9345 1.16668 12.8126C1.03614 12.6906 0.962807 12.5253 0.962807 12.3529C0.962807 12.1804 1.03614 12.0151 1.16668 11.8931C1.29721 11.7712 1.47425 11.7027 1.65886 11.7027L41.4105 11.7027L30.0701 1.11046C30.0054 1.05006 29.9541 0.978347 29.9191 0.899426C29.8841 0.820504 29.8661 0.735916 29.8661 0.650493C29.8661 0.565069 29.8841 0.480481 29.9191 0.40156C29.9541 0.322638 30.0054 0.250928 30.0701 0.190525C30.1348 0.130121 30.2116 0.0822058 30.2961 0.0495155C30.3805 0.0168252 30.4711 0 30.5626 0C30.654 0 30.7446 0.0168252 30.8291 0.0495155C30.9136 0.0822058 30.9904 0.130121 31.055 0.190525L43.5839 11.8929C43.6487 11.9533 43.7 12.025 43.735 12.1039C43.7701 12.1828 43.7881 12.2674 43.7881 12.3529C43.7881 12.4383 43.7701 12.5229 43.735 12.6018C43.7 12.6807 43.6487 12.7524 43.5839 12.8128L31.055 24.5152C30.9904 24.5756 30.9136 24.6236 30.8291 24.6563C30.7446 24.689 30.654 24.7059 30.5626 24.7059C30.4711 24.7059 30.3805 24.689 30.296 24.6563C30.2115 24.6236 30.1348 24.5756 30.0701 24.5152Z"
+                                        fill="#fff"></path>
+                                </svg>
+
+                                <span class="text-[18px] text-white font-thin leading-[50px] ml-[20px]">Close</span>
+                            </div>
+                        </div>
+                        <div class="navLowerBlock sm:mt-0 mt-[20px]">
+                            <nav class="subNavs">
+                                <ul class="subNavs_list nav1">
+                                    <li class="subNav"><a href="#">Overview</a></li>
+                                    <!-- <li class="subNav"><a href="#">Orris Ethos</a></li> -->
+                                    <li class="subNav"><a href="#">Our Team</a></li>
+                                    <li class="subNav"><a href="#">CSR</a></li>
+                                </ul>
+
+                                <ul class="subNavs_list nav2">
+                                    <li class="subNav"><a href="#">Residential</a></li>
+                                    <li class="subNav"><a href="#">Commercial</a></li>
+                                    <li class="subNav"><a href="#">Construction Update</a></li>
+                                </ul>
+
+                                <ul class="subNavs_list nav3">
+                                    <li class="subNav"><a href="#">Real Estate</a></li>
+                                    <li class="subNav"><a href="#">Entertainment</a></li>
+                                    <li class="subNav"><a href="#">Hospitality</a></li>
+                                    <li class="subNav"><a href="#">Warehousing parks</a></li>
+                                    <li class="subNav"><a href="#">Education</a></li>
+                                </ul>
+
+                                <ul class="subNavs_list nav4">
+                                    <li class="subNav"><a href="#">Blogs</a></li>
+                                    <li class="subNav"><a href="#">Events</a></li>
+
+                                    <li class="subNav"><a href="#">Media Coverage</a></li>
+                                </ul>
+
+                                <ul class="subNavs_list nav5">
+                                    <li class="subNav"><a href="#">Why Join Us</a></li>
+                                    <li class="subNav"><a href="#">Life at Orris</a></li>
+                                    <li class="subNav"><a href="#">Current Openings</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
 
     <section class="hero_Section inner_page">
 
@@ -302,7 +499,11 @@
             <div class="relative lg:overflow-hidden">
                 <div
                     class="owl-carousel owl-theme center_slide galery_slider  md:mb-0 container  max-w-[80%] mb-0 lg:max-w-[75%] 2xl:max-w-[60%] mx-auto lg:overflow-visible ">
-                    <div class="item relative zoomOnHover group  overflow-hidden">
+
+
+                    <div title="Maryna Yazbeck @yazbeckistan" data-gall="gallery01"
+                        class="item relative zoomOnHover group  overflow-hidden venobox_events_gallery cursor_circle_view"
+                        href="https://orris.in/images/project_gallery/157199676820191025.jpg">
                         <div class="bg-black featured_media relative z-10  ">
                             <img class="h-[320px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
                                 src="https://orris.in/images/project_gallery/157199676820191025.jpg" />
@@ -311,22 +512,34 @@
 
                     </div>
 
-                    <div class="item relative zoomOnHover group  overflow-hidden">
+
+                    <div title="Maryna Yazbeck @yazbeckistan" data-gall="gallery01"
+                        class="item relative zoomOnHover group  overflow-hidden venobox_events_gallery cursor_circle_view"
+                        href="http://localhost:5259/Upload/fldProject/aster-court-premier-galler-3.jpg">
                         <div class="bg-black featured_media relative z-10  ">
                             <img class="h-[320px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
-                                src="https://orris.in/images/project_gallery/157199674520191025.jpg" />
+                                src="http://localhost:5259/Upload/fldProject/aster-court-premier-galler-3.jpg" />
 
                         </div>
 
                     </div>
-                    <div class="item relative zoomOnHover group  overflow-hidden">
+
+
+                    <div title="Maryna Yazbeck @yazbeckistan" data-gall="gallery01"
+                        class="item relative zoomOnHover group  overflow-hidden venobox_events_gallery cursor_circle_view"
+                        href="http://localhost:5259/Upload/fldProject/aster-court-premier-galler-3.jpg">
                         <div class="bg-black featured_media relative z-10  ">
                             <img class="h-[320px] md:h-[500px] zoomEffectImg lg:h-[540px] w-full object-cover object-center duration-200 ease-linear"
-                                src="https://orris.in/images/project_gallery/157199672520191025.jpg" />
+                                src="http://localhost:5259/Upload/fldProject/aster-court-premier-galler-3.jpg" />
 
                         </div>
 
                     </div>
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -341,32 +554,28 @@
 
                     </div>
 
-
                     <div class="item relative zoomOnHover">
                         <img class="relative z-[1] max-w-full object-cover "
-                            src="https://orris.in/images/project_gallery/167413377120230119.jpeg" alt="" />
+                            src="https://orris.in/images/project_gallery/167413387020230119.jpeg" alt="" />
+
+                    </div>
+                    <div class="item relative zoomOnHover">
+                        <img class="relative z-[1] max-w-full object-cover "
+                            src="https://orris.in/images/project_gallery/167413387020230119.jpeg" alt="" />
+
+                    </div>
+                    <div class="item relative zoomOnHover">
+                        <img class="relative z-[1] max-w-full object-cover "
+                            src="https://orris.in/images/project_gallery/167413387020230119.jpeg" alt="" />
+
+                    </div>
+                    <div class="item relative zoomOnHover">
+                        <img class="relative z-[1] max-w-full object-cover "
+                            src="https://orris.in/images/project_gallery/167413387020230119.jpeg" alt="" />
 
                     </div>
 
 
-                    <div class="item relative zoomOnHover">
-                        <img class="relative z-[1] max-w-full object-cover "
-                            src="https://orris.in/images/project_gallery/166488230720221004.jpeg" alt="" />
-
-                    </div>
-
-
-                    <div class="item relative zoomOnHover">
-                        <img class="relative z-[1] max-w-full object-cover "
-                            src="https://orris.in/images/project_gallery/166444553520220929.jpeg" alt="" />
-
-                    </div>
-
-                    <div class="item relative zoomOnHover">
-                        <img class="relative z-[1] max-w-full object-cover "
-                            src="https://orris.in/images/project_gallery/165814752820220718.jpg" alt="" />
-
-                    </div>
 
                 </div>
             </div>
@@ -600,43 +809,57 @@
 
 
     <section>
-        <div class="relative py-sectionPadding">
+        <div
+            class="relative py-sectionPadding bg-[url(./upload/fldCMS/specifications-section-bg.png)] bg-cover bg-center bg-fixed">
             <h2 class="sectionHeading text-white uppercas  text-center fadeUp">Specifications</h2>
-            <img src="/upload/fldCMS/specifications-section-bg.png"
-                class="absolute w-full h-full left-0 top-0 object-cover object-center z-[-1]" alt="">
 
             <div class="container">
                 <div class="white_bg-Arrow owl-carousel owl-theme specification_slider mt-[25px]">
                     <div class="item p-[22px] h-full border-white border-[1px] fadeUp">
-                        <div class="bg-white text-center px-[20px] pt-[10px] pb-[20px] fadeUp h-full">
+                        <div class="bg-white text-center px-[20px] pt-[10px] pb-[20px] fadeUp  ">
                             <h4
-                                class="border-secondary_border_clr border-b-[1px] pb-[0px] text-[18px] leading-[50px] fadeUp">
-                                COMMON</h4>
+                                class="border-secondary_border_clr text-tertiary_clr border-b-[1px]  text-[18px] leading-[25px] pt-5 pb-6">
+                                COMMON </h4>
 
 
-                            <div class="speci_scroltx">
-                                <div class="mt-[15px] fadeUp">
+                            <div class="speci_scroltx content h-[350px]" data-mcs-theme="dark">
+                                <div class="mt-[15px]">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Ceiling: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Oil Bound Distemper</p>
                                 </div>
-                                <div class="mt-[15px] fadeUp">
+
+                                <div class="mt-[15px]">
+                                    <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Ceiling: </h5>
+                                    <p class="text-[15px] text-tertiary_clr font-light">Oil Bound Distemper</p>
+                                </div>
+
+                                <div class="mt-[15px]">
+                                    <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Ceiling: </h5>
+                                    <p class="text-[15px] text-tertiary_clr font-light">Oil Bound Distemper</p>
+                                </div>
+
+                                <div class="mt-[15px]">
+                                    <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Ceiling: </h5>
+                                    <p class="text-[15px] text-tertiary_clr font-light">Oil Bound Distemper</p>
+                                </div>
+                                <div class="mt-[15px]">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Walls: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">PoP punning with Acrylic
                                         Emulsion Paint</p>
                                 </div>
 
-                                <div class="mt-[15px] fadeUp">
+                                <div class="mt-[15px]">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">External Doors/ Windows: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">UPVC frames &amp; shutters with
                                         clear glass</p>
                                 </div>
 
-                                <div class="mt-[15px] fadeUp">
+                                <div class="mt-[15px]">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Doors: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Laminated Flush Doors</p>
                                 </div>
 
-                                <div class="mt-[15px] fadeUp">
+                                <div class="mt-[15px]">
                                     <h5 class="text-[15px] text-tertiary_clr font-medium">Electrical Fittings: </h5>
                                     <p class="text-[15px] text-tertiary_clr font-light">Modular fittings and fixtures
                                     </p>
@@ -649,116 +872,6 @@
                         </div>
                     </div>
 
-                    <div class="item p-[22px] h-full border-white border-[1px] fadeUp">
-                        <div class="bg-white text-center px-[20px] pt-[10px] pb-[20px] fadeUp h-full">
-                            <h4
-                                class="border-secondary_border_clr border-b-[1px] pb-[0px] text-[18px] leading-[50px] fadeUp">
-                                COMMON</h4>
-
-
-                            <div class="speci_scroltx">
-                                <div class="mt-[15px] fadeUp">
-                                    <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Ceiling: </h5>
-                                    <p class="text-[15px] text-tertiary_clr font-light">Oil Bound Distemper</p>
-                                </div>
-                                <div class="mt-[15px] fadeUp">
-                                    <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Walls: </h5>
-                                    <p class="text-[15px] text-tertiary_clr font-light">PoP punning with Acrylic
-                                        Emulsion Paint</p>
-                                </div>
-
-                                <div class="mt-[15px] fadeUp">
-                                    <h5 class="text-[15px] text-tertiary_clr font-medium">External Doors/ Windows: </h5>
-                                    <p class="text-[15px] text-tertiary_clr font-light">UPVC frames &amp; shutters with
-                                        clear glass</p>
-                                </div>
-
-                                <div class="mt-[15px] fadeUp">
-                                    <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Doors: </h5>
-                                    <p class="text-[15px] text-tertiary_clr font-light">Laminated Flush Doors</p>
-                                </div>
-
-                                <div class="mt-[15px] fadeUp">
-                                    <h5 class="text-[15px] text-tertiary_clr font-medium">Electrical Fittings: </h5>
-                                    <p class="text-[15px] text-tertiary_clr font-light">Modular fittings and fixtures
-                                    </p>
-                                </div>
-
-                            </div>
-
-
-
-                        </div>
-                    </div>
-
-                    <div class="item p-[22px] h-full border-white border-[1px] fadeUp">
-                        <div class="bg-white text-center px-[20px] pt-[10px] pb-[20px] fadeUp h-full">
-                            <h4
-                                class="border-secondary_border_clr border-b-[1px] pb-[0px] text-[18px] leading-[50px] fadeUp">
-                                COMMON</h4>
-
-
-                            <div class="speci_scroltx">
-                                <div class="mt-[15px] fadeUp">
-                                    <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Ceiling: </h5>
-                                    <p class="text-[15px] text-tertiary_clr font-light">Oil Bound Distemper</p>
-                                </div>
-
-
-                                <div class="mt-[15px] fadeUp">
-                                    <h5 class="text-[15px] text-tertiary_clr font-medium">Electrical Fittings: </h5>
-                                    <p class="text-[15px] text-tertiary_clr font-light">Modular fittings and fixtures
-                                    </p>
-                                </div>
-
-                            </div>
-
-
-
-                        </div>
-                    </div>
-
-                    <div class="item p-[22px] h-full border-white border-[1px] fadeUp">
-                        <div class="bg-white text-center px-[20px] pt-[10px] pb-[20px] fadeUp h-full">
-                            <h4
-                                class="border-secondary_border_clr border-b-[1px] pb-[0px] text-[18px] leading-[50px] fadeUp">
-                                COMMON</h4>
-
-
-                            <div class="speci_scroltx">
-                                <div class="mt-[15px] fadeUp">
-                                    <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Ceiling: </h5>
-                                    <p class="text-[15px] text-tertiary_clr font-light">Oil Bound Distemper</p>
-                                </div>
-                                <div class="mt-[15px] fadeUp">
-                                    <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Walls: </h5>
-                                    <p class="text-[15px] text-tertiary_clr font-light">PoP punning with Acrylic
-                                        Emulsion Paint</p>
-                                </div>
-
-                                <div class="mt-[15px] fadeUp">
-                                    <h5 class="text-[15px] text-tertiary_clr font-medium">External Doors/ Windows: </h5>
-                                    <p class="text-[15px] text-tertiary_clr font-light">UPVC frames &amp; shutters with
-                                        clear glass</p>
-                                </div>
-
-                                <div class="mt-[15px] fadeUp">
-                                    <h5 class="text-[15px] text-tertiary_clr font-medium">Internal Doors: </h5>
-                                    <p class="text-[15px] text-tertiary_clr font-light">Laminated Flush Doors</p>
-                                </div>
-
-                                <div class="mt-[15px] fadeUp">
-                                    <h5 class="text-[15px] text-tertiary_clr font-medium">Electrical Fittings: </h5>
-                                    <p class="text-[15px] text-tertiary_clr font-light">Modular fittings and fixtures
-                                    </p>
-                                </div>
-
-                            </div>
-
-
-
-                        </div>
-                    </div>
 
 
 
@@ -788,102 +901,106 @@
                 <button class="tablink partnersTabLink" data-tab="Consultants-Contractors">Consultants &
                     Contractors</button>
             </div>
-            <div id="Banking-Financial" class="tabcontent md:mt-[40px] mt-[20px] md:mb-0 mb-[20px] partnersTabContent ">
-                <div class="owl-carousel owl-theme financialPartners lg:mb-[30px]">
+            <div id="Banking-Financial"
+                class="tabcontent md:mt-[40px] mt-[20px] md:mb-0 mb-[20px] partnersTabContent active">
+                <div class="owl-carousel owl-theme projectFinancialPartners lg:mb-[30px]">
                     <div class="item">
-                        <img src="/upload/fldCMS/fldBRAND/ICICI-Bank.png" class="mr-auto block !max-w-full"
+                        <img src="/upload/fldCMS/fldBRAND/ICICI-Bank.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
                             alt="icici" />
                     </div>
-
                     <div class="item ">
-                        <img src="/upload/fldCMS/fldBRAND/Indostar.png" class="mr-auto block !max-w-full"
+                        <img src="/upload/fldCMS/fldBRAND/Indostar.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
+                            alt="indostar" />
+                    </div>
+                    <div class="item ">
+                        <img src="/upload/fldCMS/fldBRAND/Indostar.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
+                            alt="indostar" />
+                    </div>
+                    <div class="item">
+                        <img src="/upload/fldCMS/fldBRAND/ICICI-Bank.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
+                            alt="icici" />
+                    </div>
+                    <div class="item ">
+                        <img src="/upload/fldCMS/fldBRAND/Indostar.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
+                            alt="indostar" />
+                    </div>
+                    <div class="item ">
+                        <img src="/upload/fldCMS/fldBRAND/Indostar.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
                             alt="indostar" />
                     </div>
 
-                    <div class="item">
-                        <img src="/upload/fldCMS/fldBRAND/Kotak-Realty-Fund.png" class="mr-auto block !max-w-full"
-                            alt="kotakfund" />
-                    </div>
 
-                    <div class="item">
-                        <img src="/upload/fldCMS/fldBRAND/Kotak-Mahindra-Bank.png" class="mr-auto block !max-w-full"
-                            alt="kotak" />
-                    </div>
 
-                    <div class="item">
-                        <img src="/upload/fldCMS/fldBRAND/Religare.png" class="mr-auto block !max-w-full"
-                            alt="religare" />
-                    </div>
 
-                    <div class="item">
-                        <img src="/upload/fldCMS/fldBRAND/LIC-HFL.png" class="mr-auto block !max-w-full" alt="lic" />
-                    </div>
-
-                    <div class="item">
-                        <img src="/upload/fldCMS/fldBRAND/PNB-Housing.png" class="mr-auto block !max-w-full"
-                            alt="pnb" />
-                    </div>
-
-                    <div class="item">
-                        <img src="/upload/fldCMS/fldBRAND/LT-Finance.png" class="mr-auto block !max-w-full"
-                            alt="landt" />
-                    </div>
-
-                    <div class="item ">
-                        <img src="/upload/fldCMS/fldBRAND/Xander.png" class="mr-auto block !max-w-full" alt="xander" />
-                    </div>
                 </div>
             </div>
 
             <div id="Construction" class="tabcontent md:mt-[40px] mt-[20px] md:mb-0 mb-[20px] partnersTabContent ">
-                <div class="owl-carousel owl-theme financialPartners lg:mb-[30px]">
+                <div class="owl-carousel owl-theme projectFinancialPartners lg:mb-[30px]">
                     <div class="item">
-                        <img src="/upload/fldCMS/fldBRAND/ICICI-Bank.png" class="mr-auto block !max-w-full"
+                        <img src="http://localhost:5259/Upload/fldPartner/saint-gobain.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
                             alt="icici" />
                     </div>
 
                     <div class="item ">
-                        <img src="/upload/fldCMS/fldBRAND/Indostar.png" class="mr-auto block !max-w-full"
+                        <img src="/upload/fldCMS/fldBRAND/Indostar.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
                             alt="indostar" />
                     </div>
 
                     <div class="item">
-                        <img src="/upload/fldCMS/fldBRAND/Kotak-Realty-Fund.png" class="mr-auto block !max-w-full"
+                        <img src="http://orris.refreshideas.com/Upload/fldPartner/graffiti.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
                             alt="kotakfund" />
                     </div>
 
                     <div class="item">
-                        <img src="/upload/fldCMS/fldBRAND/Kotak-Mahindra-Bank.png" class="mr-auto block !max-w-full"
+                        <img src="http://orris.refreshideas.com/Upload/fldPartner/Godrej-security.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
                             alt="kotak" />
                     </div>
 
                     <div class="item">
-                        <img src="/upload/fldCMS/fldBRAND/Religare.png" class="mr-auto block !max-w-full"
+                        <img src="/upload/fldCMS/fldBRAND/Religare.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
                             alt="religare" />
                     </div>
 
                     <div class="item">
-                        <img src="/upload/fldCMS/fldBRAND/LIC-HFL.png" class="mr-auto block !max-w-full" alt="lic" />
+                        <img src="/upload/fldCMS/fldBRAND/LIC-HFL.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
+                            alt="lic" />
                     </div>
 
                     <div class="item">
-                        <img src="/upload/fldCMS/fldBRAND/PNB-Housing.png" class="mr-auto block !max-w-full"
+                        <img src="/upload/fldCMS/fldBRAND/PNB-Housing.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
                             alt="pnb" />
                     </div>
 
                     <div class="item">
-                        <img src="/upload/fldCMS/fldBRAND/LT-Finance.png" class="mr-auto block !max-w-full"
+                        <img src="/upload/fldCMS/fldBRAND/LT-Finance.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
                             alt="landt" />
                     </div>
 
                     <div class="item ">
-                        <img src="/upload/fldCMS/fldBRAND/Xander.png" class="mr-auto block !max-w-full" alt="xander" />
+                        <img src="/upload/fldCMS/fldBRAND/Xander.png"
+                            class="mr-auto block !max-w-full w-full md:h-[120px] h-[80px] object-contain object-center md:px-[20px] px-[10px]"
+                            alt="xander" />
                     </div>
                 </div>
             </div>
 
             <div id="Consultants-Contractors"
-                class="tabcontent md:mt-[40px] mt-[20px] md:mb-0 mb-[20px] partnersTabContent active">
+                class="tabcontent md:mt-[40px] mt-[20px] md:mb-0 mb-[20px] partnersTabContent ">
                 <ul class="flex p-0 flex-wrap mx-[-15px]">
                     <li
                         class="border-teritary_border_clr md:mb-[20px] md:py-5 py-7 lg:border-r-[1px] lg:border-b-0 lg:basis-3/12 border-b-[1px] basis-full  text-tertiary_clr">
@@ -947,7 +1064,7 @@
 
 
     <div
-        class="popUp flex justify-center items-center bg-black bg-opacity-70 h-screen w-full fixed top-0 left-0 z-[999] px-[15px] downloadMasterPlan">
+        class="popUp flex justify-center items-center bg-black bg-opacity-70 h-screen w-full fixed top-0 left-0 z-[999] px-[15px] downloadMasterPlan active">
 
         <div class="popUpInnerBlock !opacity-100 max-w-[600px] w-full mx-auto relative downloadMasterPlan ">
             <div class="close-Icon h-[35px] w-[35px] rounded-full flex justify-center items-center absolute bg-primary_clr border-2 border-white -right-[15px] -top-[15px] clickEvent toggle cursor-pointer"
@@ -960,7 +1077,7 @@
 
             </div>
             <div class="bg-white md:px-[50px] md:py-[30px] p-[15px] py-[30px]">
-                <h2 class="sectionHeading text-tertiary_clr !normal-case pb-3">
+                <h2 class="sectionHeading text-tertiary_clr !normal-case py-5 bg-primary_BG_clr px-[15px] text-center">
                     Download Master Plan
                 </h2>
 
@@ -971,19 +1088,19 @@
                             <input type="text" id="name" class="theme_input text-[14px] text-tertiary_clr font-light">
                         </div>
                     </div>
+
                     <div class="md:basis-6/12 basis-full mb-[30px]">
-                        <div class="input_row">
-                            <label for="Email" class="text-tertiary_clr text-[17px]">Email</label>
-                            <input type="text" id="Email" class="theme_input text-[14px] text-tertiary_clr font-light">
-                        </div>
-                    </div>
-                    <div class="basis-full mb-[30px]">
                         <div class="input_row">
                             <label for="Mobile" class="text-tertiary_clr text-[17px]">Mobile</label>
                             <input type="text" id="Mobile" class="theme_input text-[14px] text-tertiary_clr font-light">
                         </div>
                     </div>
-
+                    <div class="basis-full mb-[30px]    ">
+                        <div class="input_row">
+                            <label for="Email" class="text-tertiary_clr text-[17px]">Email</label>
+                            <input type="text" id="Email" class="theme_input text-[14px] text-tertiary_clr font-light">
+                        </div>
+                    </div>
                     <div class="basis-full">
                         <a href="#" class="btn primary group mx-auto">Submit </a>
                     </div>
