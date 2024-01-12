@@ -5,6 +5,10 @@ export default defineConfig({
   base: "/", // Set the base URL to maintain the same directory structure
 
   build: {
+    minify: true, // Disable minification
+    terserOptions: {
+      mangle: false, // Disable mangling
+    },
     outDir: "dist", // Change the output directory to 'build'
     assetsDir: "", // Do not create an additional directory for assets
     rollupOptions: {

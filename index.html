@@ -14,9 +14,9 @@
 
 <body>
 
-  <header class="fixed w-full left-0 top-0 scrollEvent" data-scrolly="100" data-addclass="scrollActive">
+  <header class="fixed w-full left-0 top-0 scrollEvent group" data-scrolly="100" data-addclass="scrollActive">
     <div class="container mx-auto">
-      <div class="flex justify-between items-center py-5">
+      <div class="flex justify-between items-center py-5 group-[.scrollActive]:py-[1.1rem]">
         <div class="hamburger_menu flex items-center cursor-pointer clickEvent toggle"
           data-toggleTO="navigationSection">
           <p class="font-normal text-secondary_clr text-[18px] hover:text-primary_clr duration-500">
@@ -131,7 +131,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="navLowerBlock py-[25px] sm:px-[45px] px-[25px] bg-secondary_BG_clr">
+            <div class="navLowerBlock sm:py-[25px] pt-[25px] pb-[50px] sm:px-[45px] px-[25px] bg-secondary_BG_clr">
               <a href="mailto:mail@orris.in" class="hover-tertiary_BG_clr btn lg  mb-[2rem] secondary border-[1.5px] border-primary_border_clr
                  rounded-none w-full block text-[20px] ">Quick
                 Enquiry
@@ -639,37 +639,35 @@
         <h2 class="sectionHeading text-tertiary_clr mb-[25px] text-center">
           Our Financial Partners
         </h2>
-        <div class="owl-carousel owl-theme financialPartners lg:mb-[30px]">
-          <div class="item">
-            <img src="/upload/fldCMS/fldBRAND/ICICI-Bank.png" class="mr-auto block !max-w-full" alt="icici" />
+        <div class="flex flex-wrap justify-center items-center">
+          <div class="item md:basis-2/12 basis-6/12 mb-[30px]">
+          
           </div>
 
-          <div class="item ">
-            <img src="/upload/fldCMS/fldBRAND/Indostar.png" class="mr-auto block !max-w-full" alt="indostar" />
-          </div>
 
-          <div class="item">
+
+          <div class="item md:basis-2/12 basis-6/12 mb-[30px]">
             <img src="/upload/fldCMS/fldBRAND/Kotak-Realty-Fund.png" class="mr-auto block !max-w-full"
               alt="kotakfund" />
           </div>
 
-          <div class="item">
+          <div class="item md:basis-2/12 basis-6/12 mb-[30px]">
             <img src="/upload/fldCMS/fldBRAND/Kotak-Mahindra-Bank.png" class="mr-auto block !max-w-full" alt="kotak" />
           </div>
 
-          <div class="item">
+          <div class="item md:basis-2/12 basis-6/12 mb-[30px]">
             <img src="/upload/fldCMS/fldBRAND/Religare.png" class="mr-auto block !max-w-full" alt="religare" />
           </div>
 
-          <div class="item">
+          <div class="item md:basis-2/12 basis-6/12 mb-[30px]">
             <img src="/upload/fldCMS/fldBRAND/LIC-HFL.png" class="mr-auto block !max-w-full" alt="lic" />
           </div>
 
-          <div class="item">
+          <div class="item md:basis-2/12 basis-6/12 mb-[30px]">
             <img src="/upload/fldCMS/fldBRAND/PNB-Housing.png" class="mr-auto block !max-w-full" alt="pnb" />
           </div>
 
-          <div class="item">
+          <div class="item md:basis-2/12 basis-6/12 mb-[30px]">
             <img src="/upload/fldCMS/fldBRAND/LT-Finance.png" class="mr-auto block !max-w-full" alt="landt" />
           </div>
 
@@ -770,6 +768,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="module" src="./scripts/controller.js"></script>
   <script type="module" src="./scripts/unsharable.js"></script>
+
+
+
 </body>
 
 </html>

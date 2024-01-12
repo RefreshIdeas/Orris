@@ -173,36 +173,103 @@ $(".what_we_do").owlCarousel({
   },
 });
 
+// let banking_finance_slider = document.querySelector(".banking-finance_slider")
+//   ?.children?.length;
+// $(".banking-finance_slider").owlCarousel({
+//   margin: 10,
+//   nav: false,
+//   dots: false,
+//   dotsEach: 2,
+//   touchDrag: false,
+//   mouseDrag: false,
+//   slideTransition: "linear",
+//   autoplaySpeed: 5000,
+//   responsive: {
+//     0: {
+//       items: 2,
+//       loop: banking_finance_slider > 2 ? true : false,
+//       autoplay: banking_finance_slider > 5 ? true : false,
+//       autoplay: banking_finance_slider < 5 ? true : false,
+//     },
+//     600: {
+//       items: 4,
+//       loop: banking_finance_slider > 4 ? true : false,
+//       autoplay: banking_finance_slider > 5 ? true : false,
+//       autoplay: banking_finance_slider < 5 ? true : false,
+//     },
+//     1000: {
+//       items: 5,
+//       loop: banking_finance_slider > 5 ? true : false,
+//       autoplay: banking_finance_slider > 5 ? true : false,
+//       autoplay: banking_finance_slider < 5 ? true : false,
+//     },
+//   },
+// });
+
+// let construction_slider = document.querySelector(".construction_slider")
+//   ?.children?.length;
+// $(".construction_slider").owlCarousel({
+//   margin: 10,
+//   nav: false,
+//   dots: false,
+//   dotsEach: 2,
+//   touchDrag: false,
+//   mouseDrag: false,
+//   center: true,
+//   slideTransition: "linear",
+//   autoplaySpeed: 5000,
+//   responsive: {
+//     0: {
+//       items: 2,
+//       loop: construction_slider > 2 ? true : false,
+//       autoplay: construction_slider > 2 ? true : false,
+//     },
+//     600: {
+//       items: 4,
+//       loop: construction_slider > 4 ? true : false,
+//       autoplay: construction_slider > 4 ? true : false,
+//     },
+//     1000: {
+//       items: 5,
+//       loop: construction_slider > 5 ? true : false,
+//       autoplay: construction_slider > 5 ? true : false,
+//     },
+//   },
+// });
+
 let financeLIst = document.querySelector(".projectFinancialPartners")?.children
   ?.length;
-console.log(financeLIst);
 $(".projectFinancialPartners").owlCarousel({
   margin: 10,
   nav: false,
   dots: false,
   dotsEach: 2,
-  autoplay: true,
   touchDrag: false,
   mouseDrag: false,
-
+  center: true,
   slideTransition: "linear",
   autoplaySpeed: 5000,
   responsive: {
     0: {
       items: 2,
       loop: financeLIst > 2 ? true : false,
+      autoplay: financeLIst > 2 ? true : false,
     },
     600: {
       items: 4,
       loop: financeLIst > 4 ? true : false,
+      autoplay: financeLIst > 4 ? true : false,
     },
     1000: {
       items: 5,
       loop: financeLIst > 5 ? true : false,
+      autoplay: financeLIst > 5 ? true : false,
     },
   },
 });
 
+let possessionList = document.querySelector(".projectpossession_slider")
+  ?.children?.length;
 $(".projectpossession_slider").owlCarousel({
   loop: true,
   margin: 10,
@@ -211,29 +278,39 @@ $(".projectpossession_slider").owlCarousel({
   dots: true,
   autoplay: true,
   autoplaySpeed: 1500,
+  dotsEach: Math.ceil(possessionList / 5),
   // dotsEach: calculateDots(itemsCount),
   responsive: {
     0: {
       items: 1,
+      loop: possessionList > 1 ? true : false,
+      autoplay: possessionList > 1 ? true : false,
+      center: possessionList < 1 ? true : false,
     },
     600: {
       items: 2,
+      loop: possessionList > 2 ? true : false,
+      autoplay: possessionList > 2 ? true : false,
+      center: possessionList < 1 ? true : false,
     },
     1000: {
       margin: 20,
       items: 4,
+      loop: possessionList > 4 ? true : false,
+      autoplay: possessionList > 4 ? true : false,
+      center: possessionList < 1 ? true : false,
     },
   },
 });
 
+let specification_slider = document.querySelector(".specification_slider")
+  ?.children?.length;
 $(".specification_slider").owlCarousel({
-  loop: true,
   margin: 15,
   nav: true,
   dots: false,
   dotsEach: 2,
   // autoHeight: true,
-  autoplay: true,
   autoplayHoverPause: true,
   slideTransition: "linear",
   autoplaySpeed: 6000,
@@ -241,19 +318,28 @@ $(".specification_slider").owlCarousel({
   responsive: {
     0: {
       items: 1,
+      loop: specification_slider > 1 ? true : false,
+      autoplay: specification_slider > 1 ? true : false,
     },
     600: {
       items: 2,
+      loop: specification_slider > 2 ? true : false,
+      autoplay: specification_slider > 2 ? true : false,
+      center: specification_slider < 1 ? true : false,
     },
     1000: {
       margin: 20,
       items: 3,
+      loop: specification_slider > 3 ? true : false,
+      autoplay: specification_slider > 3 ? true : false,
+      center: specification_slider < 1 ? true : false,
     },
   },
 });
 
+let relatedPostSlider =
+  document.querySelector(".relatedPostSlider")?.children?.length;
 $(".relatedPostSlider").owlCarousel({
-  loop: true,
   margin: 10,
   nav: true,
   autoplayHoverPause: true,
@@ -261,14 +347,17 @@ $(".relatedPostSlider").owlCarousel({
   responsive: {
     0: {
       items: 1,
+      loop: relatedPostSlider > 1 ? true : false,
     },
     800: {
       items: 2,
+      loop: relatedPostSlider > 2 ? true : false,
     },
     1000: {
       dotsEach: 1,
       margin: 50,
       items: 2,
+      loop: relatedPostSlider > 2 ? true : false,
     },
   },
 });
@@ -445,19 +534,6 @@ new VenoBox({
   selector: ".venobox",
 });
 
-window.addEventListener("popstate", function (event) {
-  new VenoBox({
-    selector: ".venobox_events_gallery",
-    numeration: true,
-    infinigall: true,
-    share: false,
-    titlePosition: "top",
-    // titleattr:'venotitile',
-    titleStyle: "block",
-    spinner: "rotating-plane",
-  });
-});
-
 new VenoBox({
   selector: ".venobox_events_gallery",
   numeration: true,
@@ -468,6 +544,19 @@ new VenoBox({
   titleStyle: "block",
   spinner: "rotating-plane",
 });
+
+export function reinitalizeVenobox(param) {
+  new VenoBox({
+    selector: ".venobox_events_gallery",
+    numeration: true,
+    infinigall: true,
+    share: false,
+    titlePosition: "top",
+    // titleattr:'venotitile',
+    titleStyle: "block",
+    spinner: "rotating-plane",
+  });
+}
 
 // section nav
 let section_nav_opt = {
@@ -588,7 +677,14 @@ scrollNav.forEach((element) => {
 });
 
 // read more
-customElements.define("read-more", ReadMore);
+export function initReadmore() {
+  customElements.define("read-more", ReadMore);
+}
+
+if (!document.querySelector(".testimonial_slider")) {
+  initReadmore();
+}
+
 // tabs
 tabs(".heroSectionTabLink", ".heroSectionTabContent");
 tabs(".heroSectionImgTabLink", ".heroSectionImgTabContent");
