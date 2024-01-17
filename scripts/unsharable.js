@@ -24,37 +24,37 @@ initReadmore();
 //   },
 // });
 
-// $(".featured_projects").owlCarousel({
-//   loop: true,
-//   margin: 10,
-//   nav: true,
-//   autoplayHoverPause: true,
-//   dots: true,
-//   autoplay: true,
-//   responsive: {
-//     0: {
-//       items: 1,
-//     },
-//     600: {
-//       items: 1,
-//     },
-//     991: {
-//       margin: 80,
-//       items: 1,
-//       dots: false,
-//     },
-//     1280: {
-//       margin: 100,
-//       dots: false,
-//       items: 1,
-//     },
-//     1536: {
-//       margin: 200,
-//       dots: false,
-//       items: 1,
-//     },
-//   },
-// });
+$(".featured_projects").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  autoplayHoverPause: true,
+  dots: true,
+  autoplay: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    991: {
+      margin: 80,
+      items: 1,
+      dots: false,
+    },
+    1280: {
+      margin: 100,
+      dots: false,
+      items: 1,
+    },
+    1536: {
+      margin: 200,
+      dots: false,
+      items: 1,
+    },
+  },
+});
 
 // $(".galery_slider").owlCarousel({
 //   loop: true,

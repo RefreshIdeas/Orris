@@ -25,7 +25,7 @@ header{
     display: block;
     width: 40px;
     height: 2.5px;
-    @apply bg-secondary_clr hover:bg-primary_clr;
+    @apply bg-white;
     border-radius: 1px;
     left: 0;
     @apply duration-500;
@@ -102,20 +102,20 @@ header{
   }
 }
 
-.white_nav_hamburger{
+.dark_nav_hamburger{
   .hamburger_menu{
-    .text-secondary_clr{
-      @apply duration-500 text-white
+    .togglEl{
+      @apply duration-500  text-tertiary_clr
     }
     .toggle{
 
       .line-toggle{
-        @apply duration-500 bg-white
+        @apply duration-500  bg-tertiary_clr
       }
     }
 
     &:hover{
-      .text-secondary_clr{
+      .togglEl{
         @apply text-[#808080]
       }
       .toggle{
@@ -148,7 +148,7 @@ header.scrollActive {
   }
 
   img.navLogo {
-    @include LARGER_THEN_md {height: 65px !important;}
+    @include LARGER_THEN_md {height: 60px !important;}
     height: 50px !important;
   }
 }

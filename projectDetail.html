@@ -1048,7 +1048,8 @@
     <div
         class="popUp flex justify-center items-center bg-black bg-opacity-70 h-screen w-full fixed top-0 left-0 z-[999] px-[15px] downloadMasterPlan active">
 
-        <div class="popUpInnerBlock !opacity-100 max-w-[600px] w-full mx-auto relative downloadMasterPlan ">
+        <div
+            class="popUpInnerBlock !opacity-100 max-w-[600px] w-full mx-auto relative downloadMasterPlan protectOutsideClick">
             <div class="close-Icon h-[35px] w-[35px] rounded-full flex justify-center items-center absolute bg-primary_clr border-2 border-white -right-[15px] -top-[15px] clickEvent toggle cursor-pointer "
                 data-toggleto="downloadMasterPlan">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 24 24">
@@ -1104,15 +1105,15 @@
 
 
 
-               <div class="max-w-max mx-auto">
-                <svg version="1.1" id="Download" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px"
-                viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                <circle fill="#69BD45" cx="49.993" cy="49.75" r="47.714" />
-                <path fill="#FFFFFF" d="M16.916,50.122l17.618,28.212l50.037-54.45L36.164,60.36c0,0-4.022-8.547-9.654-11.396
+                <div class="max-w-max mx-auto">
+                    <svg version="1.1" id="Download" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px"
+                        viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                        <circle fill="#69BD45" cx="49.993" cy="49.75" r="47.714" />
+                        <path fill="#FFFFFF" d="M16.916,50.122l17.618,28.212l50.037-54.45L36.164,60.36c0,0-4.022-8.547-9.654-11.396
 C20.877,46.116,16.916,50.122,16.916,50.122z" />
-            </svg>
-               </div>
+                    </svg>
+                </div>
 
 
                 <p
@@ -1225,7 +1226,7 @@ C20.877,46.116,16.916,50.122,16.916,50.122z" />
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
     <script type="module" src="./scripts/controller.js"></script>
-    <script type="module" src="./scripts/unsharable.js"></script>
+    <!-- <script type="module" src="./scripts/unsharable.js"></script> -->
 
 </body>
 

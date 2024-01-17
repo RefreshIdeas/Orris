@@ -26,6 +26,25 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
+document.querySelector("body").addEventListener("click", (e) => {
+  function outsideClick() {
+    let getClasses = document.querySelectorAll(".clickEvent");
+    getClasses.forEach((val) => {
+      let dataAttr = val.dataset.toggleto;
+      let activeElement = document.querySelectorAll(`.${dataAttr}`);
+      activeElement.forEach((el) => {
+        if (el.classList.contains("active")) {
+          if (!e.target.closest(".protectOutsideClick")) {
+            el.classList.remove("active");
+          }
+        }
+      });
+    });
+  }
+
+  outsideClick();
+});
+
 $(".white_Arrow_Vcenter").owlCarousel({
   loop: true,
   margin: 10,
@@ -45,13 +64,14 @@ $(".white_Arrow_Vcenter").owlCarousel({
     },
   },
 });
-
+let galery_slider = document.querySelector(".galery_slider")?.children?.length;
 $(".galery_slider").owlCarousel({
   loop: true,
   margin: 10,
   nav: true,
   autoplayHoverPause: true,
   dots: true,
+  dotsEach: Math.ceil(galery_slider / 5),
   responsive: {
     0: {
       items: 1,
@@ -159,7 +179,7 @@ $(".what_we_do").owlCarousel({
     0: {
       items: 1,
     },
-    600: {
+    800: {
       items: 1,
     },
     1000: {
@@ -472,6 +492,7 @@ function addToogleEvent() {
 }
 
 function toggleFunc(e) {
+  e.stopPropagation();
   let nameof_class_tobe_toggle =
     e.target.closest(".clickEvent").dataset.toggleto;
   if (!nameof_class_tobe_toggle) return;

@@ -94,11 +94,10 @@
     position: absolute;
     left: 50%;
     transform: translate3d(-50%, 50%, 0);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @apply lg:bottom-[55%] bottom-[7px] z-20 items-center justify-between flex lg:w-[82%] xl:w-[82%] 2xl:w-[69%] w-[160px];
+    @apply lg:bottom-[55%] bottom-[7px] z-20 items-center justify-between flex lg:w-[82%] xl:w-[950px] min-[1350px]:w-[69%] w-[160px];
     button {
       svg {
         @apply text-black ;
@@ -229,11 +228,33 @@
 
 
 .CMSPage_project_detail{
-  .banking-finance{
-    @apply md:mt-[20px] mt-[20px] 
+
+  #banking-finance{
+    @apply  md:mt-[30px];
+    .logo_parent{
+      @apply mb-[10px]
+    }
+    img{
+      @apply h-[60px] ;
+    }
 
   }
+
+  #construction{
+    .logo_parent{
+      @apply mb-[20px]
+    }
+    img{
+      @apply md:h-[120px] h-[70px] ;
+    }
+  }
+  #consultants-constractors{
+  ul li:last-child{
+    border-bottom: transparent !important;
+    @apply border-b-transparent;
+  }
+  }
   #construction,#consultants-constractors{
-    @apply md:mt-[30px] mt-[30px]
+    @apply md:mt-[30px]
   }
 }

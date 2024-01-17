@@ -524,12 +524,7 @@ header {
   width: 40px;
   height: 2.5px;
   --tw-bg-opacity: 1;
-  background-color: rgb(68 68 68 / var(--tw-bg-opacity));
-}
-.toggle-button .line-toggle:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 122 127 / var(--tw-bg-opacity)); }
-.toggle-button .line-toggle {
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   border-radius: 1px;
   left: 0;
   transition-duration: 500ms;
@@ -601,18 +596,18 @@ header {
 .hamburger_menu:hover .line-toggle{
   --tw-bg-opacity: 1;
   background-color: rgb(128 128 128 / var(--tw-bg-opacity)); }
-.white_nav_hamburger .hamburger_menu .text-secondary_clr{
+.dark_nav_hamburger .hamburger_menu .togglEl{
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(58 57 71 / var(--tw-text-opacity));
   transition-duration: 500ms; }
-.white_nav_hamburger .hamburger_menu .toggle .line-toggle{
+.dark_nav_hamburger .hamburger_menu .toggle .line-toggle{
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(58 57 71 / var(--tw-bg-opacity));
   transition-duration: 500ms; }
-.white_nav_hamburger .hamburger_menu:hover .text-secondary_clr{
+.dark_nav_hamburger .hamburger_menu:hover .togglEl{
   --tw-text-opacity: 1;
   color: rgb(128 128 128 / var(--tw-text-opacity)); }
-.white_nav_hamburger .hamburger_menu:hover .toggle .line-toggle{
+.dark_nav_hamburger .hamburger_menu:hover .toggle .line-toggle{
   --tw-bg-opacity: 1;
   background-color: rgb(128 128 128 / var(--tw-bg-opacity)); }
 header.scrollActive {
@@ -632,7 +627,7 @@ header.scrollActive img.navLogo {
 }
 @media (min-width: 768px) {
   header.scrollActive img.navLogo {
-    height: 65px !important;
+    height: 60px !important;
   }
 }
 footer .footerNavHeading{
@@ -832,8 +827,8 @@ a{
     width: 82%; } }
 @media (min-width: 1280px){
   .center_slide .owl-nav{
-    width: 82%; } }
-@media (min-width: 1536px){
+    width: 950px; } }
+@media (min-width: 1350px){
   .center_slide .owl-nav{
     width: 69%; } }
 .center_slide .owl-nav button svg{
@@ -1000,13 +995,24 @@ a{
 }
 .specification_slider .owl-stage{
   display: flex; }
-.CMSPage_project_detail .banking-finance{
-  margin-top: 20px; }
 @media (min-width: 768px){
-  .CMSPage_project_detail .banking-finance{
-    margin-top: 20px; } }
-.CMSPage_project_detail #construction, .CMSPage_project_detail #consultants-constractors{
-  margin-top: 30px; }
+  .CMSPage_project_detail #banking-finance{
+    margin-top: 30px; } }
+.CMSPage_project_detail #banking-finance .logo_parent{
+  margin-bottom: 10px; }
+.CMSPage_project_detail #banking-finance img{
+  height: 60px; }
+.CMSPage_project_detail #construction .logo_parent{
+  margin-bottom: 20px; }
+.CMSPage_project_detail #construction img{
+  height: 70px; }
+@media (min-width: 768px){
+  .CMSPage_project_detail #construction img{
+    height: 120px; } }
+.CMSPage_project_detail #consultants-constractors ul li:last-child {
+  border-bottom: transparent !important;
+  border-bottom-color: transparent;
+}
 @media (min-width: 768px){
   .CMSPage_project_detail #construction, .CMSPage_project_detail #consultants-constractors{
     margin-top: 30px; } }
@@ -1105,13 +1111,6 @@ a{
   color: rgb(68 68 68 / var(--tw-text-opacity));
   transition-duration: 300ms;
   transition-timing-function: linear; }
-.white_nav_hamburger .hamburger_menu .scrollToView{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  transition-duration: 500ms; }
-.white_nav_hamburger .hamburger_menu:hover .scrollToView{
-  --tw-text-opacity: 1;
-  color: rgb(128 128 128 / var(--tw-text-opacity)); }
 @media (min-width: 1024px){
   .scrollToView{
     padding-top: 0px;
@@ -1415,6 +1414,24 @@ a{
     font-size: 18px; } }
 .vbox-close{
   top: 0.75rem; }
+.vbox-next{
+  height: 50px;
+  width: 50px;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.5;
+  opacity: 1; }
+.vbox-next span{
+  right: 19px;
+  top: 14px; }
+.vbox-prev{
+  height: 50px;
+  width: 50px;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.5;
+  opacity: 1; }
+.vbox-prev span{
+  left: 19px;
+  top: 14px; }
 .input_row input, .input_row textarea, .input_row select{
   width: 100%;
   border-bottom-width: 1px;
@@ -1495,6 +1512,9 @@ a{
   max-width: max-content !important;
   margin: 0 auto !important;
 }
+.CMSPage_project_detail .greenopolis{
+  padding-top: 55px;
+  padding-bottom: 55px; }
 /*! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
  */
 /*
@@ -1953,6 +1973,8 @@ video {
   left: 50%; }
 .right-0{
   right: 0px; }
+.right-\[10px\]{
+  right: 10px; }
 .top-0{
   top: 0px; }
 .top-4{
@@ -1979,6 +2001,8 @@ video {
   z-index: 2; }
 .z-\[3\]{
   z-index: 3; }
+.z-\[5\]{
+  z-index: 5; }
 .z-\[999\]{
   z-index: 999; }
 .z-\[99\]{
@@ -2310,6 +2334,8 @@ video {
   align-items: center; }
 .justify-start{
   justify-content: flex-start; }
+.justify-end{
+  justify-content: flex-end; }
 .justify-center{
   justify-content: center; }
 .justify-between{
@@ -2963,13 +2989,6 @@ video {
   color: rgb(68 68 68 / var(--tw-text-opacity));
   transition-duration: 300ms;
   transition-timing-function: linear; }
-.white_nav_hamburger .hamburger_menu .btn{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  transition-duration: 500ms; }
-.white_nav_hamburger .hamburger_menu:hover .btn{
-  --tw-text-opacity: 1;
-  color: rgb(128 128 128 / var(--tw-text-opacity)); }
 .btn:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity)); }
@@ -2995,13 +3014,6 @@ video {
   border-color: rgb(68 68 68 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgb(68 68 68 / var(--tw-text-opacity)); }
-.white_nav_hamburger .hamburger_menu .btn.primary{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  transition-duration: 500ms; }
-.white_nav_hamburger .hamburger_menu:hover .btn.primary{
-  --tw-text-opacity: 1;
-  color: rgb(128 128 128 / var(--tw-text-opacity)); }
 .btn.primary:hover{
   --tw-border-opacity: 1;
   border-color: rgb(128 128 128 / var(--tw-border-opacity));
@@ -3102,9 +3114,9 @@ video {
   display: block; }
 .group.active .group-\[\.active\]\:hidden{
   display: none; }
-.group.scrollActive .group-\[\.scrollActive\]\:py-\[1\.1rem\]{
-  padding-top: 1.1rem;
-  padding-bottom: 1.1rem; }
+.group.scrollActive .group-\[\.scrollActive\]\:py-\[1rem\]{
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 .group.active .group-\[\&\.active\]\:text-primary_clr{
   --tw-text-opacity: 1;
   color: rgb(0 122 127 / var(--tw-text-opacity)); }
@@ -3186,6 +3198,11 @@ video {
     left: 0px; }
   .md\:top-9{
     top: 2.25rem; }
+  .md\:order-1{
+    order: 1; }
+  .md\:mx-\[-15px\]{
+    margin-left: -15px;
+    margin-right: -15px; }
   .md\:my-\[80px\]{
     margin-top: 80px;
     margin-bottom: 80px; }
@@ -3292,6 +3309,9 @@ video {
     min-width: 25px; }
   .md\:max-w-\[160px\]{
     max-width: 160px; }
+  .md\:max-w-max{
+    max-width: -moz-max-content;
+    max-width: max-content; }
   .md\:basis-2\/12{
     flex-basis: 16.666667%; }
   .md\:basis-3\/12{
@@ -3330,6 +3350,9 @@ video {
   .md\:px-\[10px\]{
     padding-left: 10px;
     padding-right: 10px; }
+  .md\:px-\[15px\]{
+    padding-left: 15px;
+    padding-right: 15px; }
   .md\:px-\[20px\]{
     padding-left: 20px;
     padding-right: 20px; }
@@ -3407,6 +3430,8 @@ video {
     font-size: 20px; }
   .md\:text-\[25px\]{
     font-size: 25px; }
+  .md\:text-\[32px\]{
+    font-size: 32px; }
   .md\:text-\[35px\]{
     font-size: 35px; }
   .md\:text-\[40px\]{
@@ -3432,6 +3457,9 @@ video {
     order: 1; }
   .lg\:order-2{
     order: 2; }
+  .lg\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px; }
   .lg\:my-\[90px\]{
     margin-top: 90px;
     margin-bottom: 90px; }
@@ -3477,6 +3505,8 @@ video {
     height: 380px; }
   .lg\:h-\[450px\]{
     height: 450px; }
+  .lg\:h-\[490px\]{
+    height: 490px; }
   .lg\:h-\[500px\]{
     height: 500px; }
   .lg\:h-\[540px\]{
@@ -3507,9 +3537,6 @@ video {
     max-width: 400px; }
   .lg\:max-w-\[75\%\]{
     max-width: 75%; }
-  .lg\:max-w-max{
-    max-width: -moz-max-content;
-    max-width: max-content; }
   .lg\:basis-10\/12{
     flex-basis: 83.333333%; }
   .lg\:basis-2\/12{
@@ -3565,6 +3592,8 @@ video {
     padding-top: 30px; }
   .lg\:pt-\[80px\]{
     padding-top: 80px; }
+  .lg\:text-\[35px\]{
+    font-size: 35px; }
   .lg\:text-\[50px\]{
     font-size: 50px; }
   .lg\:leading-\[30px\]{
@@ -3583,12 +3612,16 @@ video {
   .xl\:my-\[100px\]{
     margin-top: 100px;
     margin-bottom: 100px; }
+  .xl\:h-\[360px\]{
+    height: 360px; }
   .xl\:h-\[70vh\]{
     height: 70vh; }
   .xl\:h-full{
     height: 100%; }
   .xl\:h-screen{
     height: 100vh; }
+  .xl\:max-w-\[850px\]{
+    max-width: 850px; }
   .xl\:max-w-full{
     max-width: 100%; }
   .xl\:basis-4\/12{
@@ -3609,6 +3642,11 @@ video {
     padding-bottom: 30px; }
   .xl\:pt-0{
     padding-top: 0px; } }
+@media (min-width: 1350px){
+  .min-\[1350px\]\:h-\[540px\]{
+    height: 540px; }
+  .min-\[1350px\]\:max-w-\[60\%\]{
+    max-width: 60%; } }
 @media (min-width: 1536px){
   .\32xl\:my-\[120px\]{
     margin-top: 120px;
@@ -3636,8 +3674,8 @@ video {
     padding-bottom: 5rem; } }
     
 /*# sourceMappingURL=overview.html?html-proxy&inline-css&index=0.css.map */</style>
-  <script type="module" crossorigin src="/controller-8b5c9f4a.js"></script>
-  <link rel="stylesheet" href="/controller-519f78f1.css">
+  <script type="module" crossorigin src="/controller-c27ccae1.js"></script>
+  <link rel="stylesheet" href="/controller-660856aa.css">
 </head>
 
 <body class="white_nav_hamburger">

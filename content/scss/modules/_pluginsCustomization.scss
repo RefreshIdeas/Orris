@@ -32,3 +32,19 @@ margin-right:auto !important ;
         .vbox-close{
             @apply top-3
         }
+
+        .vbox-next{
+            @apply h-[50px] w-[50px] bg-black bg-opacity-50 opacity-100;
+            span{
+                 @apply right-[19px] top-[14px]
+
+}            
+        }
+
+        .vbox-prev{
+            @apply h-[50px] w-[50px] bg-black bg-opacity-50 opacity-100;
+            span{
+                 @apply left-[19px] top-[14px]
+
+}            
+        }
