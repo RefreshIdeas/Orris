@@ -2,7 +2,7 @@
    
     @apply flex justify-center items-center;
     .vbox-content{
-    @apply h-[500px] max-w-[800px] mx-auto;
+    @apply h-[500px] max-w-[800px] lg:max-w-[1000px] 2xl:max-w-[1400px] mx-auto;
 margin-left:auto !important ;
 margin-right:auto !important ;
 
