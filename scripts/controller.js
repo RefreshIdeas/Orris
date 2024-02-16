@@ -193,6 +193,37 @@ $(".what_we_do").owlCarousel({
   },
 });
 
+
+let financialPartners = document.querySelector(".projectFinancialPartners")?.children
+?.length;
+  $(".ourConsultant").owlCarousel({
+      loop: true,
+      margin: 10,
+      lazyLoad: true,
+      nav: false,
+      dots: false,
+      dotsEach: 2,
+      autoplay: true,
+      touchDrag: false,
+      mouseDrag: false,
+
+      slideTransition: "linear",
+      autoplaySpeed: 5000,
+      responsive: {
+          0: {
+              items: 2,
+          },
+          600: {
+              items: 4,
+          },
+          1000: {
+              items: 5,
+          },
+      },
+  });
+
+
+
 // let banking_finance_slider = document.querySelector(".banking-finance_slider")
 //   ?.children?.length;
 // $(".banking-finance_slider").owlCarousel({

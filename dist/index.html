@@ -404,7 +404,7 @@ body::-webkit-scrollbar-thumb{
 @media (min-width: 640px){
   .navigationSection .navBlock{
     max-width: 380px; } }
-.navigationSection .navBlock nav.mainNavs .nav{
+.navigationSection .navBlock nav.mainNavs .nav, .navigationSection .navBlock nav.mainNavs .nav_no_child{
   display: flex;
   cursor: pointer;
   align-items: center;
@@ -420,31 +420,34 @@ body::-webkit-scrollbar-thumb{
   color: rgb(58 57 71 / var(--tw-text-opacity));
   transition-duration: 300ms; }
 @media (min-width: 640px){
-  .navigationSection .navBlock nav.mainNavs .nav{
+  .navigationSection .navBlock nav.mainNavs .nav, .navigationSection .navBlock nav.mainNavs .nav_no_child{
     padding-left: 45px;
     font-size: 18px; } }
-.navigationSection .navBlock nav.mainNavs .nav svg{
+.navigationSection .navBlock nav.mainNavs .nav svg, .navigationSection .navBlock nav.mainNavs .nav_no_child svg{
   margin-left: 20px; }
 @media (max-width: 640px){
-  .navigationSection .navBlock nav.mainNavs .nav svg{
+  .navigationSection .navBlock nav.mainNavs .nav svg, .navigationSection .navBlock nav.mainNavs .nav_no_child svg{
     width: 30px; } }
 @media (min-width: 640px){
-  .navigationSection .navBlock nav.mainNavs .nav svg{
+  .navigationSection .navBlock nav.mainNavs .nav svg, .navigationSection .navBlock nav.mainNavs .nav_no_child svg{
     margin-left: 25px; } }
-.navigationSection .navBlock nav.mainNavs .nav:hover{
+.navigationSection .navBlock nav.mainNavs .nav:hover, .navigationSection .navBlock nav.mainNavs .nav_no_child:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(91 91 91 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity)); }
-.navigationSection .navBlock nav.mainNavs .nav:hover svg path {
+.navigationSection .navBlock nav.mainNavs .nav:hover a, .navigationSection .navBlock nav.mainNavs .nav_no_child:hover a{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity)); }
+.navigationSection .navBlock nav.mainNavs .nav:hover svg path, .navigationSection .navBlock nav.mainNavs .nav_no_child:hover svg path {
   fill: white;
 }
-.navigationSection .navBlock nav.mainNavs .nav.active{
+.navigationSection .navBlock nav.mainNavs .nav.active, .navigationSection .navBlock nav.mainNavs .nav_no_child.active{
   --tw-bg-opacity: 1;
   background-color: rgb(91 91 91 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity)); }
-.navigationSection .navBlock nav.mainNavs .nav.active svg{
+.navigationSection .navBlock nav.mainNavs .nav.active svg, .navigationSection .navBlock nav.mainNavs .nav_no_child.active svg{
   display: none; }
 .navigationSection .subNav_block{
   position: fixed;
@@ -990,7 +993,7 @@ a{
 @media (min-width: 1024px){
   .what_we_do .owl-item .item video{
     height: 100%; } }
-.financialPartners .owl-item img {
+.financialPartners .owl-item img, .ourConsultant .owl-item img {
   width: auto !important;
 }
 .specification_slider .owl-stage{
@@ -2252,6 +2255,8 @@ video {
   width: 40%; }
 .w-\[40px\]{
   width: 40px; }
+.w-\[48px\]{
+  width: 48px; }
 .w-\[50\%\]{
   width: 50%; }
 .w-\[50px\]{
@@ -3338,6 +3343,10 @@ video {
     flex-basis: auto; }
   .md\:flex-nowrap{
     flex-wrap: nowrap; }
+  .md\:items-center{
+    align-items: center; }
+  .md\:justify-between{
+    justify-content: space-between; }
   .md\:bg-transparent{
     background-color: transparent; }
   .md\:p-5{
@@ -3487,8 +3496,6 @@ video {
     margin-bottom: 50px; }
   .lg\:mb-\[60px\]{
     margin-bottom: 60px; }
-  .lg\:mb-\[70px\]{
-    margin-bottom: 70px; }
   .lg\:mr-\[5\%\]{
     margin-right: 5%; }
   .lg\:mt-0{
@@ -3592,6 +3599,9 @@ video {
   .lg\:py-\[25px\]{
     padding-top: 25px;
     padding-bottom: 25px; }
+  .lg\:py-sectionPadding{
+    padding-top: 55px;
+    padding-bottom: 55px; }
   .lg\:\!pb-\[120px\]{
     padding-bottom: 120px !important; }
   .lg\:\!pt-\[80px\]{
@@ -3600,6 +3610,8 @@ video {
     padding-bottom: 120px; }
   .lg\:pb-\[40px\]{
     padding-bottom: 40px; }
+  .lg\:pl-\[70px\]{
+    padding-left: 70px; }
   .lg\:pt-\[30px\]{
     padding-top: 30px; }
   .lg\:pt-\[80px\]{
@@ -3686,9 +3698,9 @@ video {
     padding-bottom: 5rem; } }
   
 /*# sourceMappingURL=index.html?html-proxy&inline-css&index=0.css.map */</style>
-  <script type="module" crossorigin src="/main-82af9eaa.js"></script>
-  <link rel="modulepreload" crossorigin href="/controller-4e504e4d.js">
-  <link rel="stylesheet" href="/controller-de00380f.css">
+  <script type="module" crossorigin src="/main-819d43d9.js"></script>
+  <link rel="modulepreload" crossorigin href="/controller-b12eeaf6.js">
+  <link rel="stylesheet" href="/controller-12566e56.css">
 </head>
 
 <body class="dark_nav_hamburger">
@@ -3806,6 +3818,11 @@ video {
                           fill="fill-secondary_clr"></path>
                       </svg> -->
                     </span>
+                  </li>
+
+                  <li class="nav_no_child block">
+                    <a href="">sdgsgvs</a>
+
                   </li>
                 </ul>
               </nav>
@@ -4335,6 +4352,83 @@ video {
   </section>
 
   <section class="divider h-[1px] bg-black w-full bg-opacity-10 container"></section>
+
+
+
+  <section>
+    <div class="">
+      <div class="container lg:!max-w-[90%] relative z-10 py-sectionPadding">
+        <h2 class="sectionHeading text-tertiary_clr mb-[25px] text-center">
+          Our Consultants and Partners
+        </h2>
+        <div class="owl-carousel owl-theme ourConsultant lg:mb-[30px]">
+
+          <div class="item">
+            <img src="/Upload/fldPartner/Confluence.png" class="mr-auto block !max-w-full"
+              alt="icici" />
+          </div>
+
+          <div class="item">
+            <img src="/Upload/fldPartner/Dream-Scape.png" class="mr-auto block !max-w-full"
+              alt="icici" />
+          </div>
+
+          <div class="item">
+            <img src="/Upload/fldPartner/Silhouete.png" class="mr-auto block !max-w-full"
+              alt="icici" />
+          </div>
+
+          <div class="item">
+            <img src="/Upload/fldPartner/Design-Forum-International.png"
+              class="mr-auto block !max-w-full" alt="icici" />
+          </div>
+
+          <div class="item">
+            <img src="/Upload/fldPartner/ACPL.png" class="mr-auto block !max-w-full"
+              alt="icici" />
+          </div>
+
+          <div class="item">
+            <img src="/Upload/fldPartner/SJA.png" class="mr-auto block !max-w-full"
+              alt="icici" />
+          </div>
+
+          <div class="item">
+            <img src="/Upload/fldPartner/Aufait.png" class="mr-auto block !max-w-full"
+              alt="icici" />
+          </div>
+
+          
+
+       
+
+        
+
+          <div class="item">
+            <img src="/Upload/fldPartner/InGenious.png" class="mr-auto block !max-w-full"
+              alt="icici" />
+          </div>
+
+          <div class="item">
+            <img src="/Upload/fldPartner/MAAS.png" class="mr-auto block !max-w-full"
+              alt="icici" />
+          </div>
+
+          <div class="item">
+            <img src="/Upload/fldPartner/SAHA-and-Associates.png"
+              class="mr-auto block !max-w-full" alt="icici" />
+          </div>
+
+         
+
+        
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <section>
     <div class="bg-primary_BG_clr">
